@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    .result-card {
+        background: #ffffff;
+        padding: 30px 34px;
+        border-radius: 14px;
+        max-width: 820px;
+        margin: 32px auto;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #263238;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .highlight-box {
+        background: #f0f5ff;
+        padding: 16px 20px;
+        border-left: 5px solid #4a72ff;
+        border-radius: 10px;
+        margin-bottom: 22px;
+    }
+
+    .highlight-box p {
+        margin: 6px 0;
+        font-size: 16px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .metrics-box {
+        background: #fafafa;
+        padding: 16px 20px;
+        border-radius: 10px;
+        margin-top: 12px;
+        border: 1px solid #e5e7eb;
+    }
+
+    .metrics-box ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .section-title {
+        margin-top: 26px;
+        font-weight: 700;
+        color: #1b2430;
+        margin-bottom: 8px;
+    }
+
+    pre {
+        background: #fdfdfd;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        font-size: 14px;
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+
+    .re-btn {
+        background: #4a72ff;
+        color: white;
+        padding: 10px 18px;
+        display: inline-block;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s ease;
+    }
+
+    .re-btn:hover {
+        background: #3458d0;
+    }
+</style>
+
+<section class="result-card">
+    <h2>Daily Activity Recommendation — Result</h2>
+
+    <!-- Highlight box -->
+    <div class="highlight-box">
+        <p><strong>Recommended daily play:</strong> {{ result.recommended_play_min }} min/day</p>
+        <p><strong>Recommended daily walk:</strong> {{ result.recommended_walk_min }} min/day</p>
+    </div>
+
+    {% if metrics %}
+    <div class="section-title">Model metrics (test)</div>
+    <div class="metrics-box">
+        <ul>
+            <li><strong>MAE (play):</strong> {{ metrics.mae_play }}</li>
+            <li><strong>MAE (walk):</strong> {{ metrics.mae_walk }}</li>
+            <li><strong>RMSE (play):</strong> {{ metrics.rmse_play }}</li>
+            <li><strong>RMSE (walk):</strong> {{ metrics.rmse_walk }}</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    <div class="section-title">Submitted data</div>
+    <pre>{{ submitted|tojson(indent=2) }}</pre>
+
+    <a href="{{ url_for('activity_reco_page') }}" class="re-btn">← Re-run</a>
+</section>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <h2>DogCare AI — Smart Dog Health & Activity Suite</h2>
+
+    <p class="lead">
+        Predict your dog's weight, estimate daily calorie needs, and classify activity level
+        (Hyperactive · Normal · Low activity). Lightweight models — suitable for local demos and prototypes.
+    </p>
+
+    <div class="howto">
+        <h3>How to use</h3>
+        <ol>
+            <li>Go to the <strong>Weight</strong> page to predict weight from breed, age, and measurements.</li>
+            <li>Go to the <strong>Calorie</strong> page to estimate daily calories (use predicted or provided weight).
+            </li>
+            <li>Go to the <strong>Activity</strong> page to classify activity level from play / walk / sleep inputs.
+            </li>
+            <li>Use the <strong>BMI</strong> page for a BMI-like score and health risk probabilities (obesity, joint,
+                heart).</li>
+        </ol>
+    </div>
+
+    <div class="notes">
+        <h3>Notes</h3>
+        <ul>
+            <li>All user inputs and predictions can be saved to MongoDB for analytics and history.</li>
+            <li>This is a demo — results are educational and <strong>not</strong> a substitute for veterinary advice.
+            </li>
+        </ul>
+    </div>
+
+    <div class="cta-row">
+        <a class="cta" href="{{ url_for('weight_page') }}">Try Weight Prediction</a>
+        <a class="cta secondary" href="{{ url_for('calorie_page') }}">Estimate Calories</a>
+        <a class="cta secondary" href="{{ url_for('activity_page') }}">Activity Check</a>
+        <a class="cta secondary" href="{{ url_for('bmi_page') }}">BMI & Risk Checker</a>
+    </div>
+</section>
+{% endblock %}

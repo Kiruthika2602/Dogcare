@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    .activity-card {
+        background: #ffffff;
+        padding: 28px 32px;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        max-width: 760px;
+        margin: 30px auto;
+    }
+
+    .activity-card h2 {
+        margin-top: 0;
+        color: #263238;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 22px;
+        margin-top: 10px;
+    }
+
+    .form-grid label {
+        font-weight: 600;
+        color: #333;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-grid input,
+    .form-grid select {
+        margin-top: 6px;
+        padding: 10px 12px;
+        border: 1px solid #d0d7df;
+        border-radius: 8px;
+        font-size: 14px;
+        background: #fafbfd;
+        transition: 0.2s ease;
+    }
+
+    .form-grid input:focus {
+        border-color: #4a72ff;
+        background: #fff;
+        outline: none;
+        box-shadow: 0 0 4px rgba(74, 114, 255, 0.3);
+    }
+
+    .btn-submit {
+        display: block;
+        width: 100%;
+        margin-top: 26px;
+        background: #4a72ff;
+        color: white;
+        border: none;
+        padding: 12px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s ease;
+        text-align: center;
+    }
+
+    .btn-submit:hover {
+        background: #3659d4;
+    }
+
+    @media (max-width: 640px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<section class="activity-card">
+    <h2>Daily Activity Recommendation</h2>
+
+    <form method="post">
+        <div class="form-grid">
+
+            <label>Weight (kg)
+                <input name="weight_kg" placeholder="e.g. 12.5">
+            </label>
+
+            <label>Height (cm)
+                <input name="height_cm" placeholder="e.g. 35.0">
+            </label>
+
+            <label>Length (cm)
+                <input name="length_cm" placeholder="e.g. 45.0">
+            </label>
+
+            <label>Age (years)
+                <input name="age_years" placeholder="e.g. 4">
+            </label>
+
+            <label>Avg play (min/day)
+                <input name="avg_daily_play_min" placeholder="e.g. 30">
+            </label>
+
+            <label>Avg walk (min/day)
+                <input name="avg_daily_walk_min" placeholder="e.g. 40">
+            </label>
+
+        </div>
+
+        <button class="btn-submit" type="submit">Get Recommendation</button>
+    </form>
+</section>
+
+{% endblock %}

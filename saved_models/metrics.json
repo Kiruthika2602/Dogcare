@@ -1,0 +1,47 @@
+{
+  "weight_model": {
+    "mae": 2.8749475752176825,
+    "rmse": 3.8506922534813253,
+    "r2": 0.8702632501455649,
+    "n_test": 200,
+    "notes": "MAE in kg; use prediction +/- MAE as a simple confidence band"
+  },
+  "calorie_model": {
+    "mae": 54.7843533358586,
+    "rmse": 80.3357506458338,
+    "r2": 0.9634380480875007,
+    "n_test": 200,
+    "notes": "MAE in kcal/day; use prediction +/- MAE as simple confidence band"
+  },
+  "activity_cluster": {
+    "silhouette": 0.26937451393306694,
+    "inertia": 1340.202212440894,
+    "cluster_sizes": {
+      "0": 238,
+      "1": 256,
+      "2": 306
+    },
+    "centroids": [
+      [
+        -0.249089916220968,
+        1.1282131792128338,
+        -0.4313101562922145
+      ],
+      [
+        0.9767997592321668,
+        -0.4267253743875727,
+        -0.44689927060240514
+      ],
+      [
+        -0.6234553539308643,
+        -0.5205001333641696,
+        0.7093399688619657
+      ]
+    ],
+    "activity_cols": [
+      "avg_daily_play_min",
+      "avg_daily_walk_min",
+      "sleep_hours"
+    ]
+  }
+}

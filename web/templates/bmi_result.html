@@ -1,0 +1,346 @@
+<!-- web/templates/bmi_result.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BMI & Health Risk Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* Page shell */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 20px;
+            color: #1f2933;
+        }
+
+        /* Centered responsive card */
+        .container {
+            max-width: 980px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 26px;
+            border-radius: 12px;
+            box-shadow: 0 6px 30px rgba(25, 40, 60, 0.06);
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0 0 12px 0;
+            color: #233043;
+            font-size: 22px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            color: #162028;
+            font-size: 16px;
+        }
+
+        /* Card style for BMI */
+        .card {
+            background: #f7fbff;
+            padding: 14px 16px;
+            border-radius: 10px;
+            border-left: 5px solid #4a72ff;
+        }
+
+        .metric {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f1720;
+        }
+
+        .note {
+            color: #556b75;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+
+        /* Risk rows and bars */
+        .risk-block {
+            margin-bottom: 14px;
+        }
+
+        .risk-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .risk-title strong {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+
+        .risk-prob {
+            font-weight: 700;
+            font-size: 15px;
+            color: #111827;
+            min-width: 68px;
+            text-align: right;
+        }
+
+        .risk-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .risk-bar {
+            height: 14px;
+            background: #eee;
+            border-radius: 999px;
+            flex: 1 1 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .risk-fill {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            transition: width 0.5s ease;
+        }
+
+        /* percent box on the right */
+        .risk-percent {
+            min-width: 56px;
+            text-align: right;
+            font-weight: 700;
+            font-size: 14px;
+            color: #111827;
+        }
+
+        .pred-class {
+            font-size: 13px;
+            color: #556b75;
+            margin-top: 6px;
+        }
+
+        /* table responsiveness */
+        .table-wrap {
+            overflow-x: auto;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #f0f2f4;
+            padding: 6px;
+            background: #fff;
+        }
+
+        table.metrics {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 720px;
+        }
+
+        table.metrics th,
+        table.metrics td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #f1f3f5;
+            text-align: left;
+            color: #212b32;
+        }
+
+        table.metrics thead th {
+            font-weight: 700;
+            background: #fafafa;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        pre.submitted {
+            background: #fafafa;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            overflow: auto;
+            max-height: 220px;
+            /* prevents it from pushing layout */
+            font-size: 13px;
+            line-height: 1.45;
+            color: #233043;
+        }
+
+        .actions {
+            margin-top: 16px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #4a72ff;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a.home {
+            color: #3b4a5a;
+            text-decoration: none;
+        }
+
+        /* Small screens adjustments */
+        @media (max-width: 640px) {
+            .container {
+                padding: 18px;
+                margin: 18px 12px;
+            }
+
+            .metric {
+                font-size: 16px;
+            }
+
+            .risk-prob {
+                min-width: 56px;
+                font-size: 14px;
+            }
+
+            table.metrics {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>📈 BMI & Health Risk — Result</h2>
+
+        <!-- BMI summary -->
+        <div class="section-title">Dog BMI</div>
+        <div class="card">
+            {% if result.bmi is not none %}
+            <div class="metric">BMI: {{ result.bmi|round(3) }} — {{ result.bmi_category }}</div>
+            <div class="note">
+                <small>Note: BMI thresholds are empirical for demo only. Always consult your veterinarian for clinical
+                    decisions.</small>
+            </div>
+            {% else %}
+            <div class="metric">BMI: <em>Not available</em></div>
+            <div class="note">
+                <small>Please provide both weight and height to compute BMI.</small>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Risk probabilities -->
+        <div class="section-title">Predicted Health Risks (probabilities)</div>
+
+        <div style="margin-top:8px;">
+            {% for key, prob in result.risk_probs.items() %}
+            {% set pct = (prob*100)|round(1) %}
+            <div class="risk-block">
+                <div class="risk-title">
+                    <strong>{{ key.replace('_',' ') }}</strong>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <div style="color:#556b75; font-size:13px;">probability: <strong>{{ prob|round(3) }}</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-row">
+                    <div class="risk-bar" aria-hidden="true">
+                        <div class="risk-fill"
+                            style="width: {{ pct }}%; background: {% if prob > 0.66 %} #e74c3c {% elif prob > 0.33 %} #f39c12 {% else %} #2ecc71 {% endif %};">
+                        </div>
+                    </div>
+                    <div class="risk-percent">{{ pct }}%</div>
+                </div>
+
+                <div class="pred-class">
+                    Predicted class: <strong>{{ result.risk_preds[key] }}</strong>
+                    {% if result.risk_preds[key] == 1 %} (positive) {% else %} (negative) {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Model metrics -->
+        {% if metrics %}
+        <div class="section-title">Model evaluation (test split)</div>
+        <div class="table-wrap">
+            <table class="metrics" role="table" aria-label="Model metrics">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Accuracy</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1</th>
+                        <th>ROC-AUC</th>
+                        <th>n_test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Obesity</td>
+                        <td>{{ metrics.obesity_metrics.accuracy|round(3) }}</td>
+                        <td>{{ metrics.obesity_metrics.precision|round(3) }}</td>
+                        <td>{{ metrics.obesity_metrics.recall|round(3) }}</td>
+                        <td>{{ metrics.obesity_metrics.f1|round(3) }}</td>
+                        <td>{{ metrics.obesity_metrics.roc_auc|round(3) }}</td>
+                        <td>{{ metrics.obesity_metrics.n_test }}</td>
+                    </tr>
+                    <tr>
+                        <td>Joint</td>
+                        <td>{{ metrics.joint_metrics.accuracy|round(3) }}</td>
+                        <td>{{ metrics.joint_metrics.precision|round(3) }}</td>
+                        <td>{{ metrics.joint_metrics.recall|round(3) }}</td>
+                        <td>{{ metrics.joint_metrics.f1|round(3) }}</td>
+                        <td>{{ metrics.joint_metrics.roc_auc|round(3) }}</td>
+                        <td>{{ metrics.joint_metrics.n_test }}</td>
+                    </tr>
+                    <tr>
+                        <td>Heart</td>
+                        <td>{{ metrics.heart_metrics.accuracy|round(3) }}</td>
+                        <td>{{ metrics.heart_metrics.precision|round(3) }}</td>
+                        <td>{{ metrics.heart_metrics.recall|round(3) }}</td>
+                        <td>{{ metrics.heart_metrics.f1|round(3) }}</td>
+                        <td>{{ metrics.heart_metrics.roc_auc|round(3) }}</td>
+                        <td>{{ metrics.heart_metrics.n_test }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+
+        <!-- Submitted data -->
+        <div class="section-title">Submitted Data</div>
+        <pre class="submitted">{{ submitted|tojson(indent=2) }}</pre>
+
+        <div class="actions">
+            <a href="{{ url_for('bmi_page') }}" class="back-btn">← Re-run BMI check</a>
+            <a href="{{ url_for('index') }}" class="home">Home</a>
+        </div>
+    </div>
+
+    <!-- Optional: simple client-side animation to set width (keeps progressive feel) -->
+    <script>
+        // animate fills to their width (already set inline by server) for smoothness
+        document.addEventListener("DOMContentLoaded", function () {
+            const fills = document.querySelectorAll(".risk-fill");
+            fills.forEach(f => {
+                const w = f.style.width;
+                f.style.width = "0%";
+                // small timeout to trigger transition
+                setTimeout(() => f.style.width = w, 80);
+            });
+        });
+    </script>
+</body>
+
+</html>

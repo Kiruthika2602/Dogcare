@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .metric-box {
+            background: #e7f1ff;
+            border-left: 5px solid #4a72ff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .confidence-box {
+            background: #e7ffea;
+            border-left: 5px solid #33c553;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin: 12px 0;
+            font-size: 15px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul.metrics-list {
+            margin: 10px 0 10px 20px;
+            padding: 0;
+        }
+
+        ul.metrics-list li {
+            padding: 4px 0;
+            color: #333;
+        }
+
+        pre {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        a.back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #4a72ff;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        a.back-btn:hover {
+            background: #2f54d8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>🔥 Calorie Prediction Result</h2>
+
+        <!-- Prediction -->
+        <div class="metric-box">
+            <p>
+                <span class="highlight">Estimated calories:</span>
+                {{ result.calories_per_day }} kcal/day — {{ result.calorie_label }}
+            </p>
+
+            <p>
+                <span class="highlight">Weight used:</span>
+                {{ result.weight_used }} kg ({{ result.weight_source }})
+            </p>
+        </div>
+
+        <!-- Metrics -->
+        {% if metrics %}
+        <div>
+            <div class="section-title">📊 Model Metrics (Test)</div>
+
+            <ul class="metrics-list">
+                <li><strong>MAE:</strong> {{ metrics.mae }} kcal/day</li>
+                <li><strong>RMSE:</strong> {{ metrics.rmse }} kcal/day</li>
+                <li><strong>R²:</strong> {{ metrics.r2 }}</li>
+                <li><strong>Test rows:</strong> {{ metrics.n_test }}</li>
+            </ul>
+
+            {% if ci[0] is not none %}
+            <div class="confidence-box">
+                <strong>Confidence band:</strong>
+                {{ ci[0]|round(1) }} — {{ ci[1]|round(1) }} kcal/day
+                <em>(prediction ± MAE)</em>
+            </div>
+            {% endif %}
+
+        </div>
+        {% endif %}
+
+        <!-- Submitted data -->
+        <div class="section-title">📥 Submitted Data</div>
+        <pre>{{ submitted|tojson(indent=2) }}</pre>
+
+        <a href="{{ url_for('calorie_page') }}" class="back-btn">⬅ Back</a>
+    </div>
+
+</body>
+
+</html>

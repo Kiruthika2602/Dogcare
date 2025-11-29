@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DogCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* Minimal fallback styles so page looks ok if styles.css missing */
+        :root {
+            --accent: #4a72ff;
+            --muted: #6b7280;
+            --bg: #f5f7fb;
+            --card: #ffffff;
+        }
+
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header.site-header {
+            background: var(--card);
+            box-shadow: 0 3px 12px rgba(16, 24, 40, 0.06);
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 12px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        nav {
+            margin-left: auto;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            padding: 6px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: rgba(74, 114, 255, 0.08);
+        }
+
+        main.container {
+            padding: 24px 20px;
+        }
+
+        .hero {
+            background: var(--card);
+            padding: 26px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(16, 24, 40, 0.04);
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 24px;
+        }
+
+        .hero .lead {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .cta.secondary {
+            background: transparent;
+            border: 1px solid rgba(74, 114, 255, 0.12);
+            color: var(--accent);
+        }
+
+        .messages {
+            margin: 12px 0;
+        }
+
+        .flash {
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .flash.danger {
+            background: #ffe6e6;
+            color: #9b1c1c;
+        }
+
+        footer.site-footer {
+            padding: 18px 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 18px;
+        }
+
+        @media (max-width:720px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start
+            }
+
+            nav {
+                width: 100%;
+                gap: 8px;
+                margin-top: 8px
+            }
+
+            .cta-row {
+                display: flex;
+                flex-direction: column;
+                gap: 8px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="{{ url_for('index') }}">DogCare AI</a></h1>
+            <nav>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('weight_page') }}">Weight</a>
+                <a href="{{ url_for('calorie_page') }}">Calorie</a>
+                <a href="{{ url_for('activity_page') }}">Activity</a>
+                <a href="{{ url_for('life_page') }}">Life Expectancy</a>
+                <a href="{{ url_for('activity_reco_page') }}">Activity Reco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="messages">
+            {% for category, msg in messages %}
+            <div class="flash {{ category }}">{{ msg }}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>DogCare AI · Demo · Not a substitute for professional veterinary advice.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

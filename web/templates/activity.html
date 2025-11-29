@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    .activity-card {
+        background: #ffffff;
+        max-width: 900px;
+        margin: 32px auto;
+        padding: 28px 34px;
+        border-radius: 14px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+        text-align: center;
+        color: #263238;
+        margin-bottom: 12px;
+    }
+
+    p {
+        text-align: center;
+        color: #566573;
+        margin-bottom: 24px;
+        font-size: 15px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .form-grid label {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        color: #1b2430;
+        font-size: 14px;
+    }
+
+    .form-grid input,
+    .form-grid select {
+        margin-top: 6px;
+        padding: 10px 12px;
+        border: 1px solid #d0d4db;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        transition: border 0.2s ease;
+        background: #fafbff;
+    }
+
+    .form-grid input:focus,
+    .form-grid select:focus {
+        border-color: #4a72ff;
+    }
+
+    .btn {
+        background: #4a72ff;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.2s ease;
+    }
+
+    .btn:hover {
+        background: #3458d0;
+    }
+
+    .result-card {
+        background: #fdfefe;
+        margin-top: 28px;
+        border-radius: 12px;
+        padding: 22px 26px;
+        border-left: 5px solid #4a72ff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    }
+
+    .result-card h3 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #1b2430;
+    }
+
+    pre {
+        background: #fafbff;
+        padding: 14px;
+        border-radius: 8px;
+        border: 1px solid #e5e8ef;
+        margin-top: 10px;
+        overflow-x: auto;
+        font-size: 14px;
+    }
+</style>
+
+<section class="activity-card">
+    <h2>Activity Classification</h2>
+    <p>Enter play/walk/sleep details to classify your dog into <strong>Hyperactive / Normal / Low Activity</strong>.</p>
+
+    <form method="post" class="form-grid">
+        <label>Breed
+            <input name="breed" placeholder="e.g., Beagle" required>
+        </label>
+
+        <label>Sex
+            <select name="sex">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </label>
+
+        <label>Age (months)
+            <input type="number" name="age_months" value="36">
+        </label>
+
+        <label>Age (years) (optional)
+            <input type="number" step="0.1" name="age_years">
+        </label>
+
+        <label>Avg daily play (minutes)
+            <input type="number" name="avg_daily_play_min" value="20">
+        </label>
+
+        <label>Avg daily walk (minutes)
+            <input type="number" name="avg_daily_walk_min" value="30">
+        </label>
+
+        <label>Sleep hours
+            <input type="number" step="0.1" name="sleep_hours" value="12">
+        </label>
+
+        <label>Weight (kg) — optional
+            <input type="number" step="0.1" name="weight_kg">
+        </label>
+
+        <div style="grid-column: 1 / -1; text-align: right;">
+            <button class="btn" type="submit">Classify Activity</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <section class="result-card">
+        <h3>Activity Result</h3>
+        <p><strong>Cluster:</strong> {{ result.activity_cluster }}
+            — <strong>{{ result.activity_label }}</strong></p>
+
+        <h4>Submitted Data</h4>
+        <pre>{{ submitted | tojson(indent=2) }}</pre>
+    </section>
+    {% endif %}
+</section>
+
+{% endblock %}

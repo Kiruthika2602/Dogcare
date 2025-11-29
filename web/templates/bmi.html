@@ -1,0 +1,182 @@
+<!-- web/templates/bmi.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dog BMI & Health Risk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 36px auto;
+            background: #fff;
+            padding: 28px 32px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 14px;
+            color: #2b3b4c;
+        }
+
+        form .row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 9px 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #666;
+            margin-top: 6px;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            background: #4a72ff;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #2f54d8;
+        }
+
+        .helper {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .example {
+            background: #fafafa;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        @media (max-width:640px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+
+            .row {
+                flex-direction: column
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🐶 Dog BMI & Health Risk Checker</h2>
+
+        <p class="helper">
+            Enter your dog's measurements & activity. The tool computes a BMI-like score and uses lightweight risk
+            models to estimate <strong>obesity</strong>, <strong>joint</strong> and <strong>heart</strong> risk
+            probabilities.
+            These are demo models (not a substitute for veterinary advice).
+        </p>
+
+        <div class="example">
+            <strong>Example:</strong> Weight: 12.5 kg, Height: 35 cm, Age: 3 years, Play: 30 min, Walk: 40 min, Size:
+            medium.
+        </div>
+
+        <form method="post" action="{{ url_for('bmi_page') }}">
+            <div class="grid">
+                <div>
+                    <label for="weight_kg">Weight (kg)</label>
+                    <input id="weight_kg" name="weight_kg" type="number" step="0.1" placeholder="e.g. 12.5" />
+                </div>
+
+                <div>
+                    <label for="height_cm">Height (cm)</label>
+                    <input id="height_cm" name="height_cm" type="number" step="0.1" placeholder="e.g. 35.0" />
+                </div>
+
+                <div>
+                    <label for="age_years">Age (years)</label>
+                    <input id="age_years" name="age_years" type="number" step="0.1" placeholder="e.g. 3" />
+                </div>
+
+                <div>
+                    <label for="size_group">Size group</label>
+                    <select id="size_group" name="size_group">
+                        <option value="medium" selected>Medium (default)</option>
+                        <option value="small">Small</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="avg_daily_play_min">Avg play (min/day)</label>
+                    <input id="avg_daily_play_min" name="avg_daily_play_min" type="number" step="1"
+                        placeholder="e.g. 30" />
+                </div>
+
+                <div>
+                    <label for="avg_daily_walk_min">Avg walk (min/day)</label>
+                    <input id="avg_daily_walk_min" name="avg_daily_walk_min" type="number" step="1"
+                        placeholder="e.g. 40" />
+                </div>
+            </div>
+
+            <p class="note">Tip: leave fields blank if unknown — the model will still try to give a reasonable result.
+            </p>
+
+            <div style="text-align:center; margin-top:18px;">
+                <button type="submit" class="submit-btn">Compute BMI & Risks</button>
+            </div>
+        </form>
+
+        <div style="margin-top:18px; text-align:center;">
+            <a href="{{ url_for('index') }}">← Back to Home</a>
+        </div>
+    </div>
+</body>
+
+</html>

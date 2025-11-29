@@ -1,0 +1,801 @@
+dog_id,date,breed,sex,age_months,age_years,height_cm,length_cm,weight_kg,avg_daily_play_min,avg_daily_walk_min,activity_minutes,activity_score,sleep_hours,rer,mer_multiplier,calories_per_day,activity_cluster,activity_label,size_group,breed_reduced
+DOG0030,2025-04-28,Mixed,M,11,0.92,52.3,70.4,21.07,20.2,0.0,20.2,1.4,11.2,688.4,1.9501936671105236,1237.2,1,Low activity,large,Mixed
+DOG0536,2025-06-13,Chihuahua,M,45,3.75,24.2,27.4,3.49,6.8,26.4,33.2,2.31,11.6,178.7,1.27,237.7,1,Low activity,small,Chihuahua
+DOG0696,2025-02-18,Golden Retriever,F,63,5.25,62.6,87.3,31.29,67.2,74.7,141.9,9.85,10.4,926.1,1.37,1086.3,2,Hyperactive,large,Golden Retriever
+DOG0558,2025-01-29,Boxer,M,60,5.0,61.5,83.8,31.46,48.8,7.3,56.1,3.9,12.0,929.9,1.21,1171.4,1,Low activity,large,Boxer
+DOG0837,2025-01-31,Dachshund,M,70,5.83,21.3,19.3,11.58,48.4,78.0,126.4,8.78,11.5,439.4,1.22,611.2,2,Hyperactive,small,Dachshund
+DOG0597,2025-02-05,Poodle (Standard),M,22,1.83,59.2,65.0,30.57,39.6,65.3,104.9,7.28,12.4,910.1,1.24,1159.9,2,Hyperactive,large,Poodle (Standard)
+DOG0166,2025-10-18,Labrador Retriever,F,47,3.92,56.3,70.3,28.69,34.3,54.2,88.5,6.15,11.9,867.8,1.2,989.3,2,Hyperactive,large,Labrador Retriever
+DOG0919,2025-05-13,Dachshund,F,24,2.0,16.7,16.0,10.13,25.6,3.7,29.3,2.03,11.6,397.5,1.28,578.8,1,Low activity,small,Dachshund
+DOG0496,2025-04-06,Dachshund,M,73,6.08,13.3,14.8,9.11,11.0,76.1,87.1,6.05,11.4,367.1,1.24,457.0,2,Hyperactive,small,Dachshund
+DOG0825,2024-12-08,Poodle (Standard),M,71,5.92,53.3,58.2,24.92,36.8,25.4,62.2,4.32,12.5,780.7,1.19,870.5,1,Low activity,large,Poodle (Standard)
+DOG0066,2025-07-25,German Shepherd,F,9,0.75,62.7,73.3,31.01,107.7,36.5,144.2,10.01,11.2,919.9,1.9931451883834133,1770.8,0,Normal,large,German Shepherd
+DOG0142,2025-07-23,Rottweiler,M,33,2.75,65.6,81.6,48.15,12.8,31.1,43.9,3.05,12.6,1279.5,1.29,1793.4,1,Low activity,large,Other
+DOG0926,2025-04-06,Dachshund,M,42,3.5,22.2,26.4,11.67,29.9,58.5,88.4,6.14,12.4,442.0,1.3,601.4,2,Hyperactive,small,Dachshund
+DOG0828,2025-04-12,Dachshund,F,42,3.5,13.6,16.7,8.73,19.2,17.5,36.7,2.55,10.3,355.5,1.23,426.1,1,Low activity,small,Dachshund
+DOG0656,2024-12-27,Rottweiler,M,2,0.17,66.3,73.5,28.79,68.1,0.0,68.1,4.73,13.0,870.0,2.2800532056165563,1928.6,0,Normal,large,Other
+DOG0332,2024-12-15,Labrador Retriever,M,32,2.67,60.6,80.5,36.01,40.7,46.4,87.1,6.05,11.0,1029.0,1.28,1377.1,2,Hyperactive,large,Labrador Retriever
+DOG0665,2024-12-15,Chihuahua,F,2,0.17,20.1,18.3,1.86,90.0,25.2,115.2,8.0,9.7,111.5,2.9236893410218703,326.3,0,Normal,small,Chihuahua
+DOG0250,2025-03-04,Chihuahua,M,24,2.0,20.9,24.6,2.07,5.0,0.0,5.0,0.35,12.8,120.8,1.26,145.0,1,Low activity,small,Chihuahua
+DOG0908,2025-05-07,Beagle,F,2,0.17,37.5,43.7,6.66,39.7,30.5,70.2,4.88,12.3,290.2,2.392248181326889,689.2,1,Low activity,medium,Beagle
+DOG0709,2025-03-06,French Bulldog,M,113,9.42,29.8,35.0,10.31,52.3,29.9,82.2,5.71,12.6,402.8,1.34,570.4,1,Low activity,small,French Bulldog
+DOG0306,2025-05-29,French Bulldog,F,2,0.17,31.8,43.4,6.34,67.6,48.7,116.3,8.08,10.7,279.7,2.6486829533573646,746.4,0,Normal,medium,French Bulldog
+DOG0735,2025-04-17,Beagle,M,31,2.58,38.7,48.8,10.52,25.4,17.8,43.2,3.0,11.3,408.9,1.3,562.5,1,Low activity,medium,Beagle
+DOG0976,2025-06-08,Siberian Husky,F,45,3.75,54.5,65.1,21.48,82.8,13.3,96.1,6.67,11.1,698.4,1.29,891.8,0,Normal,large,Siberian Husky
+DOG0050,2025-04-25,Bulldog,M,88,7.33,34.6,41.2,19.44,29.8,36.7,66.5,4.62,11.6,648.1,1.2,785.4,1,Low activity,medium,Other
+DOG0897,2025-10-19,Golden Retriever,F,37,3.08,52.7,48.9,27.5,46.6,73.2,119.8,8.32,10.7,840.6,1.18,1006.4,2,Hyperactive,large,Golden Retriever
+DOG0003,2025-10-03,Mixed,F,13,1.08,27.9,34.7,14.53,22.2,36.4,58.6,4.07,12.0,521.0,1.17,655.0,1,Low activity,small,Mixed
+DOG0545,2025-03-12,Pomeranian,M,13,1.08,17.8,18.7,2.8,31.4,8.3,39.7,2.76,11.1,151.5,1.24,193.4,1,Low activity,small,Other
+DOG0351,2025-02-06,Mixed,F,4,0.33,37.9,47.7,10.21,0.0,0.0,0.0,0.0,10.9,399.8,2.5091579655626024,997.1,1,Low activity,medium,Mixed
+DOG0905,2025-11-14,French Bulldog,M,63,5.25,31.4,39.9,12.27,51.5,28.7,80.2,5.57,11.6,458.9,1.23,586.6,0,Normal,medium,French Bulldog
+DOG0537,2025-02-14,Mixed,M,33,2.75,46.7,64.2,19.68,0.0,47.4,47.4,3.29,13.4,654.1,1.16,819.1,1,Low activity,medium,Mixed
+DOG0345,2025-11-23,Dachshund,F,55,4.58,15.4,14.3,8.84,32.9,55.3,88.2,6.12,10.0,358.9,1.25,400.0,2,Hyperactive,small,Dachshund
+DOG0995,2025-06-28,Chihuahua,M,110,9.17,21.1,22.1,2.55,43.9,2.4,46.3,3.22,10.7,141.3,1.24,153.1,0,Normal,small,Chihuahua
+DOG0482,2025-04-22,Bulldog,M,36,3.0,34.8,35.4,20.25,21.4,68.3,89.7,6.23,10.9,668.2,1.17,726.2,2,Hyperactive,medium,Other
+DOG0576,2025-10-30,Beagle,M,19,1.58,41.9,58.6,10.32,40.2,0.0,40.2,2.79,12.1,403.0,1.23,545.5,1,Low activity,medium,Beagle
+DOG0034,2025-01-22,Mixed,M,56,4.67,39.4,50.9,17.27,52.5,56.7,109.2,7.58,11.2,593.0,1.27,792.2,2,Hyperactive,medium,Mixed
+DOG0032,2025-06-14,Siberian Husky,M,126,10.5,58.4,77.0,18.12,13.3,27.2,40.5,2.81,12.0,614.8,1.3,814.6,1,Low activity,large,Siberian Husky
+DOG0232,2025-01-07,Poodle (Standard),F,20,1.67,51.9,70.5,25.77,46.4,0.0,46.4,3.22,9.5,800.6,1.21,963.3,0,Normal,large,Poodle (Standard)
+DOG0964,2025-01-26,Siberian Husky,M,45,3.75,50.8,69.1,18.57,57.4,44.6,102.0,7.08,9.8,626.2,1.3,941.8,0,Normal,large,Siberian Husky
+DOG0193,2025-02-17,German Shepherd,M,5,0.42,61.0,82.2,21.63,46.7,23.1,69.8,4.85,14.6,702.1,2.628426456614587,1782.9,1,Low activity,large,German Shepherd
+DOG0334,2025-02-07,Pomeranian,F,14,1.17,20.9,25.4,3.67,41.2,77.0,118.2,8.21,12.0,185.6,1.31,256.8,2,Hyperactive,small,Other
+DOG0004,2025-11-11,Poodle (Standard),M,125,10.42,59.5,56.2,26.12,0.0,25.2,25.2,1.75,10.2,808.8,1.17,873.1,1,Low activity,large,Poodle (Standard)
+DOG0205,2025-08-06,Dachshund,F,37,3.08,16.1,15.7,11.08,60.9,52.2,113.1,7.85,10.4,425.1,1.25,543.0,0,Normal,small,Dachshund
+DOG0515,2025-10-10,Labrador Retriever,F,51,4.25,58.7,74.8,30.44,42.2,47.0,89.2,6.19,10.6,907.2,1.19,1040.6,2,Hyperactive,large,Labrador Retriever
+DOG0800,2025-06-22,Siberian Husky,F,37,3.08,56.6,71.3,21.92,73.6,109.0,182.6,12.68,12.1,709.1,1.3,935.7,2,Hyperactive,large,Siberian Husky
+DOG0307,2025-04-21,Beagle,F,23,1.92,39.3,43.3,10.8,4.2,29.2,33.4,2.32,10.5,417.0,1.14,464.5,1,Low activity,medium,Beagle
+DOG0110,2025-07-14,Mixed,M,4,0.33,29.1,39.1,10.29,73.0,44.3,117.3,8.15,10.0,402.2,2.46053949727414,1005.4,0,Normal,small,Mixed
+DOG0431,2025-09-22,German Shepherd,M,11,0.92,63.7,58.6,34.8,20.7,36.4,57.1,3.97,11.3,1003.0,2.193609708425224,2208.7,1,Low activity,large,German Shepherd
+DOG0078,2025-08-25,Golden Retriever,F,14,1.17,56.2,72.8,28.69,94.9,49.3,144.2,10.01,10.9,867.8,1.31,1065.8,0,Normal,large,Golden Retriever
+DOG0085,2025-07-04,German Shepherd,M,13,1.08,63.2,87.5,32.01,36.2,59.0,95.2,6.61,11.9,942.0,1.21,1137.5,2,Hyperactive,large,German Shepherd
+DOG0287,2025-04-01,Poodle (Standard),F,109,9.08,58.2,65.3,27.27,26.6,19.9,46.5,3.23,12.8,835.3,1.31,1030.8,1,Low activity,large,Poodle (Standard)
+DOG0083,2025-02-17,Mixed,M,16,1.33,34.6,40.4,18.64,50.3,59.5,109.8,7.62,13.0,628.0,1.38,850.4,2,Hyperactive,medium,Mixed
+DOG0992,2025-03-24,Golden Retriever,M,57,4.75,57.4,60.7,30.93,5.9,23.3,29.2,2.03,13.0,918.1,1.2,936.3,1,Low activity,large,Golden Retriever
+DOG0790,2025-06-05,Poodle (Standard),F,12,1.0,54.6,49.9,25.71,15.8,9.7,25.5,1.77,10.1,799.2,1.21,950.9,1,Low activity,large,Poodle (Standard)
+DOG0895,2025-10-09,Dachshund,M,55,4.58,22.4,24.6,11.49,32.7,8.6,41.3,2.87,10.9,436.9,1.23,560.9,1,Low activity,small,Dachshund
+DOG0399,2025-04-04,Beagle,M,29,2.42,40.8,54.3,10.7,32.9,32.9,65.8,4.57,12.0,414.1,1.15,458.4,1,Low activity,medium,Beagle
+DOG0324,2025-08-10,German Shepherd,M,9,0.75,54.5,60.3,23.41,68.0,0.0,68.0,4.72,12.3,745.0,1.640822388455002,1154.6,0,Normal,large,German Shepherd
+DOG0520,2025-06-09,Poodle (Standard),F,31,2.58,47.0,49.6,25.05,37.5,45.4,82.9,5.76,11.9,783.8,1.16,896.9,1,Low activity,medium,Poodle (Standard)
+DOG0917,2025-09-04,Shih Tzu,M,5,0.42,25.5,27.9,4.3,82.3,5.0,87.3,6.06,12.1,209.0,2.003372943550556,411.8,0,Normal,small,Shih Tzu
+DOG0923,2025-08-21,Labrador Retriever,M,12,1.0,62.5,58.3,34.57,45.9,46.6,92.5,6.42,11.6,998.0,1.21,1187.7,2,Hyperactive,large,Labrador Retriever
+DOG0006,2025-10-15,Labrador Retriever,M,14,1.17,61.6,70.0,34.74,37.8,70.3,108.1,7.51,11.1,1001.7,1.34,1132.3,2,Hyperactive,large,Labrador Retriever
+DOG0732,2025-10-31,Shih Tzu,F,28,2.33,22.8,25.7,5.12,36.6,22.1,58.7,4.08,11.0,238.3,1.23,298.2,0,Normal,small,Shih Tzu
+DOG0466,2025-04-25,Labrador Retriever,F,23,1.92,61.2,67.8,32.29,0.0,65.4,65.4,4.54,10.7,948.2,1.23,1081.6,2,Hyperactive,large,Labrador Retriever
+DOG0098,2025-01-14,Shih Tzu,F,25,2.08,20.8,22.7,4.32,5.1,40.3,45.4,3.15,11.9,209.8,1.22,262.0,1,Low activity,small,Shih Tzu
+DOG0267,2025-08-09,Rottweiler,M,22,1.83,63.4,75.1,51.54,17.3,41.8,59.1,4.1,13.2,1346.5,1.28,1607.5,1,Low activity,large,Other
+DOG0358,2025-05-29,French Bulldog,M,2,0.17,28.8,32.4,6.52,26.3,10.3,36.6,2.54,11.2,285.6,2.358727019546099,730.4,1,Low activity,small,French Bulldog
+DOG0869,2025-10-09,Mixed,F,29,2.42,49.2,60.7,16.69,57.1,16.7,73.8,5.12,12.2,578.0,1.26,665.4,0,Normal,medium,Mixed
+DOG0799,2025-09-17,Chihuahua,F,33,2.75,15.3,18.1,2.49,42.2,54.0,96.2,6.68,10.2,138.8,1.22,161.5,2,Hyperactive,small,Chihuahua
+DOG0381,2025-05-23,German Shepherd,F,52,4.33,54.6,65.3,27.2,39.8,65.8,105.6,7.33,12.9,833.7,1.21,1017.9,2,Hyperactive,large,German Shepherd
+DOG0632,2024-12-16,Mixed,M,3,0.25,56.0,55.0,12.74,69.8,34.0,103.8,7.21,11.2,472.0,2.145316456336626,1000.3,0,Normal,large,Mixed
+DOG0382,2025-04-28,Shih Tzu,F,45,3.75,21.3,20.7,5.26,0.0,19.3,19.3,1.34,14.9,243.1,1.21,296.6,1,Low activity,small,Shih Tzu
+DOG0491,2025-06-22,German Shepherd,M,33,2.75,63.4,62.2,35.07,35.8,74.9,110.7,7.69,11.7,1008.8,1.3,1287.2,2,Hyperactive,large,German Shepherd
+DOG0119,2025-05-28,Chihuahua,M,33,2.75,16.2,20.7,2.33,23.6,18.6,42.2,2.93,11.4,132.0,1.18,146.0,1,Low activity,small,Chihuahua
+DOG0901,2025-07-21,Pomeranian,M,58,4.83,23.5,29.2,2.19,33.5,28.6,62.1,4.31,11.6,126.0,1.19,159.9,1,Low activity,small,Other
+DOG0251,2025-01-13,Siberian Husky,F,2,0.17,54.9,68.3,11.93,36.0,36.5,72.5,5.03,12.9,449.3,2.730221717757249,1277.1,1,Low activity,large,Siberian Husky
+DOG0524,2025-07-23,Dachshund,M,5,0.42,18.0,18.0,9.34,68.3,68.9,137.2,9.53,10.9,374.0,2.005928215336878,783.4,2,Hyperactive,small,Dachshund
+DOG0010,2025-03-31,Mixed,M,5,0.42,39.6,55.2,14.06,12.7,26.8,39.5,2.74,13.3,508.3,2.63230583059358,1361.8,1,Low activity,medium,Mixed
+DOG0197,2024-12-06,Shih Tzu,M,35,2.92,21.2,20.2,5.32,36.7,0.0,36.7,2.55,12.1,245.2,1.28,329.0,1,Low activity,small,Shih Tzu
+DOG0604,2025-01-09,Mixed,M,43,3.58,32.5,44.4,16.61,28.7,61.7,90.4,6.28,11.5,575.9,1.22,755.6,2,Hyperactive,medium,Mixed
+DOG0082,2025-06-08,Golden Retriever,F,14,1.17,60.6,58.5,31.16,47.2,29.3,76.5,5.31,10.8,923.2,1.16,1039.3,0,Normal,large,Golden Retriever
+DOG0784,2025-02-20,French Bulldog,F,2,0.17,33.7,30.4,8.06,95.2,51.5,146.7,10.19,12.1,334.8,2.2326314864096384,752.3,0,Normal,medium,French Bulldog
+DOG0588,2025-11-12,Beagle,F,13,1.08,38.4,51.3,8.9,37.4,61.4,98.8,6.86,8.8,360.7,1.25,455.5,2,Hyperactive,medium,Beagle
+DOG0798,2025-01-03,Pomeranian,F,79,6.58,22.2,21.5,3.33,28.5,0.0,28.5,1.98,11.6,172.6,1.23,227.4,1,Low activity,small,Other
+DOG0240,2025-01-28,Boxer,M,40,3.33,57.2,76.3,32.01,14.0,40.2,54.2,3.76,9.3,942.0,1.19,1207.3,2,Hyperactive,large,Boxer
+DOG0291,2025-04-24,French Bulldog,M,19,1.58,28.4,33.7,10.28,43.8,22.4,66.2,4.6,11.7,401.9,1.17,477.1,1,Low activity,small,French Bulldog
+DOG0212,2025-02-04,Beagle,F,65,5.42,40.6,40.5,11.08,54.8,0.0,54.8,3.81,11.0,425.1,1.28,534.9,0,Normal,medium,Beagle
+DOG0718,2025-09-22,Poodle (Standard),M,34,2.83,61.3,58.6,29.02,4.9,51.7,56.6,3.93,11.3,875.2,1.23,1082.0,2,Hyperactive,large,Poodle (Standard)
+DOG0360,2025-02-26,Mixed,F,4,0.33,48.1,48.4,11.21,69.3,18.0,87.3,6.06,12.5,428.8,2.32876012755445,957.2,0,Normal,medium,Mixed
+DOG0450,2025-10-03,Poodle (Standard),F,79,6.58,51.8,70.0,24.6,38.5,57.7,96.2,6.68,10.8,773.2,1.23,960.6,2,Hyperactive,large,Poodle (Standard)
+DOG0228,2025-11-13,Chihuahua,M,22,1.83,17.5,20.4,2.46,25.9,5.5,31.4,2.18,11.9,137.5,1.22,186.7,1,Low activity,small,Chihuahua
+DOG0951,2025-11-11,Golden Retriever,F,29,2.42,52.7,72.0,29.7,56.1,26.0,82.1,5.7,10.6,890.6,1.13,1120.8,0,Normal,large,Golden Retriever
+DOG0947,2025-05-30,Pomeranian,F,23,1.92,31.6,29.2,2.5,50.5,6.0,56.5,3.92,14.1,139.2,1.15,161.8,1,Low activity,medium,Other
+DOG0797,2025-02-08,Mixed,M,18,1.5,53.6,57.9,21.34,27.3,23.3,50.6,3.51,12.2,695.0,1.24,777.4,1,Low activity,large,Mixed
+DOG0502,2025-04-05,Dachshund,F,86,7.17,13.7,16.0,9.94,13.5,53.5,67.0,4.65,11.7,391.9,1.29,537.9,2,Hyperactive,small,Dachshund
+DOG0465,2025-03-24,Dachshund,M,37,3.08,13.6,12.6,11.76,0.0,27.1,27.1,1.88,10.7,444.5,1.16,504.6,1,Low activity,small,Dachshund
+DOG0363,2025-06-14,Labrador Retriever,F,27,2.25,58.6,56.0,31.68,33.2,51.6,84.8,5.89,11.7,934.7,1.33,1312.1,2,Hyperactive,large,Labrador Retriever
+DOG0469,2024-12-13,Beagle,F,83,6.92,35.4,38.6,9.52,17.8,45.1,62.9,4.37,10.7,379.4,1.34,519.2,2,Hyperactive,medium,Beagle
+DOG0936,2025-07-18,Mixed,M,49,4.08,43.6,52.5,18.9,35.4,42.5,77.9,5.41,11.2,634.5,1.29,862.3,2,Hyperactive,medium,Mixed
+DOG0429,2025-09-28,Beagle,M,119,9.92,36.7,33.5,9.93,13.3,43.1,56.4,3.92,13.2,391.6,1.2,473.0,1,Low activity,medium,Beagle
+DOG0008,2025-06-14,Siberian Husky,F,58,4.83,52.0,67.8,20.85,38.4,29.4,67.8,4.71,13.0,683.0,1.22,688.2,1,Low activity,large,Siberian Husky
+DOG0156,2025-07-03,German Shepherd,F,39,3.25,62.6,59.6,33.6,61.1,30.5,91.6,6.36,11.2,976.9,1.28,1137.6,0,Normal,large,German Shepherd
+DOG0542,2024-12-22,Siberian Husky,M,97,8.08,50.4,58.0,20.38,43.2,38.5,81.7,5.67,11.2,671.4,1.27,745.0,0,Normal,large,Siberian Husky
+DOG0441,2025-08-31,French Bulldog,M,65,5.42,29.8,39.0,11.73,0.0,81.3,81.3,5.65,8.9,443.7,1.21,530.3,2,Hyperactive,small,French Bulldog
+DOG0483,2025-03-05,French Bulldog,M,40,3.33,28.8,28.7,10.64,38.5,53.3,91.8,6.38,10.6,412.4,1.23,502.2,2,Hyperactive,small,French Bulldog
+DOG0423,2025-09-19,Siberian Husky,F,5,0.42,59.5,61.8,18.18,36.0,25.7,61.7,4.28,11.9,616.3,2.456099526662592,1432.8,1,Low activity,large,Siberian Husky
+DOG0779,2025-04-22,Pomeranian,F,53,4.42,17.7,21.4,2.47,0.0,18.1,18.1,1.26,10.0,137.9,1.22,157.3,1,Low activity,small,Other
+DOG0950,2025-10-19,Siberian Husky,M,25,2.08,61.1,72.6,26.8,19.7,45.7,65.4,4.54,11.2,824.5,1.16,962.9,2,Hyperactive,large,Siberian Husky
+DOG0335,2025-10-15,German Shepherd,M,2,0.17,61.1,80.0,19.29,12.0,16.2,28.2,1.96,13.2,644.3,2.7416841289918232,1861.8,1,Low activity,large,German Shepherd
+DOG0577,2025-06-27,Labrador Retriever,M,2,0.17,60.8,72.5,20.9,50.1,30.7,80.8,5.61,11.9,684.2,2.135832428413265,1502.7,0,Normal,large,Labrador Retriever
+DOG0935,2025-09-01,French Bulldog,F,77,6.42,28.0,35.0,10.1,39.9,38.3,78.2,5.43,11.9,396.6,1.19,484.2,1,Low activity,small,French Bulldog
+DOG0568,2025-02-04,German Shepherd,M,64,5.33,64.1,67.9,36.58,95.2,59.4,154.6,10.74,11.0,1041.2,1.33,1364.1,0,Normal,large,German Shepherd
+DOG0595,2025-03-15,Golden Retriever,M,15,1.25,56.5,69.9,29.6,61.0,50.1,111.1,7.72,10.8,888.3,1.3,1070.8,0,Normal,large,Golden Retriever
+DOG0531,2025-02-21,German Shepherd,F,19,1.58,60.4,75.8,32.28,46.9,20.1,67.0,4.65,12.3,948.0,1.22,1092.7,1,Low activity,large,German Shepherd
+DOG0582,2025-02-27,Labrador Retriever,M,45,3.75,61.8,66.9,30.86,54.2,37.1,91.3,6.34,12.5,916.5,1.2,1171.4,1,Low activity,large,Labrador Retriever
+DOG0708,2025-01-29,Golden Retriever,M,30,2.5,53.5,53.7,28.49,32.9,58.1,91.0,6.32,8.8,863.2,1.26,1092.6,2,Hyperactive,large,Golden Retriever
+DOG0449,2025-10-24,Chihuahua,F,58,4.83,20.2,26.7,2.08,22.3,20.5,42.8,2.97,12.3,121.2,1.17,144.3,1,Low activity,small,Chihuahua
+DOG0454,2024-12-22,Boxer,M,77,6.42,58.6,77.5,27.88,37.0,33.2,70.2,4.88,11.5,849.3,1.21,1094.3,1,Low activity,large,Boxer
+DOG0229,2025-01-16,Golden Retriever,M,25,2.08,59.6,55.0,34.4,70.1,8.6,78.7,5.47,9.1,994.3,1.32,1284.1,0,Normal,large,Golden Retriever
+DOG0353,2025-09-11,Labrador Retriever,M,36,3.0,60.4,73.2,32.98,33.4,44.1,77.5,5.38,10.7,963.4,1.19,1245.7,2,Hyperactive,large,Labrador Retriever
+DOG0729,2025-02-20,Bulldog,F,11,0.92,35.0,48.8,16.97,57.4,37.1,94.5,6.56,10.6,585.3,1.7466713261539974,1040.3,0,Normal,medium,Other
+DOG0213,2025-05-19,Pomeranian,F,4,0.33,21.0,28.9,1.84,15.3,20.9,36.2,2.51,12.5,110.6,2.552662267776748,295.4,1,Low activity,small,Other
+DOG0080,2025-03-31,Bulldog,F,83,6.92,34.9,36.2,20.6,38.0,35.6,73.6,5.11,12.3,676.9,1.26,815.7,1,Low activity,medium,Other
+DOG0149,2025-06-27,Shih Tzu,M,67,5.58,27.6,33.5,4.7,59.9,51.9,111.8,7.76,10.6,223.4,1.22,293.1,0,Normal,small,Shih Tzu
+DOG0303,2025-04-11,Shih Tzu,M,143,11.92,23.3,30.2,4.13,16.1,18.8,34.9,2.42,11.8,202.8,1.2,239.1,1,Low activity,small,Shih Tzu
+DOG0629,2025-03-07,Golden Retriever,F,2,0.17,53.7,68.4,20.17,49.9,26.3,76.2,5.29,11.4,666.2,2.352877350504334,1554.7,0,Normal,large,Golden Retriever
+DOG0778,2025-07-25,Boxer,M,39,3.25,61.1,55.6,31.33,36.1,13.0,49.1,3.41,13.5,927.0,1.26,1199.0,1,Low activity,large,Boxer
+DOG0507,2025-08-07,Shih Tzu,M,87,7.25,28.6,27.3,6.92,32.2,31.1,63.3,4.4,11.0,298.7,1.28,355.2,1,Low activity,small,Shih Tzu
+DOG0343,2025-09-18,Chihuahua,F,12,1.0,18.1,17.2,2.54,51.3,10.8,62.1,4.31,11.3,140.8,1.27,193.4,0,Normal,small,Chihuahua
+DOG0486,2025-05-28,Rottweiler,F,57,4.75,70.8,98.4,54.99,38.8,31.5,70.3,4.88,13.1,1413.5,1.32,1965.7,1,Low activity,large,Other
+DOG0712,2025-09-05,Beagle,F,11,0.92,41.3,51.0,11.71,21.0,39.4,60.4,4.19,10.6,443.1,1.9647827005588976,887.3,2,Hyperactive,medium,Beagle
+DOG0134,2025-03-11,Golden Retriever,M,48,4.0,54.4,58.2,29.22,27.4,48.0,75.4,5.24,12.1,879.7,1.3,1086.6,1,Low activity,large,Golden Retriever
+DOG0704,2025-09-18,Labrador Retriever,F,13,1.08,64.6,68.4,33.6,49.6,37.1,86.7,6.02,11.3,976.9,1.3,1254.2,0,Normal,large,Labrador Retriever
+DOG0312,2025-09-07,Siberian Husky,F,19,1.58,57.2,51.7,18.39,70.3,32.0,102.3,7.1,11.1,621.6,1.27,833.8,0,Normal,large,Siberian Husky
+DOG0723,2025-09-28,Mixed,F,112,9.33,35.4,33.7,15.2,1.9,28.6,30.5,2.12,13.1,538.9,1.28,636.1,1,Low activity,medium,Mixed
+DOG0630,2025-05-11,Labrador Retriever,F,10,0.83,58.5,54.6,27.65,65.6,38.3,103.9,7.22,12.8,844.1,1.7106209428118164,1360.9,0,Normal,large,Labrador Retriever
+DOG0001,2025-10-08,French Bulldog,F,47,3.92,30.8,28.6,10.64,44.3,20.5,64.8,4.5,10.8,412.4,1.19,404.5,0,Normal,medium,French Bulldog
+DOG0317,2025-10-17,Mixed,M,96,8.0,27.1,31.8,16.15,17.6,44.0,61.6,4.28,13.5,563.9,1.21,735.8,1,Low activity,small,Mixed
+DOG0707,2024-12-08,German Shepherd,F,22,1.83,63.1,79.8,31.38,27.9,80.4,108.3,7.52,11.4,928.1,1.29,1008.0,2,Hyperactive,large,German Shepherd
+DOG0548,2025-03-08,Pomeranian,F,35,2.92,19.5,22.8,2.04,39.2,29.9,69.1,4.8,10.6,119.5,1.29,154.0,0,Normal,small,Other
+DOG0873,2025-05-25,German Shepherd,F,2,0.17,57.7,67.7,18.66,12.6,41.4,54.0,3.75,10.7,628.5,2.246187357461253,1350.4,2,Hyperactive,large,German Shepherd
+DOG0533,2025-03-03,Boxer,F,7,0.58,61.5,63.8,23.7,74.0,38.6,112.6,7.82,11.1,751.9,1.9960713417977043,1531.7,0,Normal,large,Boxer
+DOG0478,2025-01-06,Golden Retriever,F,51,4.25,52.7,72.6,24.35,46.3,64.7,111.0,7.71,10.6,767.3,1.26,943.5,2,Hyperactive,large,Golden Retriever
+DOG0405,2024-12-02,Golden Retriever,F,32,2.67,55.6,70.8,24.72,35.9,19.5,55.4,3.85,11.8,776.0,1.22,1016.2,1,Low activity,large,Golden Retriever
+DOG0173,2025-05-08,Mixed,F,10,0.83,32.8,45.9,14.08,10.3,68.6,78.9,5.48,10.9,508.8,1.848681829323606,898.4,2,Hyperactive,medium,Mixed
+DOG0126,2025-11-10,German Shepherd,F,16,1.33,64.0,76.7,30.09,32.5,64.2,96.7,6.72,12.4,899.3,1.22,1121.6,2,Hyperactive,large,German Shepherd
+DOG0395,2025-10-03,French Bulldog,F,11,0.92,31.6,42.2,12.0,89.6,46.6,136.2,9.46,11.5,451.3,1.6105870961071636,829.5,0,Normal,medium,French Bulldog
+DOG0421,2024-11-26,Mixed,F,26,2.17,47.8,43.1,18.56,73.1,21.8,94.9,6.59,10.6,625.9,1.29,821.1,0,Normal,medium,Mixed
+DOG0553,2025-03-23,Mixed,M,2,0.17,29.9,40.1,10.64,71.6,17.2,88.8,6.17,13.2,412.4,2.0942403504772478,883.3,0,Normal,small,Mixed
+DOG0904,2025-08-14,Labrador Retriever,M,115,9.58,62.3,56.4,37.03,16.0,28.4,44.4,3.08,11.6,1050.8,1.27,1398.2,1,Low activity,large,Labrador Retriever
+DOG0091,2025-10-21,Labrador Retriever,F,18,1.5,64.4,84.5,32.63,42.0,39.2,81.2,5.64,10.2,955.7,1.22,1206.3,0,Normal,large,Labrador Retriever
+DOG0940,2025-05-03,Boxer,M,6,0.5,64.1,69.3,24.77,112.2,10.2,122.4,8.5,11.2,777.2,1.7540464524607349,1264.8,0,Normal,large,Boxer
+DOG0182,2025-01-25,Golden Retriever,F,44,3.67,55.2,66.2,26.53,36.2,84.2,120.4,8.36,10.0,818.3,1.35,1107.5,2,Hyperactive,large,Golden Retriever
+DOG0275,2025-04-25,Siberian Husky,M,55,4.58,60.5,56.9,23.81,55.8,56.9,112.7,7.83,11.4,754.5,1.28,992.1,2,Hyperactive,large,Siberian Husky
+DOG0896,2025-04-29,Beagle,M,28,2.33,34.7,40.6,9.13,1.3,36.5,37.8,2.62,11.5,367.7,1.16,410.0,1,Low activity,medium,Beagle
+DOG0070,2025-11-19,Pomeranian,F,17,1.42,20.6,20.3,2.76,33.2,48.9,82.1,5.7,10.6,149.9,1.34,214.1,2,Hyperactive,small,Other
+DOG0292,2025-06-22,Mixed,M,23,1.92,27.5,29.0,16.86,56.2,39.1,95.3,6.62,11.4,582.4,1.2,630.1,0,Normal,small,Mixed
+DOG0132,2024-12-27,Beagle,F,11,0.92,40.2,38.4,10.3,89.9,32.7,122.6,8.51,10.6,402.5,1.7807591564560004,665.0,0,Normal,medium,Beagle
+DOG0301,2025-05-21,Boxer,F,10,0.83,61.0,81.0,22.96,88.8,48.0,136.8,9.5,12.1,734.2,2.101849357947914,1487.3,0,Normal,large,Boxer
+DOG0425,2025-11-03,Shih Tzu,M,9,0.75,24.4,29.7,4.62,49.1,0.0,49.1,3.41,11.0,220.6,2.166131887389646,504.1,0,Normal,small,Shih Tzu
+DOG0327,2025-10-12,Poodle (Standard),F,21,1.75,45.7,51.4,23.54,30.6,21.8,52.4,3.64,10.8,748.1,1.14,881.7,1,Low activity,medium,Poodle (Standard)
+DOG0145,2025-07-10,Pomeranian,M,10,0.83,20.2,20.9,2.13,56.9,8.2,65.1,4.52,11.3,123.4,1.9757405928526384,232.9,0,Normal,small,Other
+DOG0424,2024-12-02,French Bulldog,F,53,4.42,28.3,38.5,8.59,75.0,31.3,106.3,7.38,14.5,351.2,1.19,418.5,1,Low activity,small,French Bulldog
+DOG0581,2025-04-25,Rottweiler,M,6,0.5,68.6,89.4,41.58,12.6,15.4,28.0,1.94,10.8,1146.2,1.959459595061652,2183.6,1,Low activity,large,Other
+DOG0136,2025-05-18,Golden Retriever,M,21,1.75,54.8,61.6,33.69,77.1,65.0,142.1,9.87,10.2,978.9,1.32,1105.4,0,Normal,large,Golden Retriever
+DOG0451,2025-03-03,Mixed,F,2,0.17,36.4,44.4,9.55,36.5,53.3,89.8,6.24,12.8,380.3,2.8079380300142835,1076.6,1,Low activity,medium,Mixed
+DOG0165,2025-06-25,Pomeranian,M,2,0.17,26.8,37.3,2.01,60.2,13.2,73.4,5.1,9.4,118.2,2.593560935378786,308.3,0,Normal,small,Other
+DOG0029,2025-03-12,Mixed,M,126,10.5,26.3,36.7,15.77,14.3,31.8,46.1,3.2,13.4,554.0,1.27,798.9,1,Low activity,small,Mixed
+DOG0774,2025-03-02,Rottweiler,F,198,16.5,59.5,63.8,43.47,26.2,43.0,69.2,4.81,12.3,1185.1,1.23,1476.9,1,Low activity,large,Other
+DOG0194,2025-05-29,Golden Retriever,M,46,3.83,57.0,75.3,31.68,0.0,56.7,56.7,3.94,11.9,934.7,1.22,1133.6,2,Hyperactive,large,Golden Retriever
+DOG0389,2025-10-11,Dachshund,F,17,1.42,17.1,16.1,10.49,39.2,3.3,42.5,2.95,12.8,408.0,1.23,510.2,1,Low activity,small,Dachshund
+DOG0853,2025-02-25,Beagle,M,15,1.25,37.9,41.4,9.57,39.5,38.9,78.4,5.44,10.0,380.9,1.23,458.1,2,Hyperactive,medium,Beagle
+DOG0170,2025-01-06,Shih Tzu,M,20,1.67,29.4,38.9,7.14,8.9,13.7,22.6,1.57,10.6,305.8,1.19,366.0,1,Low activity,small,Shih Tzu
+DOG0706,2025-05-16,Boxer,F,21,1.75,52.9,60.9,26.87,33.8,18.9,52.7,3.66,11.9,826.1,1.24,1100.5,1,Low activity,large,Boxer
+DOG0141,2025-09-12,Chihuahua,M,17,1.42,21.3,24.9,2.37,46.1,0.0,46.1,3.2,14.2,133.7,1.16,151.3,1,Low activity,small,Chihuahua
+DOG0174,2025-02-28,Labrador Retriever,M,26,2.17,56.3,60.9,33.65,45.1,27.6,72.7,5.05,12.2,978.0,1.29,1167.3,1,Low activity,large,Labrador Retriever
+DOG0007,2025-09-25,Pomeranian,M,81,6.75,24.3,28.7,2.35,46.9,75.8,122.7,8.52,12.0,132.9,1.28,179.6,2,Hyperactive,small,Other
+DOG0746,2025-05-07,German Shepherd,M,49,4.08,61.9,57.5,31.6,44.3,51.1,95.4,6.62,11.7,933.0,1.16,1129.8,2,Hyperactive,large,German Shepherd
+DOG0479,2025-05-13,Golden Retriever,F,9,0.75,49.8,60.5,22.71,61.8,40.3,102.1,7.09,11.8,728.2,2.1825428268699216,1667.3,0,Normal,medium,Golden Retriever
+DOG0074,2025-08-16,Rottweiler,M,6,0.5,63.0,67.0,34.07,114.8,37.2,152.0,10.56,10.6,987.1,2.033132576756161,2102.9,0,Normal,large,Other
+DOG0911,2025-04-21,Siberian Husky,M,7,0.58,61.1,57.2,21.36,65.4,47.8,113.2,7.86,11.0,695.5,1.6297676419971592,1081.1,0,Normal,large,Siberian Husky
+DOG0814,2025-03-06,Poodle (Standard),M,8,0.67,58.8,65.1,22.67,37.1,72.0,109.1,7.58,10.2,727.3,1.8736402869825544,1389.1,2,Hyperactive,large,Poodle (Standard)
+DOG0239,2024-12-18,German Shepherd,F,10,0.83,63.3,64.2,30.79,11.0,67.2,78.2,5.43,12.5,915.0,1.8381952973244848,1720.1,2,Hyperactive,large,German Shepherd
+DOG0146,2025-03-25,Golden Retriever,F,47,3.92,55.7,63.0,27.32,29.0,60.5,89.5,6.22,13.3,836.5,1.33,1072.7,1,Low activity,large,Golden Retriever
+DOG0793,2025-08-29,Beagle,M,69,5.75,34.8,34.1,9.76,20.3,58.2,78.5,5.45,10.9,386.5,1.24,483.8,2,Hyperactive,medium,Beagle
+DOG0235,2025-03-09,Dachshund,F,6,0.5,15.2,13.9,7.56,29.9,39.1,69.0,4.79,10.8,319.1,1.8357370653359075,587.7,2,Hyperactive,small,Dachshund
+DOG0221,2025-02-12,Pomeranian,F,11,0.92,20.2,19.1,2.09,53.2,4.1,57.3,3.98,10.9,121.7,2.0260795843387225,240.3,0,Normal,small,Other
+DOG0924,2024-12-25,Boxer,F,15,1.25,54.6,74.9,23.18,18.9,79.4,98.3,6.83,13.0,739.5,1.22,965.5,2,Hyperactive,large,Boxer
+DOG0501,2025-11-05,German Shepherd,M,23,1.92,59.6,64.3,31.6,20.1,61.7,81.8,5.68,10.1,933.0,1.26,1316.9,2,Hyperactive,large,German Shepherd
+DOG0133,2025-02-23,Boxer,M,83,6.92,63.0,77.7,33.83,48.9,28.3,77.2,5.36,10.8,981.9,1.21,1191.0,0,Normal,large,Boxer
+DOG0991,2025-02-17,Labrador Retriever,M,2,0.17,56.1,75.4,17.01,90.8,33.9,124.7,8.66,12.1,586.3,2.897499877401204,1791.4,0,Normal,large,Labrador Retriever
+DOG0775,2025-06-28,Labrador Retriever,M,66,5.5,59.4,59.7,30.71,62.6,26.0,88.6,6.15,9.5,913.2,1.21,991.0,0,Normal,large,Labrador Retriever
+DOG0186,2025-11-08,Chihuahua,M,8,0.67,22.5,24.0,1.93,88.0,34.7,122.7,8.52,12.5,114.6,1.92101530275936,223.7,0,Normal,small,Chihuahua
+DOG0042,2025-10-19,German Shepherd,F,12,1.0,59.3,57.9,34.83,5.8,22.8,28.6,1.99,12.7,1003.6,1.27,1336.5,1,Low activity,large,German Shepherd
+DOG0697,2025-05-18,Golden Retriever,M,78,6.5,50.6,49.0,27.75,24.5,66.0,90.5,6.28,10.3,846.3,1.17,1066.0,2,Hyperactive,large,Golden Retriever
+DOG0109,2025-08-04,Chihuahua,M,140,11.67,20.7,27.0,2.37,16.2,15.3,31.5,2.19,11.0,133.7,1.15,135.2,1,Low activity,small,Chihuahua
+DOG0589,2025-03-04,Mixed,F,18,1.5,30.1,29.7,14.67,46.2,75.4,121.6,8.44,11.5,524.7,1.28,684.4,2,Hyperactive,medium,Mixed
+DOG0057,2025-09-18,Boxer,M,33,2.75,55.5,60.8,26.31,2.4,46.8,49.2,3.42,14.7,813.2,1.25,1028.5,1,Low activity,large,Boxer
+DOG0406,2025-07-05,Mixed,F,2,0.17,33.3,45.1,10.98,34.9,16.7,51.6,3.58,10.5,422.2,2.179651217955342,867.2,0,Normal,medium,Mixed
+DOG0443,2025-04-06,Dachshund,F,64,5.33,14.3,19.6,9.18,0.0,55.9,55.9,3.88,13.0,369.2,1.25,432.9,1,Low activity,small,Dachshund
+DOG0758,2024-12-19,Poodle (Standard),F,41,3.42,56.7,58.1,26.53,24.7,25.9,50.6,3.51,11.9,818.3,1.24,964.0,1,Low activity,large,Poodle (Standard)
+DOG0998,2025-05-14,Chihuahua,F,14,1.17,18.0,23.8,1.79,50.9,29.8,80.7,5.6,15.2,108.3,1.31,148.0,1,Low activity,small,Chihuahua
+DOG0025,2025-05-04,Beagle,F,70,5.83,37.3,35.5,10.26,39.5,43.8,83.3,5.78,11.0,401.3,1.29,509.0,2,Hyperactive,medium,Beagle
+DOG0468,2025-02-19,German Shepherd,M,101,8.42,56.6,74.2,28.95,46.9,2.9,49.8,3.46,11.6,873.6,1.17,896.1,0,Normal,large,German Shepherd
+DOG0540,2025-08-03,Labrador Retriever,M,11,0.92,57.6,68.1,28.31,58.9,18.0,76.9,5.34,12.8,859.1,2.0325359314312585,1817.5,1,Low activity,large,Labrador Retriever
+DOG0532,2025-05-18,Pomeranian,M,39,3.25,21.9,30.6,2.98,32.9,27.7,60.6,4.21,10.3,158.8,1.29,212.8,0,Normal,small,Other
+DOG0619,2025-05-20,Rottweiler,M,21,1.75,69.0,80.9,53.49,53.5,85.1,138.6,9.62,10.6,1384.5,1.33,2002.5,2,Hyperactive,large,Other
+DOG0695,2025-09-17,Rottweiler,F,3,0.25,58.3,78.3,28.09,43.9,56.5,100.4,6.97,11.3,854.1,2.3567962556549347,1942.1,2,Hyperactive,large,Other
+DOG0927,2025-01-09,German Shepherd,M,72,6.0,62.5,74.2,33.12,35.2,0.9,36.1,2.51,11.5,966.4,1.17,1212.4,1,Low activity,large,German Shepherd
+DOG0339,2025-01-05,Bulldog,M,75,6.25,31.5,36.9,19.91,21.1,13.6,34.7,2.41,12.7,659.8,1.13,872.2,1,Low activity,medium,Other
+DOG0052,2025-08-21,German Shepherd,F,105,8.75,58.7,60.8,25.32,58.6,76.3,134.9,9.37,9.5,790.1,1.25,1018.6,2,Hyperactive,large,German Shepherd
+DOG0508,2025-07-29,Golden Retriever,F,28,2.33,61.2,84.1,33.96,56.6,0.0,56.6,3.93,13.1,984.7,1.12,1087.1,1,Low activity,large,Golden Retriever
+DOG0517,2025-05-30,Beagle,M,70,5.83,34.9,42.9,9.11,85.9,43.2,129.1,8.97,10.2,367.1,1.29,452.4,0,Normal,medium,Beagle
+DOG0921,2024-12-31,French Bulldog,M,51,4.25,31.1,42.3,11.68,0.0,13.4,13.4,0.93,13.3,442.3,1.11,440.4,1,Low activity,medium,French Bulldog
+DOG0782,2025-06-11,Mixed,M,14,1.17,43.1,56.7,17.09,54.8,35.1,89.9,6.24,11.0,588.4,1.27,717.1,0,Normal,medium,Mixed
+DOG0265,2025-11-10,Pomeranian,F,64,5.33,28.5,38.0,2.84,23.2,0.0,23.2,1.61,13.1,153.1,1.22,186.9,1,Low activity,small,Other
+DOG0818,2025-10-24,Mixed,M,37,3.08,45.8,60.7,18.15,24.8,37.6,62.4,4.33,10.5,615.5,1.3,805.5,2,Hyperactive,medium,Mixed
+DOG0711,2025-08-15,Mixed,F,53,4.42,53.9,54.9,18.88,41.0,59.7,100.7,6.99,10.7,634.0,1.29,800.6,2,Hyperactive,large,Mixed
+DOG0683,2024-12-24,Labrador Retriever,F,33,2.75,55.9,63.3,26.79,65.6,29.0,94.6,6.57,11.7,824.3,1.21,1065.9,0,Normal,large,Labrador Retriever
+DOG0833,2025-08-05,Dachshund,M,113,9.42,13.0,15.4,9.45,34.9,15.0,49.9,3.47,12.6,377.3,1.24,517.2,1,Low activity,small,Dachshund
+DOG0519,2025-10-12,Golden Retriever,M,67,5.58,54.6,67.0,30.73,78.4,0.0,78.4,5.44,11.1,913.6,1.29,1081.3,0,Normal,large,Golden Retriever
+DOG0448,2025-02-27,Poodle (Standard),M,7,0.58,60.2,57.7,23.95,58.3,27.6,85.9,5.97,10.9,757.8,2.002152385626616,1556.1,0,Normal,large,Poodle (Standard)
+DOG0019,2025-04-11,Siberian Husky,M,2,0.17,55.5,65.0,15.74,85.0,49.9,134.9,9.37,10.1,553.2,2.270832251262074,1221.1,0,Normal,large,Siberian Husky
+DOG0716,2025-08-05,Labrador Retriever,F,68,5.67,62.3,82.5,34.28,36.8,57.6,94.4,6.56,10.0,991.7,1.26,1275.0,2,Hyperactive,large,Labrador Retriever
+DOG0484,2025-04-13,Chihuahua,F,94,7.83,22.0,27.8,1.94,30.3,19.0,49.3,3.42,12.1,115.1,1.19,125.7,1,Low activity,small,Chihuahua
+DOG0569,2025-07-19,Siberian Husky,F,29,2.42,54.2,50.1,19.42,41.2,57.5,98.7,6.85,10.1,647.6,1.33,843.9,2,Hyperactive,large,Siberian Husky
+DOG0434,2025-06-13,Dachshund,F,14,1.17,12.7,14.6,8.71,36.3,82.6,118.9,8.26,8.4,354.9,1.26,481.0,2,Hyperactive,small,Dachshund
+DOG0368,2025-05-20,Mixed,M,13,1.08,49.0,60.8,19.46,37.1,70.2,107.3,7.45,12.1,648.6,1.2,688.3,2,Hyperactive,medium,Mixed
+DOG0084,2025-02-05,Labrador Retriever,M,21,1.75,60.7,64.2,32.31,39.1,47.0,86.1,5.98,12.6,948.6,1.14,1304.4,1,Low activity,large,Labrador Retriever
+DOG0062,2025-04-04,French Bulldog,F,58,4.83,31.8,36.9,11.78,43.2,0.0,43.2,3.0,11.1,445.1,1.16,608.8,0,Normal,medium,French Bulldog
+DOG0639,2025-11-09,Labrador Retriever,M,16,1.33,61.5,79.8,34.92,0.0,54.4,54.4,3.78,13.0,1005.6,1.22,1259.4,1,Low activity,large,Labrador Retriever
+DOG0273,2025-08-12,Beagle,M,8,0.67,41.5,43.6,9.85,72.0,16.0,88.0,6.11,12.7,389.2,1.945036344075289,784.9,0,Normal,medium,Beagle
+DOG0286,2025-01-03,Chihuahua,M,36,3.0,16.2,19.0,1.92,36.6,23.5,60.1,4.17,11.5,114.2,1.22,137.8,1,Low activity,small,Chihuahua
+DOG0361,2025-07-28,German Shepherd,M,11,0.92,62.7,63.9,31.32,3.9,43.2,47.1,3.27,11.8,926.8,1.8775661819541871,1798.5,1,Low activity,large,German Shepherd
+DOG0355,2025-01-17,Poodle (Standard),M,24,2.0,47.7,59.3,27.44,18.4,23.3,41.7,2.9,12.2,839.2,1.24,1105.0,1,Low activity,medium,Poodle (Standard)
+DOG0457,2025-02-05,Labrador Retriever,F,6,0.5,60.4,63.5,28.45,39.5,41.1,80.6,5.6,9.8,862.3,1.6949698304196243,1409.0,2,Hyperactive,large,Labrador Retriever
+DOG0279,2025-05-18,Labrador Retriever,M,71,5.92,58.2,72.6,32.9,43.0,23.3,66.3,4.6,11.6,961.6,1.23,1085.9,1,Low activity,large,Labrador Retriever
+DOG0013,2025-06-10,Shih Tzu,M,78,6.5,26.1,35.7,6.29,30.4,23.2,53.6,3.72,10.2,278.0,1.1,288.0,0,Normal,small,Shih Tzu
+DOG0183,2025-09-14,Poodle (Standard),F,8,0.67,56.9,68.8,21.0,64.5,69.6,134.1,9.31,12.3,686.7,2.134034215279152,1479.8,2,Hyperactive,large,Poodle (Standard)
+DOG0369,2025-05-21,French Bulldog,M,6,0.5,32.6,37.5,9.13,43.7,0.0,43.7,3.03,10.4,367.7,1.8344161222605693,620.5,0,Normal,medium,French Bulldog
+DOG0882,2025-05-14,Labrador Retriever,F,22,1.83,58.8,57.0,27.74,48.2,33.7,81.9,5.69,11.0,846.1,1.2,1037.6,0,Normal,large,Labrador Retriever
+DOG0616,2024-12-15,Pomeranian,M,2,0.17,19.2,26.3,1.67,41.9,31.6,73.5,5.1,10.1,102.8,2.461770366396279,258.5,0,Normal,small,Other
+DOG0224,2025-10-17,Dachshund,F,5,0.42,21.0,23.0,9.54,36.8,18.1,54.9,3.81,11.6,380.0,2.6996899090587085,1058.6,1,Low activity,small,Dachshund
+DOG0573,2025-09-15,Chihuahua,M,7,0.58,16.2,15.7,1.65,99.1,57.8,156.9,10.9,11.8,101.9,1.6110134346274851,172.6,0,Normal,small,Chihuahua
+DOG0971,2025-09-02,Boxer,F,2,0.17,58.7,72.4,20.69,57.9,28.4,86.3,5.99,9.7,679.1,2.805270597207251,1823.0,0,Normal,large,Boxer
+DOG0654,2025-08-13,Chihuahua,M,14,1.17,21.0,24.8,2.19,20.6,26.2,46.8,3.25,14.0,126.0,1.27,156.2,1,Low activity,small,Chihuahua
+DOG0546,2025-02-26,Beagle,M,52,4.33,35.7,42.2,9.91,40.4,6.8,47.2,3.28,12.5,391.0,1.23,484.7,1,Low activity,medium,Beagle
+DOG0583,2025-10-01,Mixed,F,8,0.67,52.3,66.5,14.8,0.0,41.3,41.3,2.87,11.5,528.2,2.14616306275237,1181.6,1,Low activity,large,Mixed
+DOG0634,2025-05-21,Labrador Retriever,M,24,2.0,53.8,53.4,25.59,61.3,37.5,98.8,6.86,11.1,796.4,1.3,958.2,0,Normal,large,Labrador Retriever
+DOG0177,2025-01-02,Labrador Retriever,M,45,3.75,61.1,60.5,34.19,53.5,17.6,71.1,4.94,10.2,989.7,1.26,1311.2,0,Normal,large,Labrador Retriever
+DOG0666,2025-01-25,Beagle,M,70,5.83,33.9,37.3,9.26,9.8,54.0,63.8,4.43,11.1,371.6,1.22,483.5,2,Hyperactive,medium,Beagle
+DOG0674,2025-04-02,Dachshund,M,70,5.83,13.6,13.7,9.74,53.5,68.3,121.8,8.46,10.4,385.9,1.19,505.3,2,Hyperactive,small,Dachshund
+DOG0586,2025-09-21,Poodle (Standard),F,17,1.42,46.7,45.9,25.19,25.7,70.7,96.4,6.69,9.5,787.1,1.22,1131.1,2,Hyperactive,medium,Poodle (Standard)
+DOG0874,2025-07-07,Poodle (Standard),F,85,7.08,62.8,73.3,25.27,30.6,51.7,82.3,5.72,10.1,789.0,1.25,917.8,2,Hyperactive,large,Poodle (Standard)
+DOG0394,2025-02-21,Beagle,M,9,0.75,36.0,36.9,8.42,44.5,0.0,44.5,3.09,10.7,346.0,2.0478712773142687,716.1,0,Normal,medium,Beagle
+DOG0164,2025-11-20,Bulldog,M,2,0.17,35.9,37.7,12.45,84.6,34.8,119.4,8.29,12.9,464.0,2.1803079354227783,1096.5,0,Normal,medium,Other
+DOG0249,2025-05-22,Dachshund,M,5,0.42,19.4,24.2,7.91,81.1,44.2,125.3,8.7,11.8,330.2,2.186639939797683,760.0,0,Normal,small,Dachshund
+DOG0635,2025-05-07,Boxer,F,8,0.67,64.2,80.5,26.42,49.3,40.8,90.1,6.26,10.5,815.7,2.091600251379317,1779.9,0,Normal,large,Boxer
+DOG0886,2024-12-26,Siberian Husky,M,70,5.83,54.1,55.9,20.53,25.8,82.8,108.6,7.54,10.3,675.1,1.28,829.2,2,Hyperactive,large,Siberian Husky
+DOG0670,2025-01-01,Shih Tzu,F,19,1.58,26.5,35.6,6.82,32.1,23.8,55.9,3.88,12.2,295.4,1.28,384.3,1,Low activity,small,Shih Tzu
+DOG0376,2025-04-07,Dachshund,M,40,3.33,18.6,24.2,11.6,49.5,31.6,81.1,5.63,10.7,440.0,1.15,436.9,0,Normal,small,Dachshund
+DOG0413,2025-09-20,Shih Tzu,F,2,0.17,21.2,24.8,2.86,61.1,0.0,61.1,4.24,11.3,153.9,2.9285077519437785,473.0,0,Normal,small,Shih Tzu
+DOG0075,2025-09-10,Mixed,F,49,4.08,30.0,28.5,15.5,16.0,56.0,72.0,5.0,10.6,546.8,1.29,709.4,2,Hyperactive,medium,Mixed
+DOG0114,2025-09-16,Shih Tzu,M,25,2.08,21.7,23.7,5.94,36.7,13.8,50.5,3.51,11.1,266.3,1.16,273.6,1,Low activity,small,Shih Tzu
+DOG0599,2025-07-14,Bulldog,M,26,2.17,33.9,39.2,19.5,40.7,31.6,72.3,5.02,12.8,649.6,1.12,695.5,1,Low activity,medium,Other
+DOG0962,2025-06-09,Mixed,F,18,1.5,47.4,52.4,18.5,49.3,60.6,109.9,7.63,10.9,624.4,1.32,868.9,2,Hyperactive,medium,Mixed
+DOG0391,2025-06-03,Siberian Husky,M,59,4.92,56.4,59.5,22.84,49.3,38.2,87.5,6.08,10.7,731.3,1.19,974.7,0,Normal,large,Siberian Husky
+DOG0105,2025-08-05,Labrador Retriever,M,11,0.92,56.4,55.0,28.41,69.6,66.9,136.5,9.48,10.5,861.4,2.173733314389369,1943.2,2,Hyperactive,large,Labrador Retriever
+DOG0115,2025-08-09,Bulldog,F,2,0.17,38.2,45.9,15.49,78.5,30.6,109.1,7.58,10.1,546.6,2.058550929243979,1125.0,0,Normal,medium,Other
+DOG0418,2025-04-26,French Bulldog,M,93,7.75,32.5,29.5,12.66,23.1,45.5,68.6,4.76,8.6,469.8,1.27,690.7,2,Hyperactive,medium,French Bulldog
+DOG0526,2025-05-09,Chihuahua,F,10,0.83,19.9,20.6,1.11,81.0,12.5,93.5,6.49,12.5,75.7,2.1119037871880337,160.7,0,Normal,small,Chihuahua
+DOG0458,2025-03-02,Golden Retriever,F,10,0.83,60.5,81.4,29.67,21.0,38.8,59.8,4.15,13.0,889.9,1.974820401643965,1699.3,1,Low activity,large,Golden Retriever
+DOG0410,2025-06-27,Labrador Retriever,M,4,0.33,62.4,71.0,26.44,17.9,32.1,50.0,3.47,11.9,816.2,2.673008166288677,2187.3,1,Low activity,large,Labrador Retriever
+DOG0093,2025-04-14,Beagle,M,54,4.5,34.9,45.8,10.85,20.0,57.7,77.7,5.4,9.9,418.5,1.27,506.9,2,Hyperactive,medium,Beagle
+DOG0931,2025-05-22,Beagle,M,49,4.08,34.9,43.4,9.86,9.0,16.1,25.1,1.74,12.5,389.5,1.3,477.5,1,Low activity,medium,Beagle
+DOG0090,2025-07-05,Dachshund,F,10,0.83,23.1,21.5,10.75,60.9,7.9,68.8,4.78,10.2,415.6,1.784373978955772,747.5,0,Normal,small,Dachshund
+DOG0337,2025-03-28,Dachshund,M,108,9.0,16.0,14.7,9.89,34.8,31.8,66.6,4.62,11.4,390.4,1.21,493.1,1,Low activity,small,Dachshund
+DOG0989,2025-10-26,Golden Retriever,M,60,5.0,56.9,68.0,26.76,62.0,36.3,98.3,6.83,10.3,823.6,1.28,1211.3,0,Normal,large,Golden Retriever
+DOG0922,2025-07-23,Poodle (Standard),F,40,3.33,55.8,62.1,25.56,28.2,57.1,85.3,5.92,11.6,795.7,1.25,956.2,2,Hyperactive,large,Poodle (Standard)
+DOG0934,2025-03-13,Beagle,M,11,0.92,34.2,34.3,8.8,51.0,19.0,70.0,4.86,13.2,357.7,1.7588376975993754,619.8,1,Low activity,medium,Beagle
+DOG0606,2025-10-04,Shih Tzu,M,20,1.67,23.7,31.2,5.52,15.9,16.9,32.8,2.28,11.4,252.1,1.22,330.5,1,Low activity,small,Shih Tzu
+DOG0594,2025-01-17,French Bulldog,F,9,0.75,30.4,29.8,10.11,34.8,86.6,121.4,8.43,11.8,396.9,1.744724064776814,698.3,2,Hyperactive,medium,French Bulldog
+DOG0612,2025-10-17,Poodle (Standard),F,28,2.33,45.9,56.2,25.6,0.0,17.2,17.2,1.19,11.4,796.7,1.19,987.1,1,Low activity,medium,Poodle (Standard)
+DOG0095,2025-01-14,Labrador Retriever,M,61,5.08,60.4,77.7,32.62,39.6,31.1,70.7,4.91,9.7,955.5,1.18,1049.3,0,Normal,large,Labrador Retriever
+DOG0012,2025-07-18,Mixed,M,15,1.25,29.1,38.1,15.42,75.8,30.4,106.2,7.38,9.4,544.7,1.32,775.6,0,Normal,small,Mixed
+DOG0397,2024-11-29,Beagle,M,2,0.17,36.0,46.8,6.1,18.3,0.9,19.2,1.33,8.4,271.7,2.218273198781494,600.9,0,Normal,medium,Beagle
+DOG0534,2025-07-03,Boxer,F,8,0.67,57.7,65.5,25.35,28.2,36.0,64.2,4.46,11.4,790.8,1.7355288477601456,1297.3,1,Low activity,large,Boxer
+DOG0044,2025-06-26,German Shepherd,M,36,3.0,63.2,66.9,37.15,70.7,35.8,106.5,7.4,12.1,1053.3,1.14,1328.1,0,Normal,large,German Shepherd
+DOG0043,2025-04-27,French Bulldog,M,95,7.92,32.3,32.0,12.2,29.7,67.2,96.9,6.73,11.6,456.9,1.23,544.2,2,Hyperactive,medium,French Bulldog
+DOG0330,2025-09-23,Shih Tzu,F,35,2.92,20.5,19.6,4.67,27.5,39.0,66.5,4.62,11.9,222.4,1.21,275.1,1,Low activity,small,Shih Tzu
+DOG0168,2025-05-29,Bulldog,F,4,0.33,32.8,36.0,11.43,12.0,31.6,43.6,3.03,12.3,435.1,2.357121159300503,1001.9,1,Low activity,medium,Other
+DOG0498,2025-08-25,Mixed,M,117,9.75,53.3,74.5,17.29,0.8,5.3,6.1,0.42,11.4,593.5,1.12,669.8,1,Low activity,large,Mixed
+DOG0877,2025-05-20,German Shepherd,M,71,5.92,60.8,81.7,33.66,62.0,51.1,113.1,7.85,12.2,978.2,1.28,1176.0,0,Normal,large,German Shepherd
+DOG0598,2025-01-08,Bulldog,M,27,2.25,32.3,31.2,17.19,48.3,51.5,99.8,6.93,10.5,591.0,1.26,701.0,2,Hyperactive,medium,Other
+DOG0757,2025-07-02,Bulldog,F,78,6.5,31.3,42.0,19.82,63.7,53.9,117.6,8.17,12.2,657.5,1.14,749.4,0,Normal,medium,Other
+DOG0101,2025-11-21,Mixed,F,121,10.08,34.1,36.0,11.78,26.9,22.6,49.5,3.44,10.0,445.1,1.18,540.1,0,Normal,medium,Mixed
+DOG0427,2025-11-22,Golden Retriever,F,16,1.33,51.1,65.2,26.71,35.6,66.1,101.7,7.06,11.1,822.4,1.22,919.9,2,Hyperactive,large,Golden Retriever
+DOG0179,2024-11-30,Beagle,M,14,1.17,38.2,35.8,10.31,5.7,56.9,62.6,4.35,12.3,402.8,1.26,502.1,1,Low activity,medium,Beagle
+DOG0445,2025-07-28,Chihuahua,M,18,1.5,18.2,17.9,2.28,37.3,28.8,66.1,4.59,13.5,129.9,1.19,177.5,1,Low activity,small,Chihuahua
+DOG0417,2024-12-22,Shih Tzu,M,22,1.83,22.8,25.7,5.45,10.5,19.6,30.1,2.09,11.1,249.7,1.13,266.5,1,Low activity,small,Shih Tzu
+DOG0871,2025-11-01,Mixed,F,13,1.08,49.2,44.8,16.28,37.8,26.9,64.7,4.49,11.4,567.3,1.27,790.0,1,Low activity,medium,Mixed
+DOG0883,2025-11-08,Poodle (Standard),M,41,3.42,49.8,49.3,24.18,42.6,55.0,97.6,6.78,9.9,763.3,1.26,1090.4,2,Hyperactive,medium,Poodle (Standard)
+DOG0681,2025-02-16,Beagle,F,26,2.17,37.1,42.3,9.84,45.8,19.2,65.0,4.51,10.2,388.9,1.28,486.4,0,Normal,medium,Beagle
+DOG0178,2025-09-28,Golden Retriever,F,30,2.5,58.7,68.9,30.41,7.7,42.3,50.0,3.47,13.0,906.5,1.18,1020.0,1,Low activity,large,Golden Retriever
+DOG0396,2025-07-19,French Bulldog,M,28,2.33,29.8,38.6,11.46,16.6,79.5,96.1,6.67,12.7,436.0,1.31,552.9,2,Hyperactive,small,French Bulldog
+DOG0912,2025-10-30,Golden Retriever,F,18,1.5,52.0,48.8,26.8,37.1,27.3,64.4,4.47,10.2,824.5,1.23,1053.4,0,Normal,large,Golden Retriever
+DOG0794,2025-10-01,French Bulldog,M,22,1.83,30.3,39.9,10.91,6.5,40.2,46.7,3.24,12.6,420.2,1.31,588.1,1,Low activity,medium,French Bulldog
+DOG0961,2025-11-25,Pomeranian,F,81,6.75,21.1,21.1,2.92,42.7,22.6,65.3,4.53,12.3,156.4,1.14,194.8,1,Low activity,small,Other
+DOG0685,2025-07-04,Shih Tzu,F,108,9.0,26.8,35.6,4.85,35.4,7.3,42.7,2.97,12.3,228.8,1.27,283.0,1,Low activity,small,Shih Tzu
+DOG0384,2025-10-08,Siberian Husky,F,49,4.08,54.8,60.4,22.49,18.9,38.4,57.3,3.98,11.2,722.9,1.22,824.0,1,Low activity,large,Siberian Husky
+DOG0957,2025-09-22,Beagle,M,28,2.33,36.2,32.6,10.64,34.7,31.6,66.3,4.6,11.9,412.4,1.24,501.1,1,Low activity,medium,Beagle
+DOG0752,2025-06-28,Labrador Retriever,M,56,4.67,62.6,60.9,30.11,17.8,55.4,73.2,5.08,12.1,899.8,1.21,1084.2,2,Hyperactive,large,Labrador Retriever
+DOG0258,2025-11-15,Labrador Retriever,F,11,0.92,59.3,64.7,27.6,58.1,47.4,105.5,7.33,10.8,842.9,1.6290176266292686,1275.4,0,Normal,large,Labrador Retriever
+DOG0539,2025-11-02,Dachshund,M,86,7.17,19.7,25.3,11.98,31.5,37.6,69.1,4.8,10.5,450.8,1.19,502.8,2,Hyperactive,small,Dachshund
+DOG0336,2025-05-06,Golden Retriever,M,4,0.33,53.6,74.0,20.99,30.3,72.8,103.1,7.16,12.0,686.4,2.8344582528560966,1999.5,2,Hyperactive,large,Golden Retriever
+DOG0016,2025-08-14,Mixed,M,13,1.08,30.6,33.2,15.06,43.1,36.5,79.6,5.53,9.8,535.1,1.21,603.6,0,Normal,medium,Mixed
+DOG0325,2025-01-07,Pomeranian,M,49,4.08,17.7,21.6,2.16,14.1,35.9,50.0,3.47,11.3,124.7,1.17,144.2,1,Low activity,small,Other
+DOG0759,2025-11-05,French Bulldog,F,2,0.17,30.7,41.5,7.34,53.2,47.0,100.2,6.96,13.3,312.2,2.189282864968246,673.5,1,Low activity,medium,French Bulldog
+DOG0223,2025-02-05,Boxer,F,15,1.25,58.5,61.3,26.85,48.2,33.5,81.7,5.67,12.1,825.7,1.26,1057.2,1,Low activity,large,Boxer
+DOG0180,2025-09-13,Mixed,M,26,2.17,31.8,39.8,16.4,0.0,0.3,0.3,0.02,11.9,570.5,1.13,602.6,1,Low activity,medium,Mixed
+DOG0984,2025-03-12,Labrador Retriever,F,11,0.92,57.4,53.9,27.71,0.0,40.3,40.3,2.8,14.3,845.4,1.922144804748541,1593.0,1,Low activity,large,Labrador Retriever
+DOG0023,2025-08-03,Chihuahua,F,61,5.08,19.8,19.9,1.79,23.8,22.2,46.0,3.19,10.2,108.3,1.3,131.1,1,Low activity,small,Chihuahua
+DOG0357,2025-01-25,Beagle,M,118,9.83,40.2,45.2,10.21,26.7,54.7,81.4,5.65,11.0,399.8,1.22,523.2,2,Hyperactive,medium,Beagle
+DOG0667,2025-02-05,Mixed,M,38,3.17,25.8,35.7,15.88,27.1,41.0,68.1,4.73,9.5,556.8,1.26,685.3,2,Hyperactive,small,Mixed
+DOG0862,2025-09-18,Mixed,M,16,1.33,44.5,43.5,17.44,21.6,23.0,44.6,3.1,11.7,597.4,1.25,724.9,1,Low activity,medium,Mixed
+DOG0341,2025-07-09,German Shepherd,M,25,2.08,53.3,52.9,26.02,35.1,29.5,64.6,4.49,10.4,806.5,1.2,986.1,0,Normal,large,German Shepherd
+DOG0432,2025-04-13,Beagle,F,9,0.75,37.5,41.3,9.06,43.3,59.5,102.8,7.14,10.9,365.5,1.94569559789558,672.2,2,Hyperactive,medium,Beagle
+DOG0552,2025-08-08,Poodle (Standard),F,19,1.58,48.0,50.0,28.7,43.8,73.0,116.8,8.11,11.5,868.0,1.31,1063.5,2,Hyperactive,medium,Poodle (Standard)
+DOG0834,2025-03-28,Labrador Retriever,M,3,0.25,61.5,61.7,22.74,11.6,44.1,55.7,3.87,11.1,728.9,2.0975791695762696,1604.7,2,Hyperactive,large,Labrador Retriever
+DOG0204,2024-12-18,French Bulldog,F,36,3.0,30.1,40.0,8.57,39.9,53.2,93.1,6.47,10.7,350.6,1.3,461.5,2,Hyperactive,medium,French Bulldog
+DOG0631,2025-02-11,Labrador Retriever,M,64,5.33,56.9,71.9,30.47,35.8,12.9,48.7,3.38,10.1,907.8,1.23,1159.6,0,Normal,large,Labrador Retriever
+DOG0094,2025-03-30,Bulldog,F,7,0.58,33.1,40.3,14.5,52.1,30.1,82.2,5.71,10.6,520.1,1.8674745487463376,1050.3,0,Normal,medium,Other
+DOG0559,2025-02-04,Dachshund,F,6,0.5,12.9,12.1,7.61,103.0,45.7,148.7,10.33,11.2,320.7,1.9431089973342677,614.0,0,Normal,small,Dachshund
+DOG0069,2025-09-13,Chihuahua,F,25,2.08,15.0,15.7,2.06,18.6,42.6,61.2,4.25,14.1,120.4,1.22,149.0,1,Low activity,small,Chihuahua
+DOG0623,2025-03-09,Mixed,F,83,6.92,28.3,37.1,15.74,55.6,0.0,55.6,3.86,11.9,553.2,1.21,683.3,0,Normal,small,Mixed
+DOG0285,2025-05-03,Beagle,M,9,0.75,33.8,35.3,7.61,0.0,0.0,0.0,0.0,11.8,320.7,1.7788397207020026,562.1,1,Low activity,medium,Beagle
+DOG0845,2025-10-25,Mixed,M,45,3.75,36.8,39.1,18.96,11.0,46.0,57.0,3.96,12.6,636.0,1.22,933.9,1,Low activity,medium,Mixed
+DOG0435,2025-10-03,German Shepherd,F,26,2.17,56.4,59.2,31.5,0.0,17.9,17.9,1.24,10.3,930.7,1.17,1174.3,1,Low activity,large,German Shepherd
+DOG0154,2025-07-02,German Shepherd,F,2,0.17,59.2,62.7,18.49,56.4,42.5,98.9,6.87,10.1,624.2,2.3162701497293066,1432.1,0,Normal,large,German Shepherd
+DOG0076,2025-01-12,Labrador Retriever,M,5,0.42,60.7,60.7,25.77,111.2,19.1,130.3,9.05,11.8,800.6,2.714086932132428,2198.2,0,Normal,large,Labrador Retriever
+DOG0731,2025-02-14,Bulldog,M,12,1.0,33.4,42.8,18.88,13.2,65.4,78.6,5.46,12.6,634.0,1.29,877.2,2,Hyperactive,medium,Other
+DOG0447,2025-07-24,Beagle,M,9,0.75,43.3,54.9,10.45,73.7,79.1,152.8,10.61,7.9,406.9,1.733249312925394,698.0,2,Hyperactive,medium,Beagle
+DOG0189,2025-03-10,Boxer,M,74,6.17,62.4,80.7,30.97,26.0,10.5,36.5,2.53,12.5,919.0,1.21,1134.6,1,Low activity,large,Boxer
+DOG0272,2025-05-11,Shih Tzu,F,2,0.17,25.6,31.2,3.31,38.9,0.0,38.9,2.7,12.5,171.8,2.040288945734542,347.1,1,Low activity,small,Shih Tzu
+DOG0237,2025-02-24,French Bulldog,M,9,0.75,29.6,30.5,8.74,59.3,28.2,87.5,6.08,11.7,355.8,2.0554521595333832,727.9,0,Normal,small,French Bulldog
+DOG0488,2025-03-14,Labrador Retriever,M,25,2.08,61.0,60.7,34.03,53.0,89.6,142.6,9.9,10.0,986.3,1.32,1226.8,2,Hyperactive,large,Labrador Retriever
+DOG0118,2025-08-18,Mixed,F,2,0.17,51.8,52.5,10.72,0.0,19.2,19.2,1.33,12.2,414.7,2.6311706459567064,1094.5,1,Low activity,large,Mixed
+DOG0944,2025-01-31,Beagle,F,59,4.92,33.0,41.3,8.87,78.0,32.0,110.0,7.64,11.6,359.8,1.21,407.1,0,Normal,medium,Beagle
+DOG0513,2025-06-27,Poodle (Standard),F,64,5.33,57.1,75.6,26.98,31.4,74.9,106.3,7.38,12.2,828.7,1.33,1176.6,2,Hyperactive,large,Poodle (Standard)
+DOG0826,2024-12-18,Labrador Retriever,F,28,2.33,57.5,55.4,33.93,0.0,28.9,28.9,2.01,11.2,984.1,1.19,1095.1,1,Low activity,large,Labrador Retriever
+DOG0592,2025-05-03,Mixed,F,22,1.83,52.0,57.5,16.0,81.2,4.7,85.9,5.97,11.6,560.0,1.18,680.7,0,Normal,large,Mixed
+DOG0127,2025-07-15,Mixed,M,4,0.33,46.0,48.8,12.22,50.7,24.0,74.7,5.19,9.9,457.5,2.973457389976173,1314.3,0,Normal,medium,Mixed
+DOG0117,2024-12-24,Siberian Husky,M,36,3.0,57.5,75.9,22.01,40.6,20.2,60.8,4.22,9.8,711.3,1.18,809.3,0,Normal,large,Siberian Husky
+DOG0474,2025-10-31,Labrador Retriever,F,17,1.42,57.7,77.2,29.67,55.4,18.2,73.6,5.11,11.4,889.9,1.28,1134.3,0,Normal,large,Labrador Retriever
+DOG0694,2025-01-03,Pomeranian,F,86,7.17,20.9,27.2,2.25,28.1,28.8,56.9,3.95,10.8,128.6,1.26,169.3,1,Low activity,small,Other
+DOG0058,2025-11-01,Bulldog,M,27,2.25,32.7,45.0,20.09,25.1,0.0,25.1,1.74,10.5,664.3,1.12,784.8,1,Low activity,medium,Other
+DOG0864,2025-09-04,Siberian Husky,M,24,2.0,57.2,55.5,22.49,53.9,4.0,57.9,4.02,11.3,722.9,1.24,782.5,0,Normal,large,Siberian Husky
+DOG0913,2025-08-16,Golden Retriever,M,122,10.17,54.0,70.2,24.96,24.1,44.8,68.9,4.78,13.7,781.7,1.32,1059.4,1,Low activity,large,Golden Retriever
+DOG0370,2025-11-04,Golden Retriever,M,47,3.92,54.0,53.7,28.63,56.8,2.4,59.2,4.11,11.2,866.4,1.19,1026.0,0,Normal,large,Golden Retriever
+DOG0269,2024-12-16,Rottweiler,F,6,0.5,61.8,58.4,37.75,104.7,0.0,104.7,7.27,11.2,1066.1,1.6135387070232083,1739.7,0,Normal,large,Other
+DOG0047,2025-06-08,Labrador Retriever,F,30,2.5,58.4,70.1,27.35,8.0,39.3,47.3,3.28,11.9,837.2,1.27,1000.5,1,Low activity,large,Labrador Retriever
+DOG0350,2025-03-02,Bulldog,M,98,8.17,35.9,48.4,18.73,18.7,46.7,65.4,4.54,10.4,630.2,1.23,742.6,2,Hyperactive,medium,Other
+DOG0196,2025-09-25,Golden Retriever,F,2,0.17,50.6,47.3,17.2,95.8,41.6,137.4,9.54,10.7,591.2,2.34994493952964,1380.7,0,Normal,large,Golden Retriever
+DOG1000,2025-02-06,Mixed,M,60,5.0,41.9,49.2,17.83,65.7,70.7,136.4,9.47,8.7,607.4,1.25,739.2,2,Hyperactive,medium,Mixed
+DOG0835,2025-06-25,Beagle,M,57,4.75,35.1,46.2,9.87,34.5,59.8,94.3,6.55,10.8,389.8,1.22,410.0,2,Hyperactive,medium,Beagle
+DOG0737,2025-05-31,Dachshund,F,12,1.0,22.3,26.2,11.02,0.0,15.2,15.2,1.06,10.9,423.4,1.2,478.5,1,Low activity,small,Dachshund
+DOG0264,2025-04-20,Mixed,M,11,0.92,37.6,48.5,17.12,44.2,17.4,61.6,4.28,11.4,589.1,1.708535140827339,978.4,0,Normal,medium,Mixed
+DOG0444,2025-09-02,Chihuahua,M,45,3.75,19.8,27.3,1.89,44.0,26.7,70.7,4.91,9.7,112.8,1.23,140.9,0,Normal,small,Chihuahua
+DOG0676,2025-01-07,Beagle,F,40,3.33,34.7,40.7,8.87,12.4,53.8,66.2,4.6,11.8,359.8,1.31,451.2,2,Hyperactive,medium,Beagle
+DOG0305,2025-09-05,Golden Retriever,M,3,0.25,50.5,48.3,18.24,11.3,4.0,15.3,1.06,11.9,617.8,2.751770787682978,1712.0,1,Low activity,large,Golden Retriever
+DOG0342,2025-07-29,Bulldog,M,2,0.17,36.5,34.6,14.34,41.3,54.5,95.8,6.65,11.9,515.8,2.0037024068324167,1015.1,2,Hyperactive,medium,Other
+DOG0967,2025-02-25,Shih Tzu,M,45,3.75,25.3,28.2,5.52,0.0,31.8,31.8,2.21,11.4,252.1,1.21,325.5,1,Low activity,small,Shih Tzu
+DOG0150,2025-03-11,Boxer,F,56,4.67,61.9,61.9,31.87,12.3,33.6,45.9,3.19,12.0,938.9,1.3,1168.3,1,Low activity,large,Boxer
+DOG0125,2025-03-03,Labrador Retriever,M,7,0.58,55.9,71.5,22.29,20.5,25.2,45.7,3.17,11.7,718.1,1.8685617641921304,1396.8,1,Low activity,large,Labrador Retriever
+DOG0787,2025-07-08,Dachshund,F,7,0.58,21.2,19.5,8.98,27.9,44.2,72.1,5.01,12.3,363.1,2.078146939445578,766.0,1,Low activity,small,Dachshund
+DOG0051,2025-07-17,Pomeranian,F,15,1.25,22.6,29.8,3.24,12.5,54.1,66.6,4.62,9.6,169.0,1.38,254.8,2,Hyperactive,small,Other
+DOG0354,2025-05-30,Chihuahua,M,28,2.33,22.9,24.9,1.9,34.6,75.2,109.8,7.63,12.1,113.3,1.21,121.8,2,Hyperactive,small,Chihuahua
+DOG0928,2025-05-16,Golden Retriever,F,80,6.67,56.9,72.6,25.31,72.5,0.0,72.5,5.03,11.7,789.9,1.15,888.7,0,Normal,large,Golden Retriever
+DOG0143,2025-07-27,Siberian Husky,M,67,5.58,55.8,65.8,23.99,42.2,0.0,42.2,2.93,10.6,758.8,1.2,844.0,0,Normal,large,Siberian Husky
+DOG0471,2024-12-25,Golden Retriever,F,8,0.67,54.3,70.1,23.07,109.1,30.9,140.0,9.72,11.6,736.9,1.7644070682313286,1257.5,0,Normal,large,Golden Retriever
+DOG0400,2025-01-23,Pomeranian,F,30,2.5,29.8,31.1,2.43,18.5,9.2,27.7,1.92,12.7,136.2,1.16,162.7,1,Low activity,small,Other
+DOG0626,2025-10-10,Labrador Retriever,M,13,1.08,60.0,71.4,31.51,28.7,44.2,72.9,5.06,12.0,931.0,1.28,1203.8,1,Low activity,large,Labrador Retriever
+DOG0321,2025-05-06,Mixed,F,17,1.42,29.1,30.0,17.46,41.7,32.6,74.3,5.16,14.9,597.9,1.29,795.0,1,Low activity,small,Mixed
+DOG0020,2024-12-12,German Shepherd,M,20,1.67,61.7,57.3,32.8,49.9,40.0,89.9,6.24,13.9,959.4,1.21,1308.5,1,Low activity,large,German Shepherd
+DOG0810,2025-06-30,Beagle,M,27,2.25,35.1,39.0,10.34,31.6,38.7,70.3,4.88,11.0,403.6,1.29,537.5,2,Hyperactive,medium,Beagle
+DOG0791,2025-01-01,Bulldog,F,17,1.42,33.1,44.3,18.84,13.3,24.1,37.4,2.6,10.8,633.0,1.18,746.2,1,Low activity,medium,Other
+DOG0809,2024-12-27,Labrador Retriever,F,42,3.5,56.3,57.8,30.13,50.5,49.0,99.5,6.91,11.8,900.2,1.24,1135.6,2,Hyperactive,large,Labrador Retriever
+DOG0408,2025-06-14,Bulldog,F,95,7.92,35.7,40.9,18.18,10.5,62.1,72.6,5.04,11.8,616.3,1.11,658.2,2,Hyperactive,medium,Other
+DOG0538,2025-04-23,Beagle,F,27,2.25,36.5,42.1,10.69,26.4,69.5,95.9,6.66,9.5,413.8,1.3,500.3,2,Hyperactive,medium,Beagle
+DOG0621,2025-02-09,Mixed,M,110,9.17,52.0,54.5,17.8,23.0,25.4,48.4,3.36,12.2,606.6,1.18,717.0,1,Low activity,large,Mixed
+DOG0039,2025-04-04,Labrador Retriever,M,8,0.67,56.5,54.2,25.58,97.9,40.0,137.9,9.58,10.8,796.2,1.9222639250911289,1627.5,0,Normal,large,Labrador Retriever
+DOG0176,2025-06-11,Pomeranian,F,13,1.08,22.1,29.9,2.56,32.3,42.4,74.7,5.19,11.5,141.7,1.2,191.3,2,Hyperactive,small,Other
+DOG0246,2025-03-15,Golden Retriever,F,3,0.25,60.5,64.3,20.38,29.3,23.8,53.1,3.69,7.7,671.4,2.318262041385726,1572.0,0,Normal,large,Golden Retriever
+DOG0829,2025-01-11,Shih Tzu,F,29,2.42,23.9,28.6,6.09,43.2,21.7,64.9,4.51,12.5,271.4,1.21,339.0,1,Low activity,small,Shih Tzu
+DOG0668,2025-01-13,Labrador Retriever,M,5,0.42,56.1,55.8,22.23,76.5,27.0,103.5,7.19,9.3,716.6,2.018548195724408,1396.6,0,Normal,large,Labrador Retriever
+DOG0755,2025-04-28,Mixed,F,18,1.5,39.8,39.4,18.16,65.6,58.1,123.7,8.59,10.2,615.8,1.26,772.1,2,Hyperactive,medium,Mixed
+DOG0859,2025-01-14,Chihuahua,M,2,0.17,16.2,21.6,2.06,40.0,16.8,56.8,3.94,10.9,120.4,2.3454463858055137,286.8,0,Normal,small,Chihuahua
+DOG0155,2025-06-04,Rottweiler,F,30,2.5,66.2,90.8,43.34,14.0,60.3,74.3,5.16,11.5,1182.4,1.26,1575.3,2,Hyperactive,large,Other
+DOG0288,2024-12-18,Poodle (Standard),M,17,1.42,51.4,50.9,25.93,37.0,39.8,76.8,5.33,12.9,804.4,1.21,1050.3,1,Low activity,large,Poodle (Standard)
+DOG0603,2025-06-24,Pomeranian,F,3,0.25,22.0,23.8,1.62,33.8,13.8,47.6,3.31,10.3,100.5,2.7500613241443475,276.7,0,Normal,small,Other
+DOG0570,2025-01-24,Mixed,M,25,2.08,33.7,38.9,17.5,31.8,18.7,50.5,3.51,9.8,598.9,1.13,620.2,0,Normal,medium,Mixed
+DOG0744,2025-04-28,Poodle (Standard),F,36,3.0,47.7,59.2,26.44,8.6,83.6,92.2,6.4,12.2,816.2,1.2,1002.1,2,Hyperactive,medium,Poodle (Standard)
+DOG0018,2025-08-10,Shih Tzu,M,16,1.33,20.4,23.1,5.2,6.9,20.2,27.1,1.88,10.7,241.0,1.2,319.3,1,Low activity,small,Shih Tzu
+DOG0128,2025-10-16,Boxer,M,22,1.83,59.4,67.1,30.02,0.0,68.0,68.0,4.72,10.4,897.8,1.21,1056.8,2,Hyperactive,large,Boxer
+DOG0323,2025-01-08,Golden Retriever,F,45,3.75,57.5,53.6,28.39,71.9,43.7,115.6,8.03,9.3,860.9,1.25,1159.3,0,Normal,large,Golden Retriever
+DOG0256,2025-05-29,Labrador Retriever,F,85,7.08,56.4,55.0,27.0,60.6,72.4,133.0,9.24,13.6,829.1,1.25,1069.0,2,Hyperactive,large,Labrador Retriever
+DOG0658,2025-06-03,Rottweiler,F,55,4.58,64.2,84.1,47.97,27.8,24.1,51.9,3.6,12.5,1275.9,1.2,1503.1,1,Low activity,large,Other
+DOG0965,2025-11-16,Golden Retriever,M,30,2.5,55.7,55.1,29.41,27.1,31.4,58.5,4.06,13.0,884.0,1.21,1064.2,1,Low activity,large,Golden Retriever
+DOG0191,2024-11-28,Poodle (Standard),M,19,1.58,59.4,57.0,31.5,9.8,19.9,29.7,2.06,10.7,930.7,1.16,1113.1,1,Low activity,large,Poodle (Standard)
+DOG0116,2025-07-31,Boxer,F,8,0.67,57.0,54.8,23.66,41.5,25.8,67.3,4.67,12.2,750.9,2.040169498025388,1574.0,1,Low activity,large,Boxer
+DOG0617,2025-06-06,Beagle,M,24,2.0,36.7,47.2,9.58,38.4,5.4,43.8,3.04,12.0,381.2,1.17,449.3,1,Low activity,medium,Beagle
+DOG0607,2025-04-14,Mixed,F,16,1.33,25.4,33.6,16.25,14.0,41.5,55.5,3.85,12.2,566.5,1.24,785.6,1,Low activity,small,Mixed
+DOG0181,2025-07-15,Dachshund,M,32,2.67,14.3,19.5,10.41,15.1,79.1,94.2,6.54,10.2,405.7,1.32,566.5,2,Hyperactive,small,Dachshund
+DOG0302,2025-08-08,Bulldog,M,91,7.58,32.6,37.2,20.2,69.6,14.1,83.7,5.81,10.4,667.0,1.24,788.9,0,Normal,medium,Other
+DOG0760,2025-08-07,Beagle,M,4,0.33,34.0,42.9,7.38,111.1,13.7,124.8,8.67,11.4,313.4,2.5893809380091737,822.6,0,Normal,medium,Beagle
+DOG0713,2025-10-10,Chihuahua,M,21,1.75,16.3,22.5,2.52,37.9,36.2,74.1,5.15,12.1,140.0,1.25,152.3,1,Low activity,small,Chihuahua
+DOG0724,2024-12-30,Labrador Retriever,F,4,0.33,54.8,64.3,18.91,66.0,0.0,66.0,4.58,11.3,634.8,2.7832776812823696,1841.2,0,Normal,large,Labrador Retriever
+DOG0686,2025-08-15,French Bulldog,M,6,0.5,28.1,33.4,7.49,41.1,31.6,72.7,5.05,12.6,316.9,2.08774289845168,669.9,1,Low activity,small,French Bulldog
+DOG0980,2025-03-31,Labrador Retriever,M,36,3.0,61.2,83.1,39.51,39.5,78.9,118.4,8.22,11.1,1103.1,1.27,1268.2,2,Hyperactive,large,Labrador Retriever
+DOG0518,2025-05-02,Beagle,M,24,2.0,37.4,42.9,10.04,12.1,76.8,88.9,6.17,10.2,394.8,1.21,439.4,2,Hyperactive,medium,Beagle
+DOG0985,2025-07-23,Boxer,M,41,3.42,61.7,83.5,33.6,3.9,17.7,21.6,1.5,12.5,976.9,1.14,1124.1,1,Low activity,large,Boxer
+DOG0046,2025-07-19,German Shepherd,M,10,0.83,65.4,60.0,35.53,68.6,75.9,144.5,10.03,10.3,1018.7,1.6899504564092644,1783.2,2,Hyperactive,large,German Shepherd
+DOG0910,2025-10-03,Boxer,M,6,0.5,59.4,67.4,22.73,82.2,37.1,119.3,8.28,10.9,728.7,1.7119130978601262,1134.3,0,Normal,large,Boxer
+DOG0158,2025-07-31,Beagle,M,37,3.08,39.8,42.1,10.31,45.6,47.8,93.4,6.49,11.9,402.8,1.22,486.1,2,Hyperactive,medium,Beagle
+DOG0852,2024-11-30,Boxer,M,29,2.42,58.1,80.4,26.6,65.5,28.2,93.7,6.51,8.5,819.9,1.27,1080.9,0,Normal,large,Boxer
+DOG0172,2025-01-24,Labrador Retriever,M,26,2.17,51.7,71.7,23.97,8.0,43.3,51.3,3.56,12.6,758.3,1.22,993.9,1,Low activity,large,Labrador Retriever
+DOG0017,2025-07-07,Dachshund,F,16,1.33,15.4,20.1,10.32,34.1,79.0,113.1,7.85,11.1,403.0,1.33,567.9,2,Hyperactive,small,Dachshund
+DOG0512,2025-04-14,Labrador Retriever,M,33,2.75,60.3,71.6,37.53,8.9,14.8,23.7,1.65,11.8,1061.4,1.3,1392.7,1,Low activity,large,Labrador Retriever
+DOG0049,2025-11-01,French Bulldog,F,8,0.67,32.4,38.9,9.62,9.7,0.0,9.7,0.67,12.8,382.4,1.619708002146063,613.5,1,Low activity,medium,French Bulldog
+DOG0972,2025-02-19,Dachshund,F,33,2.75,16.7,15.4,10.31,13.3,6.2,19.5,1.35,10.4,402.8,1.24,495.4,1,Low activity,small,Dachshund
+DOG0941,2025-10-04,Rottweiler,F,75,6.25,69.4,68.6,50.08,11.6,56.8,68.4,4.75,12.0,1317.8,1.29,1721.2,2,Hyperactive,large,Other
+DOG0516,2025-03-01,German Shepherd,F,10,0.83,60.2,72.0,28.42,4.0,67.5,71.5,4.97,11.8,861.6,1.8034987195150205,1531.2,2,Hyperactive,large,German Shepherd
+DOG0953,2025-04-18,French Bulldog,F,2,0.17,31.9,37.8,7.73,47.3,26.3,73.6,5.11,12.6,324.5,2.5517092841490734,829.7,1,Low activity,medium,French Bulldog
+DOG0481,2025-02-17,Golden Retriever,F,7,0.58,58.7,55.9,24.5,123.8,55.2,179.0,12.43,6.6,770.9,2.033186177079118,1661.8,0,Normal,large,Golden Retriever
+DOG0284,2025-01-02,Mixed,M,156,13.0,46.9,48.0,16.26,11.4,49.6,61.0,4.24,10.8,566.8,1.28,703.0,2,Hyperactive,medium,Mixed
+DOG0719,2025-01-27,Golden Retriever,M,2,0.17,59.2,81.6,16.99,27.4,44.3,71.7,4.98,10.5,585.8,2.1686036613825426,1266.0,2,Hyperactive,large,Golden Retriever
+DOG0878,2025-04-21,Golden Retriever,M,167,13.92,54.1,69.3,26.83,30.4,15.5,45.9,3.19,12.2,825.2,1.3,1035.8,1,Low activity,large,Golden Retriever
+DOG0226,2024-12-26,Chihuahua,F,29,2.42,17.7,16.2,1.93,28.1,17.3,45.4,3.15,10.3,114.6,1.24,148.0,0,Normal,small,Chihuahua
+DOG0027,2025-06-12,Shih Tzu,M,9,0.75,22.1,26.3,4.83,55.8,19.1,74.9,5.2,11.2,228.1,1.8267925540733527,450.6,0,Normal,small,Shih Tzu
+DOG0955,2025-08-24,Dachshund,F,13,1.08,19.6,21.4,10.83,39.1,46.6,85.7,5.95,11.0,417.9,1.25,456.1,2,Hyperactive,small,Dachshund
+DOG0438,2025-09-13,Golden Retriever,F,23,1.92,55.0,57.9,26.47,40.2,57.9,98.1,6.81,8.2,816.9,1.22,979.5,2,Hyperactive,large,Golden Retriever
+DOG0952,2025-09-01,Dachshund,F,2,0.17,16.0,16.3,6.28,40.9,43.5,84.4,5.86,11.5,277.7,2.187108422917253,623.5,2,Hyperactive,small,Dachshund
+DOG0365,2025-11-17,French Bulldog,F,6,0.5,31.9,36.8,8.21,29.5,69.8,99.3,6.9,11.8,339.5,1.6370047501725746,564.6,2,Hyperactive,medium,French Bulldog
+DOG0230,2025-06-20,Poodle (Standard),M,8,0.67,49.2,66.6,21.7,32.1,79.4,111.5,7.74,10.7,703.8,2.1812047633446143,1499.6,2,Hyperactive,medium,Poodle (Standard)
+DOG0038,2025-10-29,Mixed,M,51,4.25,40.6,39.5,18.23,28.2,59.2,87.4,6.07,9.9,617.6,1.17,737.1,2,Hyperactive,medium,Mixed
+DOG0966,2025-03-21,French Bulldog,F,5,0.42,30.0,30.2,7.84,30.6,40.1,70.7,4.91,11.5,328.0,2.650483349994688,843.3,1,Low activity,medium,French Bulldog
+DOG0375,2025-02-13,Beagle,M,7,0.58,42.3,46.7,9.08,53.9,114.4,168.3,11.69,9.6,366.2,1.7009419474650953,617.8,2,Hyperactive,medium,Beagle
+DOG0470,2025-05-13,Mixed,M,51,4.25,43.4,44.1,18.6,23.5,45.3,68.8,4.78,11.1,626.9,1.24,819.1,2,Hyperactive,medium,Mixed
+DOG0968,2025-03-05,Bulldog,M,35,2.92,31.8,35.7,19.96,3.3,48.1,51.4,3.57,14.8,661.0,1.29,913.8,1,Low activity,medium,Other
+DOG0851,2025-10-11,Labrador Retriever,M,53,4.42,53.7,71.6,28.19,3.0,21.2,24.2,1.68,11.0,856.4,1.13,993.0,1,Low activity,large,Labrador Retriever
+DOG0705,2025-11-12,Chihuahua,M,94,7.83,21.9,22.6,2.32,12.8,23.4,36.2,2.51,12.9,131.6,1.25,165.5,1,Low activity,small,Chihuahua
+DOG0842,2025-09-25,Mixed,M,47,3.92,47.9,62.5,18.76,26.5,49.1,75.6,5.25,10.3,631.0,1.17,789.2,2,Hyperactive,medium,Mixed
+DOG0195,2024-12-26,French Bulldog,F,2,0.17,30.3,30.4,6.6,39.6,19.8,59.4,4.12,12.9,288.2,2.9817073425211413,877.6,1,Low activity,medium,French Bulldog
+DOG0855,2024-12-28,Pomeranian,M,7,0.58,30.2,27.3,3.74,81.4,0.0,81.4,5.65,12.3,188.3,2.007589323979602,352.3,0,Normal,medium,Other
+DOG0865,2025-10-22,Beagle,M,143,11.92,36.0,33.6,9.66,0.0,49.8,49.8,3.46,11.5,383.6,1.24,505.9,2,Hyperactive,medium,Beagle
+DOG0504,2025-04-28,Mixed,F,76,6.33,40.5,54.7,17.12,0.4,0.0,0.4,0.03,10.8,589.1,1.15,632.5,1,Low activity,medium,Mixed
+DOG0970,2025-07-10,Poodle (Standard),M,5,0.42,57.2,53.6,21.24,15.0,24.3,39.3,2.73,11.1,692.6,2.154811240596826,1460.9,1,Low activity,large,Poodle (Standard)
+DOG0831,2025-01-31,Labrador Retriever,M,3,0.25,58.5,78.2,22.26,0.0,0.0,0.0,0.0,14.2,717.4,2.061146181047686,1557.0,1,Low activity,large,Labrador Retriever
+DOG0580,2025-07-19,Boxer,M,18,1.5,64.0,69.4,33.06,88.3,42.8,131.1,9.1,10.1,965.1,1.27,1312.8,0,Normal,large,Boxer
+DOG0969,2025-02-02,French Bulldog,F,36,3.0,30.4,36.7,11.67,46.0,56.3,102.3,7.1,11.2,442.0,1.26,532.9,2,Hyperactive,medium,French Bulldog
+DOG0163,2025-11-21,Shih Tzu,M,11,0.92,29.1,33.9,6.71,61.9,33.5,95.4,6.62,13.3,291.8,1.636377355639881,503.6,1,Low activity,small,Shih Tzu
+DOG0909,2025-03-15,Golden Retriever,F,12,1.0,60.0,70.0,28.18,68.4,51.1,119.5,8.3,12.0,856.2,1.32,1224.3,0,Normal,large,Golden Retriever
+DOG0153,2025-02-09,Rottweiler,F,2,0.17,65.7,67.1,32.62,63.8,29.8,93.6,6.5,11.3,955.5,2.775346150403136,2649.8,0,Normal,large,Other
+DOG0802,2025-01-12,Beagle,F,68,5.67,39.9,46.1,10.06,40.6,54.8,95.4,6.62,10.4,395.4,1.22,482.0,2,Hyperactive,medium,Beagle
+DOG0994,2025-09-07,Pomeranian,M,13,1.08,26.9,32.1,2.21,21.9,17.7,39.6,2.75,11.6,126.9,1.29,150.3,1,Low activity,small,Other
+DOG0756,2025-03-27,Dachshund,F,8,0.67,20.9,27.2,9.18,105.2,21.8,127.0,8.82,13.5,369.2,1.7004205184359908,626.2,0,Normal,small,Dachshund
+DOG0112,2025-04-16,Boxer,F,4,0.33,54.8,73.4,16.65,21.9,50.3,72.2,5.01,12.0,577.0,2.277902097248868,1330.1,1,Low activity,large,Boxer
+DOG0227,2025-07-06,Chihuahua,M,15,1.25,18.1,23.6,1.73,20.8,32.3,53.1,3.69,11.5,105.6,1.2,115.7,1,Low activity,small,Chihuahua
+DOG0689,2024-12-28,Rottweiler,M,7,0.58,67.9,65.4,43.94,27.4,0.0,27.4,1.9,10.2,1194.7,2.025147475039,2562.3,0,Normal,large,Other
+DOG0104,2025-06-06,French Bulldog,F,10,0.83,29.8,35.5,9.34,30.0,24.8,54.8,3.81,12.0,374.0,1.7193137666651777,675.2,1,Low activity,small,French Bulldog
+DOG0422,2025-09-14,Labrador Retriever,M,38,3.17,58.1,69.3,30.02,0.8,36.6,37.4,2.6,11.4,897.8,1.23,1104.1,1,Low activity,large,Labrador Retriever
+DOG0420,2025-01-03,Golden Retriever,M,41,3.42,51.5,54.8,29.46,38.7,69.4,108.1,7.51,10.2,885.2,1.27,1032.5,2,Hyperactive,large,Golden Retriever
+DOG0751,2025-05-21,Rottweiler,M,42,3.5,56.3,73.7,42.74,37.7,0.0,37.7,2.62,12.6,1170.1,1.14,1404.0,1,Low activity,large,Other
+DOG0587,2025-11-07,Labrador Retriever,M,48,4.0,58.2,62.2,29.49,63.0,41.3,104.3,7.24,11.0,885.8,1.32,1062.0,0,Normal,large,Labrador Retriever
+DOG0781,2025-08-29,Poodle (Standard),M,22,1.83,46.3,56.4,23.01,29.1,14.2,43.3,3.01,12.8,735.4,1.17,935.3,1,Low activity,medium,Poodle (Standard)
+DOG0673,2024-12-28,Shih Tzu,M,35,2.92,20.3,19.3,5.12,0.0,20.1,20.1,1.4,10.1,238.3,1.27,300.6,1,Low activity,small,Shih Tzu
+DOG0120,2025-05-11,Pomeranian,F,11,0.92,20.5,22.0,3.35,70.1,18.6,88.7,6.16,11.7,173.3,1.676792925120152,314.1,0,Normal,small,Other
+DOG0054,2025-09-28,Siberian Husky,M,62,5.17,55.2,50.6,21.62,50.3,59.5,109.8,7.62,11.7,701.8,1.27,836.5,2,Hyperactive,large,Siberian Husky
+DOG0152,2025-09-13,French Bulldog,M,5,0.42,28.7,26.1,8.51,39.9,53.8,93.7,6.51,10.6,348.8,2.187842852537774,782.0,2,Hyperactive,small,French Bulldog
+DOG0404,2025-08-01,Mixed,F,8,0.67,50.2,50.1,16.1,29.1,37.3,66.4,4.61,10.4,562.6,2.151112918265873,1271.1,2,Hyperactive,large,Mixed
+DOG0946,2024-12-15,Mixed,M,7,0.58,51.5,56.5,16.26,39.1,68.0,107.1,7.44,9.5,566.8,1.6968375506468758,1014.0,2,Hyperactive,large,Mixed
+DOG0208,2025-10-07,Siberian Husky,F,53,4.42,50.0,54.9,16.27,54.3,22.2,76.5,5.31,10.9,567.1,1.31,738.5,0,Normal,large,Siberian Husky
+DOG0659,2025-03-05,Dachshund,M,20,1.67,13.6,15.0,10.47,16.0,8.1,24.1,1.67,12.0,407.4,1.19,430.8,1,Low activity,small,Dachshund
+DOG0844,2025-05-04,Shih Tzu,F,29,2.42,21.5,22.4,6.15,27.2,0.0,27.2,1.89,10.1,273.4,1.19,281.3,0,Normal,small,Shih Tzu
+DOG0763,2025-09-01,Chihuahua,F,7,0.58,17.0,20.5,1.77,59.1,17.0,76.1,5.28,12.7,107.4,2.176123724311884,227.3,1,Low activity,small,Chihuahua
+DOG0009,2025-04-16,Dachshund,M,10,0.83,14.8,14.9,8.43,78.2,51.7,129.9,9.02,9.7,346.3,2.027362353954665,689.9,0,Normal,small,Dachshund
+DOG0808,2025-08-29,Poodle (Standard),F,10,0.83,50.0,51.6,21.2,30.8,40.3,71.1,4.94,10.2,691.6,2.0611228582068497,1495.7,2,Hyperactive,large,Poodle (Standard)
+DOG0037,2025-07-22,German Shepherd,M,8,0.67,62.1,57.1,28.35,87.5,47.7,135.2,9.39,10.0,860.0,1.7256095940020262,1523.9,0,Normal,large,German Shepherd
+DOG0453,2024-12-31,Shih Tzu,F,26,2.17,24.1,30.7,6.51,31.9,35.0,66.9,4.65,12.4,285.3,1.18,311.7,1,Low activity,small,Shih Tzu
+DOG0652,2024-12-31,Beagle,F,63,5.25,38.5,53.7,10.44,17.8,57.9,75.7,5.26,11.7,406.6,1.25,555.7,2,Hyperactive,medium,Beagle
+DOG0254,2025-01-24,Pomeranian,F,2,0.17,24.8,27.2,2.74,0.0,17.5,17.5,1.22,11.2,149.1,2.2624705851212648,331.4,1,Low activity,small,Other
+DOG0304,2025-02-20,Labrador Retriever,M,31,2.58,56.8,54.1,27.84,20.3,84.0,104.3,7.24,12.2,848.4,1.19,931.5,2,Hyperactive,large,Labrador Retriever
+DOG0747,2024-12-08,French Bulldog,F,41,3.42,32.9,41.7,12.17,56.5,22.5,79.0,5.49,10.2,456.1,1.25,572.4,0,Normal,medium,French Bulldog
+DOG0572,2025-03-19,Shih Tzu,M,9,0.75,23.8,27.4,4.65,33.7,11.1,44.8,3.11,13.5,221.7,2.028452213611011,438.3,1,Low activity,small,Shih Tzu
+DOG0624,2025-01-20,Rottweiler,F,36,3.0,63.5,59.0,43.99,11.9,43.1,55.0,3.82,12.2,1195.7,1.22,1505.4,1,Low activity,large,Other
+DOG0733,2025-06-21,Golden Retriever,F,58,4.83,57.5,61.4,32.23,46.1,30.8,76.9,5.34,13.2,946.9,1.22,1217.5,1,Low activity,large,Golden Retriever
+DOG0892,2025-09-25,German Shepherd,F,10,0.83,60.3,77.1,28.13,81.3,36.0,117.3,8.15,11.7,855.0,2.0013709850563752,1790.4,0,Normal,large,German Shepherd
+DOG0263,2025-06-04,Siberian Husky,M,24,2.0,54.3,68.7,22.49,4.2,30.3,34.5,2.4,12.3,722.9,1.19,889.9,1,Low activity,large,Siberian Husky
+DOG0611,2025-04-09,German Shepherd,F,36,3.0,56.3,57.5,28.6,35.4,17.1,52.5,3.65,10.6,865.7,1.15,1024.7,0,Normal,large,German Shepherd
+DOG0298,2025-03-04,Shih Tzu,M,15,1.25,26.1,27.1,6.23,39.7,20.6,60.3,4.19,10.6,276.0,1.32,367.0,0,Normal,small,Shih Tzu
+DOG0415,2025-07-21,Poodle (Standard),F,9,0.75,44.8,48.3,20.61,91.5,57.4,148.9,10.34,10.7,677.1,2.190593187288425,1426.1,0,Normal,medium,Poodle (Standard)
+DOG0151,2025-02-04,French Bulldog,M,15,1.25,26.9,25.2,9.84,51.9,37.7,89.6,6.22,11.1,388.9,1.21,439.5,0,Normal,small,French Bulldog
+DOG0789,2025-07-30,Mixed,F,9,0.75,50.6,55.3,17.4,60.2,41.2,101.4,7.04,11.4,596.4,1.703182241106126,1072.9,0,Normal,large,Mixed
+DOG0641,2025-03-11,Poodle (Standard),F,2,0.17,49.2,59.3,16.6,35.1,0.5,35.6,2.47,13.3,575.7,2.656239893248358,1548.2,1,Low activity,medium,Poodle (Standard)
+DOG0890,2025-02-17,Poodle (Standard),M,7,0.58,53.6,59.0,22.79,66.1,96.0,162.1,11.26,12.7,730.1,2.1164212195252903,1532.1,2,Hyperactive,large,Poodle (Standard)
+DOG0551,2025-02-01,Beagle,M,40,3.33,37.9,35.2,10.9,44.6,51.8,96.4,6.69,11.8,419.9,1.28,544.7,2,Hyperactive,medium,Beagle
+DOG0887,2025-02-18,Dachshund,M,48,4.0,16.9,18.9,10.12,38.0,18.4,56.4,3.92,13.5,397.2,1.22,514.8,1,Low activity,small,Dachshund
+DOG0489,2025-09-24,Golden Retriever,M,14,1.17,56.3,65.0,27.47,35.0,8.9,43.9,3.05,10.7,839.9,1.24,1080.6,0,Normal,large,Golden Retriever
+DOG0148,2025-01-02,Pomeranian,F,90,7.5,21.9,27.7,2.43,67.6,29.2,96.8,6.72,11.7,136.2,1.26,171.6,0,Normal,small,Other
+DOG0147,2025-04-24,German Shepherd,F,4,0.33,59.0,61.2,20.4,24.7,37.3,62.0,4.31,12.7,671.9,2.375329907919602,1547.4,1,Low activity,large,German Shepherd
+DOG0721,2024-12-07,Siberian Husky,F,14,1.17,52.7,70.8,22.1,10.9,3.4,14.3,0.99,11.7,713.5,1.15,757.6,1,Low activity,large,Siberian Husky
+DOG0932,2025-01-09,Labrador Retriever,M,14,1.17,55.2,55.1,27.13,26.5,65.3,91.8,6.38,9.4,832.1,1.22,1098.4,2,Hyperactive,large,Labrador Retriever
+DOG0740,2025-04-10,Labrador Retriever,M,11,0.92,62.1,76.0,34.06,35.5,32.5,68.0,4.72,10.5,986.9,1.8152569404796828,1803.2,0,Normal,large,Labrador Retriever
+DOG0660,2025-10-19,Beagle,F,64,5.33,37.4,42.3,9.5,64.7,34.1,98.8,6.86,9.1,378.8,1.3,458.0,0,Normal,medium,Beagle
+DOG0349,2025-06-29,Dachshund,M,87,7.25,18.3,17.7,11.64,36.6,81.8,118.4,8.22,10.2,441.1,1.28,539.8,2,Hyperactive,small,Dachshund
+DOG0464,2025-04-19,Shih Tzu,M,12,1.0,19.0,20.7,5.68,14.2,47.9,62.1,4.31,10.5,257.5,1.29,352.2,2,Hyperactive,small,Shih Tzu
+DOG0326,2025-05-26,Beagle,M,46,3.83,39.8,54.0,11.98,30.6,14.3,44.9,3.12,9.1,450.8,1.21,579.4,0,Normal,medium,Beagle
+DOG0187,2025-08-16,Chihuahua,M,21,1.75,15.0,15.8,1.74,39.5,27.6,67.1,4.66,11.0,106.0,1.32,131.3,0,Normal,small,Chihuahua
+DOG0124,2025-06-01,Golden Retriever,M,151,12.58,59.5,54.4,27.8,17.4,20.0,37.4,2.6,11.7,847.5,1.27,1110.6,1,Low activity,large,Golden Retriever
+DOG0854,2025-09-28,Bulldog,M,22,1.83,34.4,44.4,21.03,13.9,20.1,34.0,2.36,15.1,687.4,1.2,813.3,1,Low activity,medium,Other
+DOG0609,2025-08-16,German Shepherd,F,5,0.42,63.8,86.3,22.92,0.0,79.2,79.2,5.5,10.8,733.3,2.689229736362952,1927.7,2,Hyperactive,large,German Shepherd
+DOG0144,2024-12-18,German Shepherd,F,13,1.08,63.8,76.7,29.49,14.9,2.0,16.9,1.17,10.4,885.8,1.29,1160.5,1,Low activity,large,German Shepherd
+DOG0959,2025-05-26,Mixed,M,74,6.17,35.6,48.9,15.9,9.9,40.5,50.4,3.5,10.4,557.4,1.22,631.2,2,Hyperactive,medium,Mixed
+DOG0198,2025-06-09,Dachshund,F,48,4.0,14.8,18.9,9.91,36.1,90.1,126.2,8.76,11.2,391.0,1.32,483.8,2,Hyperactive,small,Dachshund
+DOG0610,2025-02-28,Dachshund,F,6,0.5,20.3,24.4,7.63,2.3,42.4,44.7,3.1,11.0,321.4,1.6747031526194154,539.6,2,Hyperactive,small,Dachshund
+DOG0280,2025-07-19,Poodle (Standard),M,146,12.17,49.6,59.4,21.27,0.0,25.3,25.3,1.76,12.4,693.3,1.27,814.0,1,Low activity,medium,Poodle (Standard)
+DOG0294,2025-11-01,Poodle (Standard),M,20,1.67,50.1,63.3,26.5,20.1,52.5,72.6,5.04,11.5,817.6,1.22,1103.6,2,Hyperactive,large,Poodle (Standard)
+DOG0401,2025-09-22,Golden Retriever,F,21,1.75,60.6,69.1,30.39,0.4,57.9,58.3,4.05,11.7,906.0,1.29,1129.7,2,Hyperactive,large,Golden Retriever
+DOG0123,2025-03-01,Boxer,M,55,4.58,54.2,70.3,27.09,0.0,58.6,58.6,4.07,12.5,831.2,1.27,990.9,1,Low activity,large,Boxer
+DOG0184,2025-01-12,Pomeranian,F,9,0.75,24.8,30.6,1.83,77.4,29.0,106.4,7.39,10.8,110.1,1.6094879177397774,168.7,0,Normal,small,Other
+DOG0203,2025-08-08,Shih Tzu,F,29,2.42,25.8,34.4,6.39,76.8,0.0,76.8,5.33,10.7,281.3,1.28,363.7,0,Normal,small,Shih Tzu
+DOG0439,2024-12-20,Dachshund,F,12,1.0,17.3,15.8,10.12,29.8,11.1,40.9,2.84,12.1,397.2,1.18,425.5,1,Low activity,small,Dachshund
+DOG0247,2025-04-21,Chihuahua,M,2,0.17,21.2,22.9,2.11,54.6,8.5,63.1,4.38,11.5,122.5,2.5488728015426,326.3,0,Normal,small,Chihuahua
+DOG0416,2025-01-02,Chihuahua,M,36,3.0,18.4,24.5,2.58,3.3,39.5,42.8,2.97,12.5,142.5,1.2,174.6,1,Low activity,small,Chihuahua
+DOG0933,2025-11-10,Siberian Husky,M,12,1.0,54.6,64.2,20.61,18.0,19.4,37.4,2.6,9.3,677.1,1.27,907.1,0,Normal,large,Siberian Husky
+DOG0766,2024-12-17,Rottweiler,M,31,2.58,61.1,63.8,46.0,31.7,93.6,125.3,8.7,11.3,1236.4,1.3,1709.9,2,Hyperactive,large,Other
+DOG0907,2025-08-29,French Bulldog,F,18,1.5,28.2,30.5,9.77,37.5,58.0,95.5,6.63,10.7,386.8,1.14,422.8,2,Hyperactive,small,French Bulldog
+DOG0836,2025-08-20,Poodle (Standard),M,6,0.5,50.2,49.9,19.05,82.0,61.2,143.2,9.94,12.5,638.3,2.000564337836202,1329.1,0,Normal,large,Poodle (Standard)
+DOG0888,2025-04-07,Chihuahua,M,4,0.33,20.8,21.9,1.7,39.3,0.0,39.3,2.73,11.7,104.2,2.117676512645299,225.0,1,Low activity,small,Chihuahua
+DOG0130,2025-10-19,Beagle,M,2,0.17,34.8,42.7,6.52,51.9,43.8,95.7,6.65,12.0,285.6,2.56044063098044,728.3,0,Normal,medium,Beagle
+DOG0638,2025-01-27,German Shepherd,M,125,10.42,59.4,54.8,28.88,13.2,33.1,46.3,3.22,14.9,872.1,1.29,1206.9,1,Low activity,large,German Shepherd
+DOG0403,2025-02-09,Chihuahua,F,7,0.58,16.0,14.8,2.17,57.9,35.1,93.0,6.46,11.3,125.2,1.9585679145594763,250.5,0,Normal,small,Chihuahua
+DOG0785,2024-12-03,Mixed,F,51,4.25,27.9,31.1,14.84,0.0,22.0,22.0,1.53,10.5,529.3,1.23,643.1,1,Low activity,small,Mixed
+DOG0771,2025-10-06,Poodle (Standard),M,6,0.5,51.0,63.1,19.23,28.0,7.9,35.9,2.49,10.1,642.8,2.022028411348083,1352.6,0,Normal,large,Poodle (Standard)
+DOG0736,2025-06-23,Shih Tzu,M,5,0.42,23.1,26.9,4.87,91.3,33.2,124.5,8.65,10.1,229.5,2.678182584589068,629.2,0,Normal,small,Shih Tzu
+DOG0914,2025-10-20,Beagle,F,13,1.08,35.2,46.5,8.23,47.6,0.0,47.6,3.31,12.7,340.1,1.24,389.2,1,Low activity,medium,Beagle
+DOG0220,2025-03-24,Mixed,F,97,8.08,32.3,38.9,14.04,36.4,36.2,72.6,5.04,10.2,507.7,1.29,697.1,2,Hyperactive,medium,Mixed
+DOG0642,2025-10-22,French Bulldog,M,19,1.58,31.1,41.8,11.98,20.0,21.0,41.0,2.85,12.5,450.8,1.3,557.5,1,Low activity,medium,French Bulldog
+DOG0916,2025-06-03,German Shepherd,M,2,0.17,56.1,70.9,19.83,27.2,0.0,27.2,1.89,11.7,657.8,2.3786906633330025,1512.4,1,Low activity,large,German Shepherd
+DOG0753,2025-03-26,Mixed,M,35,2.92,37.4,44.1,18.42,14.1,27.2,41.3,2.87,11.8,622.4,1.23,838.4,1,Low activity,medium,Mixed
+DOG0807,2025-11-13,Golden Retriever,M,30,2.5,53.5,60.6,29.68,34.0,61.1,95.1,6.6,11.4,890.1,1.21,1026.4,2,Hyperactive,large,Golden Retriever
+DOG0920,2025-03-12,Golden Retriever,M,56,4.67,56.1,68.8,30.47,69.1,44.2,113.3,7.87,12.4,907.8,1.27,1219.3,0,Normal,large,Golden Retriever
+DOG0625,2025-05-02,Boxer,F,27,2.25,60.4,58.6,26.98,15.3,33.5,48.8,3.39,10.3,828.7,1.27,952.4,2,Hyperactive,large,Boxer
+DOG0875,2025-06-15,French Bulldog,F,37,3.08,33.1,35.7,12.37,11.3,57.0,68.3,4.74,11.5,461.7,1.28,548.1,2,Hyperactive,medium,French Bulldog
+DOG0761,2025-02-28,Mixed,M,72,6.0,28.9,35.2,15.88,32.5,49.8,82.3,5.72,11.0,556.8,1.3,715.6,2,Hyperactive,small,Mixed
+DOG0387,2025-11-08,Shih Tzu,M,66,5.5,25.0,33.6,5.22,58.8,22.3,81.1,5.63,10.3,241.7,1.24,302.4,0,Normal,small,Shih Tzu
+DOG0973,2025-10-17,Beagle,F,9,0.75,32.0,38.0,6.92,31.9,38.9,70.8,4.92,12.1,298.7,2.0888612088082152,644.7,1,Low activity,medium,Beagle
+DOG0510,2024-12-24,Bulldog,F,2,0.17,39.0,36.3,13.43,34.4,21.6,56.0,3.89,11.5,491.1,2.593940620943405,1223.1,1,Low activity,medium,Other
+DOG0268,2025-09-12,French Bulldog,M,25,2.08,27.1,36.7,9.39,28.8,14.3,43.1,2.99,12.6,375.5,1.22,448.6,1,Low activity,small,French Bulldog
+DOG0820,2025-03-29,Labrador Retriever,M,4,0.33,59.3,81.8,20.69,37.4,16.0,53.4,3.71,12.7,679.1,2.4243381397962755,1626.7,1,Low activity,large,Labrador Retriever
+DOG0442,2025-07-24,Boxer,M,75,6.25,59.1,81.5,30.73,47.1,31.7,78.8,5.47,9.8,913.6,1.3,1188.5,0,Normal,large,Boxer
+DOG0497,2025-08-30,German Shepherd,F,29,2.42,62.3,59.7,32.68,61.3,36.1,97.4,6.76,11.1,956.8,1.27,1142.7,0,Normal,large,German Shepherd
+DOG0113,2025-03-28,Shih Tzu,F,13,1.08,26.3,32.7,6.24,20.2,39.6,59.8,4.15,11.9,276.4,1.25,362.6,1,Low activity,small,Shih Tzu
+DOG0692,2025-11-15,Dachshund,M,29,2.42,19.5,24.6,12.22,37.8,89.5,127.3,8.84,9.8,457.5,1.32,600.8,2,Hyperactive,small,Dachshund
+DOG0233,2025-11-08,Shih Tzu,F,42,3.5,22.1,29.4,4.75,40.6,5.7,46.3,3.22,10.6,225.2,1.33,296.3,0,Normal,small,Shih Tzu
+DOG0870,2025-04-04,Shih Tzu,F,49,4.08,22.3,25.7,5.06,61.5,29.8,91.3,6.34,10.0,236.2,1.26,318.4,0,Normal,small,Shih Tzu
+DOG0608,2025-02-13,Rottweiler,M,56,4.67,60.3,67.0,49.48,18.7,33.7,52.4,3.64,9.9,1305.9,1.17,1453.1,2,Hyperactive,large,Other
+DOG0672,2025-09-08,Beagle,F,5,0.42,41.7,46.4,8.17,61.7,70.8,132.5,9.2,10.1,338.3,2.758073501420799,978.3,2,Hyperactive,medium,Beagle
+DOG0374,2025-02-23,Beagle,F,67,5.58,42.2,44.7,10.89,8.1,12.4,20.5,1.42,12.1,419.6,1.18,464.0,1,Low activity,medium,Beagle
+DOG0982,2025-08-12,Chihuahua,M,26,2.17,17.9,22.9,2.81,37.6,38.9,76.5,5.31,13.4,151.9,1.32,185.7,1,Low activity,small,Chihuahua
+DOG0843,2025-08-28,Labrador Retriever,F,27,2.25,55.4,72.2,26.13,50.5,68.1,118.6,8.24,11.7,809.0,1.2,1060.7,2,Hyperactive,large,Labrador Retriever
+DOG0234,2025-11-01,German Shepherd,F,7,0.58,58.7,59.4,24.63,0.0,29.8,29.8,2.07,10.3,773.9,2.0543697869653004,1537.9,1,Low activity,large,German Shepherd
+DOG0786,2025-08-20,Poodle (Standard),F,46,3.83,53.6,68.9,27.42,2.3,50.7,53.0,3.68,12.7,838.8,1.35,1035.5,1,Low activity,large,Poodle (Standard)
+DOG0677,2025-02-07,French Bulldog,M,44,3.67,33.8,32.3,13.1,45.1,20.0,65.1,4.52,14.5,482.0,1.24,629.9,1,Low activity,medium,French Bulldog
+DOG0318,2025-09-06,German Shepherd,M,25,2.08,56.6,59.5,29.28,33.9,49.3,83.2,5.78,13.5,881.1,1.22,1097.8,1,Low activity,large,German Shepherd
+DOG0649,2025-11-21,Mixed,F,30,2.5,46.7,63.6,16.81,37.2,11.5,48.7,3.38,10.5,581.1,1.28,665.6,0,Normal,medium,Mixed
+DOG0411,2025-02-10,German Shepherd,M,77,6.42,54.2,69.2,23.35,19.5,15.1,34.6,2.4,13.0,743.6,1.22,942.7,1,Low activity,large,German Shepherd
+DOG0899,2025-05-25,French Bulldog,M,78,6.5,28.4,27.5,10.3,17.5,54.7,72.2,5.01,12.6,402.5,1.21,486.5,1,Low activity,small,French Bulldog
+DOG0710,2024-12-20,Siberian Husky,F,14,1.17,61.1,81.3,21.73,5.8,60.5,66.3,4.6,10.7,704.5,1.28,875.6,2,Hyperactive,large,Siberian Husky
+DOG0359,2025-05-14,Bulldog,M,24,2.0,39.6,52.1,20.96,42.9,44.9,87.8,6.1,10.5,685.7,1.14,772.4,2,Hyperactive,medium,Other
+DOG0259,2025-03-06,Chihuahua,F,15,1.25,22.2,27.0,2.46,52.3,28.8,81.1,5.63,14.1,137.5,1.29,183.7,1,Low activity,small,Chihuahua
+DOG0745,2025-03-25,French Bulldog,M,47,3.92,29.1,37.0,10.29,20.0,36.6,56.6,3.93,12.8,402.2,1.16,438.6,1,Low activity,small,French Bulldog
+DOG0628,2025-03-31,Rottweiler,M,98,8.17,57.4,67.9,47.42,14.0,52.2,66.2,4.6,10.2,1264.9,1.25,1522.7,2,Hyperactive,large,Other
+DOG0633,2025-02-13,Shih Tzu,M,55,4.58,19.6,23.6,4.95,29.0,5.1,34.1,2.37,12.8,232.3,1.17,293.5,1,Low activity,small,Shih Tzu
+DOG0283,2025-05-14,Labrador Retriever,M,49,4.08,55.7,62.7,29.28,65.0,46.5,111.5,7.74,11.9,881.1,1.32,1165.7,0,Normal,large,Labrador Retriever
+DOG0377,2025-03-01,Mixed,M,8,0.67,50.6,61.5,17.35,60.5,75.8,136.3,9.47,9.4,595.1,1.963831670189832,1190.3,2,Hyperactive,large,Mixed
+DOG0385,2025-09-07,Mixed,M,16,1.33,26.4,26.7,15.71,38.7,32.2,70.9,4.92,12.2,552.4,1.22,680.0,1,Low activity,small,Mixed
+DOG0225,2025-08-28,French Bulldog,M,2,0.17,32.0,38.0,7.57,22.4,19.9,42.3,2.94,12.2,319.5,2.1032650088750486,725.1,1,Low activity,medium,French Bulldog
+DOG0954,2025-10-14,Beagle,F,59,4.92,37.3,52.1,9.13,25.2,42.9,68.1,4.73,10.9,367.7,1.27,433.7,2,Hyperactive,medium,Beagle
+DOG0815,2025-04-08,Golden Retriever,F,52,4.33,60.1,70.7,30.64,68.8,24.7,93.5,6.49,11.8,911.6,1.31,1198.5,0,Normal,large,Golden Retriever
+DOG0473,2025-01-04,Dachshund,F,23,1.92,19.7,22.6,10.96,40.6,4.4,45.0,3.12,13.1,421.7,1.21,514.9,1,Low activity,small,Dachshund
+DOG0348,2025-04-05,Boxer,M,60,5.0,59.7,60.0,31.45,9.8,73.0,82.8,5.75,10.8,929.6,1.22,1279.1,2,Hyperactive,large,Boxer
+DOG0506,2024-12-31,Mixed,F,28,2.33,41.2,50.6,14.85,48.5,39.9,88.4,6.14,8.6,529.5,1.19,583.7,0,Normal,medium,Mixed
+DOG0640,2025-07-01,Pomeranian,F,7,0.58,21.1,24.0,2.2,36.7,37.5,74.2,5.15,13.5,126.4,1.8430937242516992,212.7,1,Low activity,small,Other
+DOG0988,2025-08-21,Beagle,M,20,1.67,37.3,39.1,10.67,28.6,58.0,86.6,6.01,14.1,413.3,1.27,520.2,1,Low activity,medium,Beagle
+DOG0929,2025-01-14,German Shepherd,F,9,0.75,63.0,83.5,27.5,50.3,40.4,90.7,6.3,11.5,840.6,1.753919570566587,1421.9,0,Normal,large,German Shepherd
+DOG0906,2025-09-25,Siberian Husky,M,34,2.83,57.3,72.3,23.61,41.1,27.7,68.8,4.78,13.8,749.8,1.25,856.5,1,Low activity,large,Siberian Husky
+DOG0620,2025-05-09,Labrador Retriever,F,2,0.17,59.4,76.0,16.36,110.9,10.7,121.6,8.44,14.2,569.4,2.104554458151024,1264.4,0,Normal,large,Labrador Retriever
+DOG0856,2025-08-11,Shih Tzu,M,26,2.17,23.3,22.4,4.93,40.0,16.9,56.9,3.95,10.1,231.6,1.25,277.8,0,Normal,small,Shih Tzu
+DOG0804,2025-02-11,Mixed,F,19,1.58,29.3,37.9,15.57,29.4,1.4,30.8,2.14,13.0,548.7,1.21,626.6,1,Low activity,small,Mixed
+DOG0646,2025-09-04,Beagle,M,2,0.17,33.9,45.3,6.63,89.1,49.2,138.3,9.6,10.8,289.2,2.359445026182239,687.2,0,Normal,medium,Beagle
+DOG0847,2025-04-11,Shih Tzu,M,26,2.17,27.4,38.0,5.73,21.8,13.8,35.6,2.47,11.5,259.2,1.21,298.8,1,Low activity,small,Shih Tzu
+DOG0557,2025-10-21,Labrador Retriever,F,29,2.42,56.6,76.1,27.12,11.2,24.8,36.0,2.5,12.9,831.9,1.25,1054.6,1,Low activity,large,Labrador Retriever
+DOG0958,2025-10-11,Labrador Retriever,F,2,0.17,62.4,58.0,20.57,15.8,37.5,53.3,3.7,12.3,676.1,2.374653091653261,1582.2,1,Low activity,large,Labrador Retriever
+DOG0578,2025-04-12,German Shepherd,F,29,2.42,61.5,78.1,29.11,33.8,66.0,99.8,6.93,13.1,877.3,1.15,964.6,2,Hyperactive,large,German Shepherd
+DOG0796,2024-12-23,French Bulldog,M,9,0.75,30.3,35.4,10.47,41.9,49.8,91.7,6.37,10.1,407.4,1.679936048790612,699.2,2,Hyperactive,medium,French Bulldog
+DOG0086,2025-06-18,Shih Tzu,F,52,4.33,22.2,28.8,5.19,51.7,30.9,82.6,5.74,10.8,240.7,1.17,299.5,0,Normal,small,Shih Tzu
+DOG0243,2025-11-14,Labrador Retriever,M,103,8.58,56.4,69.4,25.42,24.7,57.7,82.4,5.72,10.5,792.5,1.26,920.2,2,Hyperactive,large,Labrador Retriever
+DOG0699,2025-06-04,Bulldog,M,2,0.17,37.8,51.4,14.42,58.5,30.1,88.6,6.15,12.1,518.0,2.004127154674604,1021.8,0,Normal,medium,Other
+DOG0160,2025-10-02,French Bulldog,F,21,1.75,28.9,38.4,9.77,19.9,0.0,19.9,1.38,11.5,386.8,1.15,407.5,1,Low activity,small,French Bulldog
+DOG0525,2025-05-31,Mixed,M,9,0.75,30.4,37.5,16.66,61.7,0.0,61.7,4.28,10.5,577.2,2.118146201883488,1213.5,0,Normal,medium,Mixed
+DOG0036,2025-01-04,Golden Retriever,M,4,0.33,50.6,54.3,19.84,67.7,21.8,89.5,6.22,10.6,658.0,2.177010484276747,1390.8,0,Normal,large,Golden Retriever
+DOG0541,2025-02-07,Golden Retriever,M,149,12.42,63.8,84.3,27.79,6.3,44.9,51.2,3.56,11.6,847.3,1.17,1058.3,1,Low activity,large,Golden Retriever
+DOG0171,2025-06-10,Beagle,F,22,1.83,34.7,37.3,9.59,44.1,27.2,71.3,4.95,11.8,381.5,1.23,498.3,1,Low activity,medium,Beagle
+DOG0655,2025-09-01,Labrador Retriever,F,16,1.33,57.0,78.2,29.96,37.0,28.8,65.8,4.57,12.6,896.4,1.21,1030.9,1,Low activity,large,Labrador Retriever
+DOG0891,2025-06-12,Shih Tzu,F,18,1.5,27.5,31.1,4.67,78.9,59.7,138.6,9.63,10.4,222.4,1.29,295.5,0,Normal,small,Shih Tzu
+DOG0858,2025-03-18,Labrador Retriever,M,26,2.17,57.9,64.9,30.74,0.0,28.2,28.2,1.96,12.2,913.9,1.2,1122.8,1,Low activity,large,Labrador Retriever
+DOG0848,2025-11-08,Boxer,M,9,0.75,52.8,54.0,22.18,23.7,49.3,73.0,5.07,13.0,715.4,2.050948249169703,1508.4,1,Low activity,large,Boxer
+DOG0945,2025-04-26,Pomeranian,F,104,8.67,19.3,21.7,2.23,21.6,33.2,54.8,3.81,11.2,127.7,1.18,164.6,1,Low activity,small,Other
+DOG0734,2025-04-21,Golden Retriever,M,16,1.33,61.5,82.7,35.34,8.1,41.8,49.9,3.47,10.7,1014.6,1.17,1177.1,2,Hyperactive,large,Golden Retriever
+DOG0096,2025-01-30,Labrador Retriever,F,9,0.75,62.4,83.6,30.03,111.8,25.8,137.6,9.56,13.2,898.0,2.038390306143548,1779.8,0,Normal,large,Labrador Retriever
+DOG0564,2025-10-17,Chihuahua,M,3,0.25,15.4,16.5,1.13,83.6,0.0,83.6,5.81,10.9,76.7,2.3556219992575658,173.2,0,Normal,small,Chihuahua
+DOG0241,2025-08-12,Labrador Retriever,M,11,0.92,56.3,53.5,29.35,130.9,0.0,130.9,9.09,10.9,882.7,1.9912558371289903,1804.4,0,Normal,large,Labrador Retriever
+DOG0743,2025-07-15,Shih Tzu,M,23,1.92,22.5,24.5,6.5,46.4,22.2,68.6,4.76,10.9,285.0,1.22,369.8,0,Normal,small,Shih Tzu
+DOG0575,2025-08-05,Mixed,M,2,0.17,27.5,24.8,10.51,81.9,36.3,118.2,8.21,10.0,408.6,2.476837774858072,1041.4,0,Normal,small,Mixed
+DOG0691,2025-04-26,Poodle (Standard),F,65,5.42,64.0,61.2,28.48,10.6,64.1,74.7,5.19,10.5,863.0,1.21,1053.2,2,Hyperactive,large,Poodle (Standard)
+DOG0461,2025-03-26,Boxer,F,10,0.83,50.8,51.4,19.35,32.0,13.1,45.1,3.13,12.7,645.8,1.8286881292208412,1262.6,1,Low activity,large,Boxer
+DOG0554,2025-01-21,French Bulldog,M,2,0.17,29.9,37.2,6.9,42.7,8.1,50.8,3.53,9.9,298.0,2.534800976919168,743.6,0,Normal,small,French Bulldog
+DOG0889,2025-05-28,Golden Retriever,M,6,0.5,57.6,72.5,20.98,84.3,53.9,138.2,9.6,12.0,686.2,1.8112458878854591,1199.8,0,Normal,large,Golden Retriever
+DOG0207,2025-07-30,Pomeranian,M,33,2.75,29.2,39.2,2.4,47.6,27.8,75.4,5.24,10.6,135.0,1.25,177.6,0,Normal,small,Other
+DOG0393,2025-09-05,Labrador Retriever,M,33,2.75,59.7,60.5,30.87,75.8,26.5,102.3,7.1,12.2,916.7,1.21,1010.3,0,Normal,large,Labrador Retriever
+DOG0795,2024-11-27,German Shepherd,F,46,3.83,64.3,59.6,33.19,14.0,63.8,77.8,5.4,9.2,968.0,1.2,1248.9,2,Hyperactive,large,German Shepherd
+DOG0398,2025-05-08,Shih Tzu,M,3,0.25,23.0,29.6,3.17,84.1,4.8,88.9,6.17,11.0,166.3,2.223602548323671,388.0,0,Normal,small,Shih Tzu
+DOG0767,2025-04-20,Mixed,M,11,0.92,53.9,55.8,17.82,57.0,42.7,99.7,6.92,10.5,607.1,1.8149449900221903,1113.3,0,Normal,large,Mixed
+DOG0849,2025-03-10,Mixed,M,26,2.17,26.8,29.0,16.35,38.9,30.2,69.1,4.8,10.0,569.2,1.22,543.2,0,Normal,small,Mixed
+DOG0218,2025-04-08,Poodle (Standard),M,2,0.17,42.7,56.3,17.3,7.7,18.1,25.8,1.79,10.8,593.8,2.3797515229193174,1387.1,1,Low activity,medium,Poodle (Standard)
+DOG0005,2025-10-24,German Shepherd,M,19,1.58,59.2,62.0,33.15,57.2,53.4,110.6,7.68,11.4,967.1,1.25,1299.0,2,Hyperactive,large,German Shepherd
+DOG0769,2024-12-06,French Bulldog,F,125,10.42,29.0,27.4,8.04,26.4,3.3,29.7,2.06,12.4,334.2,1.22,423.7,1,Low activity,small,French Bulldog
+DOG0643,2025-01-21,Mixed,F,9,0.75,33.4,30.6,15.13,12.3,40.4,52.7,3.66,10.8,537.0,2.114985664304229,1129.6,2,Hyperactive,medium,Mixed
+DOG0930,2024-12-02,Poodle (Standard),M,2,0.17,60.6,81.0,16.21,39.3,67.6,106.9,7.42,10.2,565.5,2.3533983534076546,1370.0,2,Hyperactive,large,Poodle (Standard)
+DOG0613,2025-03-17,German Shepherd,F,55,4.58,54.7,57.1,25.94,56.9,0.0,56.9,3.95,9.9,804.6,1.15,987.5,0,Normal,large,German Shepherd
+DOG0739,2025-07-18,Golden Retriever,M,53,4.42,58.2,69.1,35.49,16.8,17.5,34.3,2.38,12.5,1017.8,1.23,1208.5,1,Low activity,large,Golden Retriever
+DOG0547,2025-02-22,Labrador Retriever,M,19,1.58,60.8,80.4,33.93,65.4,51.0,116.4,8.08,11.1,984.1,1.19,1311.5,0,Normal,large,Labrador Retriever
+DOG0726,2025-05-11,Shih Tzu,F,35,2.92,19.9,20.5,4.9,21.8,39.6,61.4,4.26,12.2,230.5,1.24,292.3,1,Low activity,small,Shih Tzu
+DOG0684,2025-08-25,German Shepherd,F,25,2.08,65.3,87.7,33.13,52.3,31.1,83.4,5.79,10.3,966.6,1.25,1022.9,0,Normal,large,German Shepherd
+DOG0099,2025-09-21,Shih Tzu,M,96,8.0,21.8,28.5,5.81,29.6,17.8,47.4,3.29,12.8,262.0,1.22,303.7,1,Low activity,small,Shih Tzu
+DOG0805,2025-05-14,Shih Tzu,M,6,0.5,23.1,29.1,4.08,33.2,36.9,70.1,4.87,10.5,201.0,1.681568788823321,327.3,2,Hyperactive,small,Shih Tzu
+DOG0728,2025-11-16,German Shepherd,M,29,2.42,55.1,54.5,25.77,67.2,83.0,150.2,10.43,11.0,800.6,1.31,1079.9,2,Hyperactive,large,German Shepherd
+DOG0574,2025-05-14,Pomeranian,M,26,2.17,26.8,33.0,3.52,18.9,32.8,51.7,3.59,12.8,179.9,1.29,222.6,1,Low activity,small,Other
+DOG0407,2024-12-30,German Shepherd,M,20,1.67,60.0,62.5,29.71,11.6,75.7,87.3,6.06,11.4,890.8,1.21,1073.5,2,Hyperactive,large,German Shepherd
+DOG0503,2025-10-05,Siberian Husky,M,60,5.0,59.1,78.2,23.81,44.7,22.8,67.5,4.69,10.3,754.5,1.28,892.7,0,Normal,large,Siberian Husky
+DOG0048,2025-06-30,Mixed,F,42,3.5,51.4,61.1,18.76,28.7,45.2,73.9,5.13,11.3,631.0,1.28,935.8,2,Hyperactive,large,Mixed
+DOG0033,2025-10-03,Boxer,M,9,0.75,53.6,53.8,22.16,75.0,33.6,108.6,7.54,12.6,714.9,1.7846663438626298,1270.7,0,Normal,large,Boxer
+DOG0780,2025-01-12,Labrador Retriever,F,87,7.25,56.8,67.3,29.78,74.0,40.5,114.5,7.95,12.1,892.4,1.21,1069.4,0,Normal,large,Labrador Retriever
+DOG0840,2025-04-17,Shih Tzu,F,53,4.42,25.4,24.0,5.79,3.1,31.4,34.5,2.4,14.6,261.3,1.26,312.3,1,Low activity,small,Shih Tzu
+DOG0201,2025-05-23,Mixed,F,53,4.42,48.2,47.0,17.7,2.1,23.4,25.5,1.77,12.2,604.1,1.2,793.5,1,Low activity,medium,Mixed
+DOG0135,2025-07-13,French Bulldog,M,38,3.17,33.1,39.7,12.54,49.2,32.8,82.0,5.69,9.7,466.5,1.21,563.0,0,Normal,medium,French Bulldog
+DOG0028,2025-08-01,Pomeranian,F,4,0.33,23.9,22.2,1.65,90.1,22.3,112.4,7.81,9.3,101.9,2.8685991281894605,285.5,0,Normal,small,Other
+DOG0881,2025-03-19,Labrador Retriever,M,75,6.25,63.8,57.7,34.16,38.8,27.8,66.6,4.62,12.9,989.1,1.27,1425.3,1,Low activity,large,Labrador Retriever
+DOG0231,2024-12-11,Mixed,M,78,6.5,53.4,64.9,20.36,46.4,85.1,131.5,9.13,12.9,670.9,1.25,822.6,2,Hyperactive,large,Mixed
+DOG0490,2025-09-15,Bulldog,M,42,3.5,32.1,42.1,19.4,39.5,74.7,114.2,7.93,10.7,647.1,1.33,850.6,2,Hyperactive,medium,Other
+DOG0773,2025-07-24,Poodle (Standard),F,7,0.58,52.2,61.9,19.37,24.7,11.9,36.6,2.54,12.0,646.3,1.7834337995819378,1087.3,1,Low activity,large,Poodle (Standard)
+DOG0379,2025-06-13,Boxer,F,168,14.0,56.0,64.3,20.89,5.5,30.7,36.2,2.51,12.0,684.0,1.2,861.3,1,Low activity,large,Boxer
+DOG0289,2025-06-21,Siberian Husky,M,27,2.25,54.9,72.1,22.71,44.1,73.8,117.9,8.19,11.3,728.2,1.32,985.6,2,Hyperactive,large,Siberian Husky
+DOG0419,2025-06-21,Beagle,M,3,0.25,39.5,42.6,7.48,79.0,18.1,97.1,6.74,11.8,316.6,2.4159136542975093,756.7,0,Normal,medium,Beagle
+DOG0675,2025-11-05,Labrador Retriever,F,79,6.58,60.5,83.0,28.44,66.4,18.9,85.3,5.92,11.3,862.1,1.27,1087.6,0,Normal,large,Labrador Retriever
+DOG0392,2025-01-16,Poodle (Standard),F,54,4.5,58.1,80.5,26.01,39.8,43.5,83.3,5.78,11.0,806.2,1.28,1037.6,2,Hyperactive,large,Poodle (Standard)
+DOG0593,2025-09-06,Pomeranian,M,75,6.25,26.7,25.8,2.53,70.9,12.8,83.7,5.81,12.9,140.4,1.2,163.4,0,Normal,small,Other
+DOG0499,2024-12-17,Dachshund,F,54,4.5,14.5,15.9,9.26,12.1,26.0,38.1,2.65,11.8,371.6,1.17,398.1,1,Low activity,small,Dachshund
+DOG0139,2025-10-29,Pomeranian,F,2,0.17,19.1,20.6,1.56,50.6,27.2,77.8,5.4,11.4,97.7,2.636096046409542,259.2,0,Normal,small,Other
+DOG0063,2025-01-25,Mixed,F,19,1.58,36.9,46.8,16.18,12.3,6.6,18.9,1.31,10.9,564.7,1.21,693.9,1,Low activity,medium,Mixed
+DOG0472,2025-04-04,Golden Retriever,M,43,3.58,57.7,60.7,31.05,23.9,29.6,53.5,3.72,11.1,920.8,1.21,1195.9,1,Low activity,large,Golden Retriever
+DOG0648,2025-06-07,Dachshund,F,18,1.5,22.5,25.4,12.23,15.0,63.7,78.7,5.47,12.4,457.8,1.28,591.1,2,Hyperactive,small,Dachshund
+DOG0129,2025-01-27,Boxer,M,34,2.83,60.1,78.3,31.47,35.2,23.5,58.7,4.08,12.1,930.1,1.18,1080.8,1,Low activity,large,Boxer
+DOG0977,2025-06-27,Mixed,F,3,0.25,38.2,48.3,11.18,70.5,16.9,87.4,6.07,10.4,428.0,2.195483406363503,898.9,0,Normal,medium,Mixed
+DOG0521,2025-11-23,Dachshund,M,2,0.17,22.0,25.0,6.94,65.9,64.5,130.4,9.06,10.9,299.3,2.8610088213080136,839.1,2,Hyperactive,small,Dachshund
+DOG0839,2025-04-01,Beagle,M,5,0.42,35.0,33.5,6.74,23.5,5.6,29.1,2.02,11.2,292.8,2.1828876508965527,633.4,1,Low activity,medium,Beagle
+DOG0963,2025-07-19,Boxer,F,8,0.67,60.1,56.2,26.33,51.9,31.1,83.0,5.76,10.4,813.6,1.698413046777258,1450.5,0,Normal,large,Boxer
+DOG0065,2025-07-04,Labrador Retriever,M,2,0.17,60.8,79.8,21.87,96.8,16.5,113.3,7.87,14.0,707.9,2.2602333679515274,1496.4,0,Normal,large,Labrador Retriever
+DOG0813,2025-10-19,Beagle,M,13,1.08,37.9,47.8,11.17,45.9,34.0,79.9,5.55,11.1,427.7,1.3,508.9,0,Normal,medium,Beagle
+DOG0015,2025-08-19,Siberian Husky,F,25,2.08,56.5,64.8,22.29,10.7,46.3,57.0,3.96,12.4,718.1,1.26,900.6,1,Low activity,large,Siberian Husky
+DOG0157,2025-04-03,Siberian Husky,F,2,0.17,54.6,54.2,10.14,91.8,53.7,145.5,10.1,11.5,397.8,2.6477131710629216,1073.8,0,Normal,large,Siberian Husky
+DOG0041,2025-07-09,Dachshund,F,81,6.75,18.8,23.7,11.14,46.8,44.3,91.1,6.33,10.7,426.8,1.28,568.2,2,Hyperactive,small,Dachshund
+DOG0493,2024-11-26,Beagle,M,24,2.0,35.9,38.4,10.53,22.9,38.0,60.9,4.23,12.7,409.2,1.26,514.3,1,Low activity,medium,Beagle
+DOG0380,2025-03-22,French Bulldog,M,49,4.08,28.5,27.4,10.07,37.1,67.8,104.9,7.28,10.3,395.7,1.3,544.0,2,Hyperactive,small,French Bulldog
+DOG0188,2025-02-22,German Shepherd,M,2,0.17,58.2,76.1,19.87,42.5,0.0,42.5,2.95,11.8,658.8,2.5355538148796724,1582.9,1,Low activity,large,German Shepherd
+DOG0764,2025-01-22,French Bulldog,F,31,2.58,32.5,38.2,11.73,16.6,6.9,23.5,1.63,10.5,443.7,1.12,512.1,1,Low activity,medium,French Bulldog
+DOG0217,2025-05-30,Boxer,M,43,3.58,63.2,68.8,32.04,83.5,57.0,140.5,9.76,10.3,942.7,1.31,1149.9,0,Normal,large,Boxer
+DOG0792,2025-07-31,Shih Tzu,M,11,0.92,22.4,28.1,5.56,43.2,0.3,43.5,3.02,12.5,253.5,1.993847880537804,533.8,1,Low activity,small,Shih Tzu
+DOG0053,2025-01-27,Rottweiler,F,58,4.83,71.4,98.6,53.58,0.0,33.9,33.9,2.35,12.5,1386.3,1.24,1870.6,1,Low activity,large,Other
+DOG0879,2025-10-01,Rottweiler,M,57,4.75,64.1,75.2,49.02,30.6,35.9,66.5,4.62,12.0,1296.8,1.29,1702.2,1,Low activity,large,Other
+DOG0338,2025-01-15,Golden Retriever,M,41,3.42,55.6,71.0,29.24,4.9,23.6,28.5,1.98,10.5,880.2,1.26,971.3,1,Low activity,large,Golden Retriever
+DOG0749,2025-03-25,Mixed,M,13,1.08,30.1,36.3,18.12,32.8,20.8,53.6,3.72,12.4,614.8,1.3,777.5,1,Low activity,medium,Mixed
+DOG0720,2025-03-11,Siberian Husky,M,92,7.67,51.1,54.4,20.92,58.2,87.7,145.9,10.13,10.5,684.7,1.16,702.9,2,Hyperactive,large,Siberian Husky
+DOG0725,2025-05-20,Beagle,F,2,0.17,38.2,41.2,6.07,61.6,18.0,79.6,5.53,9.6,270.7,2.911754332001477,769.6,0,Normal,medium,Beagle
+DOG0296,2025-10-11,Mixed,F,34,2.83,41.9,51.7,14.3,22.5,1.3,23.8,1.65,11.4,514.8,1.25,661.3,1,Low activity,medium,Mixed
+DOG0702,2025-01-05,Poodle (Standard),M,75,6.25,45.2,46.5,23.59,23.6,0.0,23.6,1.64,12.3,749.3,1.21,973.4,1,Low activity,medium,Poodle (Standard)
+DOG0252,2025-07-27,Mixed,F,52,4.33,33.7,46.2,18.08,28.2,58.9,87.1,6.05,11.7,613.8,1.26,797.7,2,Hyperactive,medium,Mixed
+DOG0727,2025-08-11,French Bulldog,F,48,4.0,27.5,28.3,10.69,50.4,39.3,89.7,6.23,11.5,413.8,1.27,483.0,0,Normal,small,French Bulldog
+DOG0462,2025-10-14,Shih Tzu,F,7,0.58,23.1,25.3,3.74,64.9,26.8,91.7,6.37,12.7,188.3,1.8466893594040836,359.5,0,Normal,small,Shih Tzu
+DOG0456,2025-09-15,German Shepherd,M,30,2.5,64.1,80.4,33.39,61.7,0.0,61.7,4.28,11.7,972.3,1.29,1392.0,0,Normal,large,German Shepherd
+DOG0997,2025-05-29,Poodle (Standard),F,39,3.25,50.9,64.8,23.99,56.7,46.4,103.1,7.16,9.9,758.8,1.27,909.5,0,Normal,large,Poodle (Standard)
+DOG0816,2025-07-06,Poodle (Standard),M,42,3.5,47.5,59.6,22.83,51.5,26.4,77.9,5.41,9.5,731.1,1.23,855.7,0,Normal,medium,Poodle (Standard)
+DOG0863,2025-02-03,Labrador Retriever,F,73,6.08,56.0,75.3,29.81,35.2,14.3,49.5,3.44,8.8,893.0,1.18,1062.5,0,Normal,large,Labrador Retriever
+DOG0270,2025-11-05,Beagle,F,59,4.92,39.1,41.0,9.71,8.6,24.4,33.0,2.29,13.3,385.0,1.32,466.1,1,Low activity,medium,Beagle
+DOG0202,2025-05-27,Poodle (Standard),F,20,1.67,56.7,74.1,25.57,55.0,1.1,56.1,3.9,11.2,796.0,1.29,961.1,0,Normal,large,Poodle (Standard)
+DOG0162,2025-10-31,Boxer,F,33,2.75,58.0,69.1,26.89,81.7,86.5,168.2,11.68,9.8,826.6,1.32,1141.9,2,Hyperactive,large,Boxer
+DOG0556,2024-12-21,Mixed,M,39,3.25,55.1,56.8,21.66,37.6,2.0,39.6,2.75,10.7,702.8,1.2,853.3,0,Normal,large,Mixed
+DOG0730,2025-08-21,German Shepherd,F,6,0.5,62.8,82.5,24.43,58.4,73.5,131.9,9.16,9.5,769.2,2.074722552152843,1472.7,2,Hyperactive,large,German Shepherd
+DOG0402,2025-11-16,Labrador Retriever,F,10,0.83,58.3,81.6,26.53,51.9,0.8,52.7,3.66,13.2,818.3,1.921248001306881,1610.0,1,Low activity,large,Labrador Retriever
+DOG0703,2025-03-08,Dachshund,F,39,3.25,14.6,16.1,9.34,36.3,51.3,87.6,6.08,12.3,374.0,1.27,453.1,1,Low activity,small,Dachshund
+DOG0477,2025-01-09,French Bulldog,M,13,1.08,28.5,35.4,10.3,37.3,61.2,98.5,6.84,11.2,402.5,1.28,506.9,2,Hyperactive,small,French Bulldog
+DOG0822,2025-04-06,Rottweiler,F,21,1.75,63.7,75.6,47.91,7.1,83.8,90.9,6.31,11.3,1274.7,1.37,1664.8,2,Hyperactive,large,Other
+DOG0772,2025-02-24,Labrador Retriever,M,2,0.17,56.4,56.1,21.77,52.5,61.4,113.9,7.91,10.6,705.5,2.21936806506527,1616.0,2,Hyperactive,large,Labrador Retriever
+DOG0106,2025-09-18,Mixed,F,13,1.08,43.5,57.4,16.94,56.3,59.3,115.6,8.03,12.6,584.5,1.34,784.7,2,Hyperactive,medium,Mixed
+DOG0566,2024-12-24,Golden Retriever,F,43,3.58,54.1,68.2,27.83,19.4,26.4,45.8,3.18,10.8,848.2,1.3,1167.2,1,Low activity,large,Golden Retriever
+DOG0390,2024-12-20,Beagle,F,12,1.0,34.3,37.0,9.37,12.9,99.4,112.3,7.8,10.8,374.9,1.26,499.6,2,Hyperactive,medium,Beagle
+DOG0002,2025-08-29,Poodle (Standard),M,2,0.17,63.3,64.3,19.01,31.0,44.5,75.5,5.24,11.2,637.3,2.68030753858778,1693.2,2,Hyperactive,large,Poodle (Standard)
+DOG0938,2025-01-26,Shih Tzu,F,2,0.17,26.4,31.3,3.09,94.9,2.1,97.0,6.74,11.1,163.1,2.8712539058201942,459.1,0,Normal,small,Shih Tzu
+DOG0983,2025-09-13,French Bulldog,F,18,1.5,29.0,31.4,10.4,25.7,25.2,50.9,3.53,11.6,405.4,1.29,506.4,1,Low activity,small,French Bulldog
+DOG0562,2025-09-21,Siberian Husky,M,2,0.17,53.6,52.5,12.56,51.5,0.0,51.5,3.58,10.4,467.0,2.30998013643547,1126.1,0,Normal,large,Siberian Husky
+DOG0081,2025-10-29,Siberian Husky,F,16,1.33,54.0,60.4,20.25,25.3,97.9,123.2,8.56,10.2,668.2,1.28,784.5,2,Hyperactive,large,Siberian Husky
+DOG0206,2025-10-28,Labrador Retriever,M,21,1.75,59.2,72.2,32.53,62.7,30.3,93.0,6.46,10.7,953.5,1.26,1325.6,0,Normal,large,Labrador Retriever
+DOG0035,2025-10-14,Poodle (Standard),M,86,7.17,53.1,61.7,28.17,51.8,39.0,90.8,6.31,10.7,855.9,1.19,977.3,0,Normal,large,Poodle (Standard)
+DOG0776,2025-04-09,Shih Tzu,F,5,0.42,26.2,26.3,5.12,20.7,6.7,27.4,1.9,11.9,238.3,2.529245056959473,570.9,1,Low activity,small,Shih Tzu
+DOG0509,2025-08-09,Pomeranian,M,45,3.75,22.4,22.4,1.94,6.1,63.6,69.7,4.84,8.6,115.1,1.22,136.7,2,Hyperactive,small,Other
+DOG0428,2025-07-21,Shih Tzu,F,11,0.92,27.3,28.9,5.24,36.0,28.1,64.1,4.45,10.2,242.4,1.600240926415204,379.3,0,Normal,small,Shih Tzu
+DOG0455,2025-11-07,Poodle (Standard),F,27,2.25,60.4,55.4,25.24,12.5,36.1,48.6,3.38,12.5,788.3,1.23,988.6,1,Low activity,large,Poodle (Standard)
+DOG0367,2025-08-25,Beagle,M,5,0.42,37.9,46.3,7.26,65.7,9.8,75.5,5.24,13.3,309.6,2.920040052545904,886.9,1,Low activity,medium,Beagle
+DOG0092,2025-06-27,Pomeranian,M,60,5.0,21.8,19.6,2.66,57.9,46.2,104.1,7.23,9.9,145.8,1.28,195.3,0,Normal,small,Other
+DOG0340,2025-01-20,German Shepherd,M,37,3.08,61.5,58.4,31.98,62.6,99.2,161.8,11.24,12.0,941.4,1.22,1206.0,2,Hyperactive,large,German Shepherd
+DOG0898,2025-06-28,Labrador Retriever,M,5,0.42,61.1,55.7,23.4,126.0,26.0,152.0,10.56,9.7,744.7,2.9791764972000583,2130.7,0,Normal,large,Labrador Retriever
+DOG0565,2025-10-05,Dachshund,M,9,0.75,19.8,26.9,10.73,84.5,15.5,100.0,6.94,12.4,415.0,1.613562663615536,654.3,0,Normal,small,Dachshund
+DOG0346,2025-08-04,Bulldog,F,20,1.67,39.0,46.7,21.17,60.4,49.9,110.3,7.66,10.8,690.9,1.24,883.7,0,Normal,medium,Other
+DOG0777,2025-03-06,Beagle,M,31,2.58,35.7,45.1,8.8,9.9,19.7,29.6,2.06,11.4,357.7,1.2,426.4,1,Low activity,medium,Beagle
+DOG0242,2025-02-18,Shih Tzu,M,4,0.33,28.4,35.1,4.18,82.0,55.3,137.3,9.53,12.0,204.6,2.5753591731290983,499.9,0,Normal,small,Shih Tzu
+DOG0014,2025-03-07,German Shepherd,M,24,2.0,59.1,74.5,29.99,26.5,87.7,114.2,7.93,11.7,897.1,1.19,1066.7,2,Hyperactive,large,German Shepherd
+DOG0316,2025-11-05,Labrador Retriever,M,53,4.42,59.9,66.7,31.36,43.9,45.4,89.3,6.2,12.3,927.6,1.24,1127.6,1,Low activity,large,Labrador Retriever
+DOG0601,2025-06-22,Golden Retriever,M,26,2.17,51.0,50.0,25.26,42.7,45.4,88.1,6.12,10.3,788.7,1.23,1024.7,2,Hyperactive,large,Golden Retriever
+DOG0388,2025-11-20,Boxer,F,13,1.08,62.9,65.9,31.11,7.0,36.8,43.8,3.04,13.6,922.1,1.17,1121.2,1,Low activity,large,Boxer
+DOG0274,2024-12-03,Boxer,M,5,0.42,56.8,62.4,18.7,58.1,42.8,100.9,7.01,12.5,629.5,2.143161357811193,1311.6,0,Normal,large,Boxer
+DOG0167,2024-12-12,Chihuahua,F,51,4.25,22.6,29.2,2.55,24.4,25.1,49.5,3.44,13.3,141.3,1.23,164.2,1,Low activity,small,Chihuahua
+DOG0841,2025-11-15,Mixed,F,74,6.17,46.4,63.2,19.38,38.3,31.9,70.2,4.87,9.4,646.6,1.27,835.0,0,Normal,medium,Mixed
+DOG0993,2025-08-15,Shih Tzu,F,2,0.17,22.9,31.8,3.28,18.0,16.1,34.1,2.37,12.0,170.6,2.766176399469911,482.5,1,Low activity,small,Shih Tzu
+DOG0647,2025-03-17,Shih Tzu,F,89,7.42,24.7,28.5,5.55,5.9,16.3,22.2,1.54,13.0,253.1,1.27,319.3,1,Low activity,small,Shih Tzu
+DOG0819,2025-09-26,Chihuahua,F,31,2.58,17.3,17.5,2.75,45.8,45.3,91.1,6.33,12.2,149.5,1.19,197.5,1,Low activity,small,Chihuahua
+DOG0485,2025-02-06,Rottweiler,F,51,4.25,57.8,55.2,43.62,2.2,44.6,46.8,3.25,11.2,1188.1,1.31,1455.5,2,Hyperactive,large,Other
+DOG0981,2025-09-01,Labrador Retriever,F,75,6.25,59.4,75.6,27.87,14.4,38.5,52.9,3.67,13.6,849.1,1.22,986.3,1,Low activity,large,Labrador Retriever
+DOG0505,2024-12-17,Golden Retriever,M,13,1.08,52.9,48.1,27.87,49.9,23.8,73.7,5.12,11.8,849.1,1.26,1024.9,0,Normal,large,Golden Retriever
+DOG0832,2025-07-24,Labrador Retriever,M,52,4.33,60.0,71.0,34.58,42.7,59.1,101.8,7.07,12.5,998.2,1.31,1297.5,2,Hyperactive,large,Labrador Retriever
+DOG0244,2025-08-08,Beagle,M,2,0.17,32.6,38.3,6.88,26.2,32.2,58.4,4.06,13.5,297.4,2.500278535207761,789.9,1,Low activity,medium,Beagle
+DOG0567,2025-03-09,Labrador Retriever,M,6,0.5,56.8,54.1,20.89,88.3,33.0,121.3,8.42,10.5,684.0,1.900628426676651,1255.8,0,Normal,large,Labrador Retriever
+DOG0876,2025-06-10,Labrador Retriever,M,40,3.33,61.2,81.8,32.3,36.0,63.7,99.7,6.92,9.3,948.4,1.29,1212.7,2,Hyperactive,large,Labrador Retriever
+DOG0563,2025-05-17,Golden Retriever,F,11,0.92,56.7,74.8,28.39,19.4,79.9,99.3,6.9,11.1,860.9,2.105957225693059,1796.9,2,Hyperactive,large,Golden Retriever
+DOG0687,2025-08-21,Pomeranian,F,6,0.5,21.1,28.1,1.13,113.0,8.8,121.8,8.46,12.4,76.7,1.8292689187057116,136.1,0,Normal,small,Other
+DOG0190,2025-06-29,Dachshund,F,70,5.83,19.2,21.5,10.2,25.5,35.1,60.6,4.21,12.4,399.5,1.24,551.2,1,Low activity,small,Dachshund
+DOG0783,2024-12-04,Beagle,F,30,2.5,35.0,40.9,9.03,19.2,49.2,68.4,4.75,11.0,364.6,1.19,408.6,2,Hyperactive,medium,Beagle
+DOG0700,2025-05-05,Bulldog,M,42,3.5,34.8,45.1,20.26,15.6,21.6,37.2,2.58,11.3,668.5,1.2,775.1,1,Low activity,medium,Other
+DOG0476,2025-03-05,Mixed,M,2,0.17,31.6,32.2,11.23,50.7,17.4,68.1,4.73,12.0,429.4,2.7304162650197354,1112.9,0,Normal,medium,Mixed
+DOG0682,2025-05-19,French Bulldog,F,15,1.25,28.7,26.3,10.43,19.2,17.0,36.2,2.51,13.0,406.3,1.23,463.5,1,Low activity,small,French Bulldog
+DOG0511,2025-07-19,Poodle (Standard),M,2,0.17,59.4,63.5,16.06,14.7,25.1,39.8,2.76,11.3,561.6,2.658283783426157,1434.4,1,Low activity,large,Poodle (Standard)
+DOG0059,2025-04-25,Golden Retriever,F,57,4.75,60.7,62.9,28.18,45.8,51.4,97.2,6.75,11.3,856.2,1.29,1146.8,2,Hyperactive,large,Golden Retriever
+DOG0475,2025-03-20,Dachshund,M,3,0.25,20.7,22.7,8.32,12.7,51.3,64.0,4.44,9.8,342.9,2.9486540809029904,1031.3,2,Hyperactive,small,Dachshund
+DOG0561,2025-03-16,Beagle,F,100,8.33,36.9,34.6,9.71,18.1,47.7,65.8,4.57,12.8,385.0,1.34,488.5,1,Low activity,medium,Beagle
+DOG0857,2025-02-06,Golden Retriever,F,2,0.17,51.2,55.7,16.06,103.9,56.3,160.2,11.12,10.6,561.6,2.115390229009924,1221.1,0,Normal,large,Golden Retriever
+DOG0748,2024-12-17,German Shepherd,M,38,3.17,63.2,68.7,33.43,35.8,12.6,48.4,3.36,13.8,973.2,1.3,1311.5,1,Low activity,large,German Shepherd
+DOG0253,2025-09-08,French Bulldog,F,10,0.83,29.0,31.6,9.33,38.7,15.3,54.0,3.75,9.1,373.7,1.84042250010068,667.2,0,Normal,small,French Bulldog
+DOG0022,2025-05-31,Golden Retriever,M,97,8.08,58.2,68.1,31.8,50.0,67.6,117.6,8.17,12.3,937.4,1.21,1149.6,2,Hyperactive,large,Golden Retriever
+DOG0314,2025-10-23,Labrador Retriever,F,25,2.08,59.0,62.1,29.83,29.5,49.0,78.5,5.45,9.5,893.5,1.24,1073.3,2,Hyperactive,large,Labrador Retriever
+DOG0460,2025-06-20,Shih Tzu,M,40,3.33,23.6,23.6,5.69,21.7,24.4,46.1,3.2,14.0,257.9,1.2,288.8,1,Low activity,small,Shih Tzu
+DOG0161,2025-05-15,Poodle (Standard),M,16,1.33,43.3,45.5,23.82,32.5,41.5,74.0,5.14,13.2,754.8,1.16,825.5,1,Low activity,medium,Poodle (Standard)
+DOG0277,2024-12-30,German Shepherd,F,48,4.0,60.5,62.1,30.25,39.6,54.9,94.5,6.56,11.1,902.9,1.2,1055.1,2,Hyperactive,large,German Shepherd
+DOG0956,2025-09-19,Poodle (Standard),M,47,3.92,50.5,68.4,26.2,30.1,48.9,79.0,5.49,11.9,810.6,1.19,977.5,2,Hyperactive,large,Poodle (Standard)
+DOG0192,2025-03-26,Rottweiler,M,20,1.67,66.0,82.4,49.08,11.7,45.0,56.7,3.94,12.6,1298.0,1.18,1540.5,1,Low activity,large,Other
+DOG0386,2025-07-25,Shih Tzu,M,3,0.25,27.9,28.0,4.48,95.7,46.5,142.2,9.87,10.9,215.6,2.9077508002412378,630.8,0,Normal,small,Shih Tzu
+DOG0806,2025-04-10,German Shepherd,M,5,0.42,62.0,76.9,27.2,70.8,0.0,70.8,4.92,12.4,833.7,2.6763895694084345,2111.6,0,Normal,large,German Shepherd
+DOG0414,2025-11-03,Dachshund,F,9,0.75,20.1,22.0,10.82,8.2,0.0,8.2,0.57,12.9,417.6,1.6092989450957145,684.2,1,Low activity,small,Dachshund
+DOG0492,2025-06-21,Labrador Retriever,M,60,5.0,55.5,64.3,25.9,47.2,69.3,116.5,8.09,8.6,803.7,1.2,997.4,2,Hyperactive,large,Labrador Retriever
+DOG0344,2025-02-02,Mixed,F,6,0.5,33.7,44.1,12.08,27.8,43.8,71.6,4.97,10.7,453.6,1.6420412174327137,775.0,2,Hyperactive,medium,Mixed
+DOG0770,2025-09-08,Labrador Retriever,F,3,0.25,53.3,52.5,19.91,82.9,19.3,102.2,7.1,9.7,659.8,2.4119596798957987,1550.5,0,Normal,large,Labrador Retriever
+DOG0309,2025-01-23,Boxer,F,40,3.33,57.1,78.2,25.59,24.8,65.1,89.9,6.24,12.2,796.4,1.24,947.8,2,Hyperactive,large,Boxer
+DOG0662,2025-03-29,Siberian Husky,M,46,3.83,57.1,78.0,23.88,20.1,29.8,49.9,3.47,10.3,756.2,1.18,965.4,2,Hyperactive,large,Siberian Husky
+DOG0131,2025-09-14,Golden Retriever,M,4,0.33,53.5,69.6,19.54,55.5,35.2,90.7,6.3,12.3,650.6,2.839460909500767,1849.3,0,Normal,large,Golden Retriever
+DOG0664,2025-09-06,Dachshund,M,20,1.67,14.5,13.2,10.62,29.1,0.0,29.1,2.02,12.4,411.8,1.28,458.3,1,Low activity,small,Dachshund
+DOG0872,2025-08-18,Golden Retriever,F,22,1.83,54.9,51.5,29.68,50.7,17.5,68.2,4.74,11.4,890.1,1.23,1087.1,0,Normal,large,Golden Retriever
+DOG0100,2025-09-08,German Shepherd,M,113,9.42,61.0,69.5,31.34,22.2,43.7,65.9,4.58,10.5,927.2,1.25,1229.5,2,Hyperactive,large,German Shepherd
+DOG0373,2025-02-03,Shih Tzu,F,15,1.25,20.6,26.0,5.4,13.4,0.0,13.4,0.93,13.5,248.0,1.1,253.9,1,Low activity,small,Shih Tzu
+DOG0088,2024-12-31,Dachshund,M,35,2.92,19.2,22.7,12.18,8.3,80.4,88.7,6.16,11.2,456.4,1.19,554.5,2,Hyperactive,small,Dachshund
+DOG0459,2025-04-29,Boxer,M,44,3.67,53.1,56.4,28.34,27.2,51.9,79.1,5.49,11.3,859.8,1.24,1113.2,2,Hyperactive,large,Boxer
+DOG0331,2025-10-06,Golden Retriever,F,15,1.25,59.3,81.0,28.8,56.9,86.4,143.3,9.95,11.2,870.2,1.24,1041.4,2,Hyperactive,large,Golden Retriever
+DOG0215,2024-12-24,Rottweiler,M,160,13.33,54.9,56.3,43.5,59.7,50.6,110.3,7.66,13.1,1185.7,1.25,1431.6,1,Low activity,large,Other
+DOG0467,2024-12-10,Labrador Retriever,F,39,3.25,58.3,65.1,31.18,64.3,103.1,167.4,11.62,10.1,923.6,1.29,1121.5,2,Hyperactive,large,Labrador Retriever
+DOG0122,2025-07-24,Poodle (Standard),M,70,5.83,56.3,52.6,28.25,56.3,4.4,60.7,4.22,11.4,857.8,1.21,1175.8,0,Normal,large,Poodle (Standard)
+DOG0615,2025-07-12,Boxer,F,129,10.75,54.7,68.8,25.87,15.7,21.3,37.0,2.57,13.3,803.0,1.19,868.8,1,Low activity,large,Boxer
+DOG0021,2025-02-09,Pomeranian,M,15,1.25,27.5,31.3,3.28,21.9,6.9,28.8,2.0,9.4,170.6,1.15,217.3,0,Normal,small,Other
+DOG0701,2025-05-23,Beagle,M,6,0.5,39.6,36.0,8.23,72.6,23.3,95.9,6.66,11.0,340.1,1.6946961887798793,583.4,0,Normal,medium,Beagle
+DOG0072,2025-10-30,Shih Tzu,F,2,0.17,24.4,25.9,3.08,82.7,15.5,98.2,6.82,11.8,162.7,2.471532460102513,424.6,0,Normal,small,Shih Tzu
+DOG0107,2025-03-10,Boxer,M,41,3.42,52.2,49.2,25.33,27.5,38.6,66.1,4.59,10.7,790.4,1.18,966.6,2,Hyperactive,large,Boxer
+DOG0271,2025-07-03,Pomeranian,F,3,0.25,19.1,19.2,0.92,16.7,45.8,62.5,4.34,11.4,65.8,2.5645906389334634,173.9,2,Hyperactive,small,Other
+DOG0861,2025-05-19,Poodle (Standard),F,22,1.83,47.7,44.3,22.58,9.6,33.1,42.7,2.97,11.8,725.1,1.2,807.6,1,Low activity,medium,Poodle (Standard)
+DOG0436,2025-02-24,German Shepherd,F,29,2.42,64.0,68.0,31.37,5.0,43.1,48.1,3.34,13.2,927.9,1.21,1113.8,1,Low activity,large,German Shepherd
+DOG0103,2025-04-11,Siberian Husky,M,9,0.75,53.0,70.2,17.54,93.0,58.4,151.4,10.51,11.2,600.0,1.8889809079209177,1029.0,0,Normal,large,Siberian Husky

@@ -1,0 +1,144 @@
+<!-- templates/weight_result.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .metric-box {
+            background: #f0f4ff;
+            border-left: 5px solid #4a72ff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        ul.metrics-list {
+            margin: 10px 0 10px 20px;
+            padding: 0;
+        }
+
+        ul.metrics-list li {
+            padding: 4px 0;
+            color: #333;
+        }
+
+        pre {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        a.back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #4a72ff;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        a.back-btn:hover {
+            background: #2f54d8;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .confidence-box {
+            background: #e7ffea;
+            border-left: 5px solid #33c553;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🐶 Weight Prediction Result</h2>
+
+        <!-- Prediction -->
+        <div class="metric-box">
+            <p><span class="highlight">Predicted weight:</span> {{ result.weight_kg }} kg
+                <em>(source: {{ result.weight_source }})</em>
+            </p>
+        </div>
+
+        <!-- Metrics -->
+        {% if metrics %}
+        <div>
+            <div class="section-title">📊 Model Metrics (Test)</div>
+
+            <ul class="metrics-list">
+                <li><strong>MAE:</strong> {{ metrics.mae }} kg</li>
+                <li><strong>RMSE:</strong> {{ metrics.rmse }} kg</li>
+                <li><strong>R²:</strong> {{ metrics.r2 }}</li>
+                <li><strong>Test rows:</strong> {{ metrics.n_test }}</li>
+            </ul>
+
+            {% if ci[0] is not none %}
+            <div class="confidence-box">
+                <strong>Confidence band:</strong> {{ ci[0]|round(2) }} — {{ ci[1]|round(2) }} kg
+                <em>(prediction ± MAE)</em>
+            </div>
+            {% endif %}
+        </div>
+        {% else %}
+        <p>No metrics available. Run evaluator to generate metrics.json.</p>
+        {% endif %}
+
+        <!-- Submitted data -->
+        <div class="section-title">📥 Submitted Data</div>
+        <pre>{{ submitted|tojson(indent=2) }}</pre>
+
+        <a href="{{ url_for('weight_page') }}" class="back-btn">⬅ Back</a>
+    </div>
+
+</body>
+
+</html>

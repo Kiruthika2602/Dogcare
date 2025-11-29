@@ -1,0 +1,117 @@
+/* custom css */
+/* web/static/styles.css - simple, clean styles */
+:root {
+    --bg: #f7fafc;
+    --card: #ffffff;
+    --accent: #2b6cb0;
+    --muted: #6b7280;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    margin: 0;
+    background: var(--bg);
+    color: #111827;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 16px;
+}
+
+.site-header {
+    background: linear-gradient(90deg, #1f2937, #111827);
+    color: white;
+    padding: 12px 0;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.site-header h1 a {
+    color: white;
+    text-decoration: none
+}
+
+.site-header nav a {
+    color: #e5e7eb;
+    margin-left: 12px;
+    text-decoration: none
+}
+
+.hero {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.form-grid label {
+    display: block;
+    background: var(--card);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.form-grid input,
+.form-grid select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px
+}
+
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.result {
+    margin-top: 18px;
+    padding: 14px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.04);
+}
+
+.cta {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none
+}
+
+.site-footer {
+    padding: 18px 0;
+    text-align: center;
+    color: var(--muted)
+}
+
+.messages .flash {
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 6px
+}
+
+.flash.danger {
+    background: #fee2e2;
+    color: #991b1b
+}

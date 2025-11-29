@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    .life-result-card {
+        background: #ffffff;
+        max-width: 860px;
+        margin: 36px auto;
+        padding: 32px 36px;
+        border-radius: 14px;
+        box-shadow: 0 6px 26px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #263238;
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .highlight-value {
+        background: #eef4ff;
+        padding: 12px 16px;
+        border-left: 5px solid #4a72ff;
+        border-radius: 8px;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .metrics-section h4,
+    .submitted-section h4 {
+        margin-top: 24px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #1b2430;
+    }
+
+    ul.metrics-list {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    ul.metrics-list li {
+        background: #f8f9fb;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1px solid #e5e8ef;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    pre {
+        background: #fafbff;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #e6e9f0;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .btn-back {
+        display: inline-block;
+        margin-top: 20px;
+        background: #4a72ff;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s ease;
+    }
+
+    .btn-back:hover {
+        background: #3458d0;
+    }
+</style>
+
+<section class="life-result-card">
+
+    <h2>Life Expectancy Result</h2>
+
+    <!-- Highlight Section -->
+    <div class="highlight-value">
+        <p><strong>Estimated years remaining:</strong> {{ result.years_left }} years</p>
+        <p><strong>Category:</strong> {{ result.life_category }}</p>
+    </div>
+
+    <!-- Metrics -->
+    {% if metrics %}
+    <div class="metrics-section">
+        <h4>Model metrics (test)</h4>
+        <ul class="metrics-list">
+            <li><strong>MAE:</strong> {{ metrics.mae }}</li>
+            <li><strong>RMSE:</strong> {{ metrics.rmse }}</li>
+            <li><strong>R²:</strong> {{ metrics.r2 }}</li>
+            <li><strong>Test rows:</strong> {{ metrics.n_test }}</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- Submitted Data -->
+    <div class="submitted-section">
+        <h4>Submitted Data</h4>
+        <pre>{{ submitted|tojson(indent=2) }}</pre>
+    </div>
+
+    <a href="{{ url_for('life_page') }}" class="btn-back">← Re-run</a>
+
+</section>
+
+{% endblock %}

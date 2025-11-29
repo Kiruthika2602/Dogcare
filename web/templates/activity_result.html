@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .metric-box {
+            background: #e5f3ff;
+            border-left: 5px solid #4287f5;
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 25px;
+            color: #222;
+        }
+
+        ul.metrics-list,
+        ul.cluster-list {
+            margin: 10px 0 10px 20px;
+            padding: 0;
+        }
+
+        ul.metrics-list li,
+        ul.cluster-list li {
+            padding: 4px 0;
+            color: #333;
+        }
+
+        pre {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        a.back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #4a72ff;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        a.back-btn:hover {
+            background: #2f54d8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>🐾 Activity Prediction Result</h2>
+
+        <!-- Main result -->
+        <div class="metric-box">
+            <p>
+                <strong>Cluster:</strong> {{ result.activity_cluster }}
+                — <strong>{{ result.activity_label }}</strong>
+            </p>
+        </div>
+
+        <!-- Metrics -->
+        {% if metrics %}
+        <div>
+
+            <div class="section-title">📊 Clustering Metrics (Train)</div>
+
+            <ul class="metrics-list">
+                <li><strong>Silhouette score:</strong> {{ metrics.silhouette }}</li>
+                <li><strong>Inertia:</strong> {{ metrics.inertia }}</li>
+            </ul>
+
+            <div class="section-title">📦 Cluster Sizes</div>
+            <ul class="cluster-list">
+                {% for cid, size in metrics.cluster_sizes.items() %}
+                <li>Cluster {{ cid }} → {{ size }} rows</li>
+                {% endfor %}
+            </ul>
+
+            <div class="section-title">🧭 Centroids ({{ metrics.activity_cols|join(', ') }})</div>
+            <pre>{{ metrics.centroids|tojson(indent=2) }}</pre>
+
+        </div>
+        {% endif %}
+
+        <!-- Submitted Data -->
+        <div class="section-title">📥 Submitted Data</div>
+        <pre>{{ submitted|tojson(indent=2) }}</pre>
+
+        <a href="{{ url_for('activity_page') }}" class="back-btn">⬅ Back</a>
+
+    </div>
+
+</body>
+
+</html>
